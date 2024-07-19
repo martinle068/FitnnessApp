@@ -1,0 +1,169 @@
+\doxysection{Nutrition\+Plan\+View\+Model.\+cpp File Reference}
+\hypertarget{_nutrition_plan_view_model_8cpp}{}\label{_nutrition_plan_view_model_8cpp}\index{NutritionPlanViewModel.cpp@{NutritionPlanViewModel.cpp}}
+{\ttfamily \#include "{}Nutrition\+Plan\+View\+Model.\+h"{}}\newline
+{\ttfamily \#include "{}Utils.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+Include dependency graph for Nutrition\+Plan\+View\+Model.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_nutrition_plan_view_model_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{define}} \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_a9f918755b601cf4bffca775992e6fb90}{NOMINMAX}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_ab66066424a0f3ba2ec3286d31705efea}{display\+Food\+Items\+By\+Category}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::map}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}, \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&food\+Item\+Map, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::vector}}$<$ \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{filtered\+Food\+Items}})
+\begin{DoxyCompactList}\small\item\em Display food items by category. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_a366721059816872a8788b34bb7f02e1e}{view\+Options}} ()
+\begin{DoxyCompactList}\small\item\em Display view options for the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_aa8bc1c07eede4f24a23c985f4a9d37a7}{try\+Load\+Profile\+And\+Goals}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{profile\+Filename}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goals\+Filename}}, \mbox{\hyperlink{class_profile}{Profile}} \&profile, \mbox{\hyperlink{class_goals}{Goals}} \&goals)
+\begin{DoxyCompactList}\small\item\em Try loading profile and goals from CSV files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_nutrition_plan_view_model_8cpp_a9f918755b601cf4bffca775992e6fb90}\label{_nutrition_plan_view_model_8cpp_a9f918755b601cf4bffca775992e6fb90} 
+\index{NutritionPlanViewModel.cpp@{NutritionPlanViewModel.cpp}!NOMINMAX@{NOMINMAX}}
+\index{NOMINMAX@{NOMINMAX}!NutritionPlanViewModel.cpp@{NutritionPlanViewModel.cpp}}
+\doxysubsubsection{\texorpdfstring{NOMINMAX}{NOMINMAX}}
+{\footnotesize\ttfamily \#\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{define}} NOMINMAX}
+
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source_l00001}{1}} of file \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source}{Nutrition\+Plan\+View\+Model.\+cpp}}.
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_nutrition_plan_view_model_8cpp_ab66066424a0f3ba2ec3286d31705efea}\label{_nutrition_plan_view_model_8cpp_ab66066424a0f3ba2ec3286d31705efea} 
+\index{NutritionPlanViewModel.cpp@{NutritionPlanViewModel.cpp}!displayFoodItemsByCategory@{displayFoodItemsByCategory}}
+\index{displayFoodItemsByCategory@{displayFoodItemsByCategory}!NutritionPlanViewModel.cpp@{NutritionPlanViewModel.cpp}}
+\doxysubsubsection{\texorpdfstring{displayFoodItemsByCategory()}{displayFoodItemsByCategory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} display\+Food\+Items\+By\+Category (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::map}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}, \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&}]{food\+Item\+Map,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{category,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::vector}}$<$ \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&}]{filtered\+Food\+Items }\end{DoxyParamCaption})}
+
+
+
+Display food items by category. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em food\+Item\+Map} & The map of all food items. \\
+\hline
+{\em category} & The category to filter food items by. \\
+\hline
+{\em filtered\+Food\+Items} & The vector to store the filtered food items. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source}{Nutrition\+Plan\+View\+Model.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{index}}\ =\ 1;}
+\DoxyCodeLine{00028\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Food\ items\ in\ the\ category\ '"{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}}\ <<\ \textcolor{stringliteral}{"{}':\(\backslash\)n"{}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}\ :\ foodItemMap)}
+\DoxyCodeLine{00030\ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Check\ if\ the\ food\ item\ belongs\ to\ the\ specified\ category}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second.categories.find(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}})\ !=\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second.categories.end())}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Display\ food\ item\ details}}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{index}}\ <<\ \textcolor{stringliteral}{"{}.\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second.name\ <<\ \textcolor{stringliteral}{"{}\ (Calories:\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second.calories}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ kcal,\ Protein:\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second.protein\ <<\ \textcolor{stringliteral}{"{}\ g,\ Carbohydrates:\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second.carbohydrates}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ g,\ Fats:\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second.fats\ <<\ \textcolor{stringliteral}{"{}\ g,\ Portion:\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second.portion\ <<\ \textcolor{stringliteral}{"{}\ g)\(\backslash\)n"{}};}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{filteredFoodItems}}.push\_back(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second);}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{index}}++;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ac61722961cd6bde5ad740e9ed665cb37}{printWindowSizedSeparator}}();}
+\DoxyCodeLine{00043\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00417}{print\+Window\+Sized\+Separator()}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_nutrition_plan_view_model_8cpp_aa8bc1c07eede4f24a23c985f4a9d37a7}\label{_nutrition_plan_view_model_8cpp_aa8bc1c07eede4f24a23c985f4a9d37a7} 
+\index{NutritionPlanViewModel.cpp@{NutritionPlanViewModel.cpp}!tryLoadProfileAndGoals@{tryLoadProfileAndGoals}}
+\index{tryLoadProfileAndGoals@{tryLoadProfileAndGoals}!NutritionPlanViewModel.cpp@{NutritionPlanViewModel.cpp}}
+\doxysubsubsection{\texorpdfstring{tryLoadProfileAndGoals()}{tryLoadProfileAndGoals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} try\+Load\+Profile\+And\+Goals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{profile\+Filename,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{goals\+Filename,  }\item[{\mbox{\hyperlink{class_profile}{Profile}} \&}]{profile,  }\item[{\mbox{\hyperlink{class_goals}{Goals}} \&}]{goals }\end{DoxyParamCaption})}
+
+
+
+Try loading profile and goals from CSV files. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em profile\+Filename} & The filename of the profile CSV. \\
+\hline
+{\em goals\+Filename} & The filename of the goals CSV. \\
+\hline
+{\em profile} & The \doxylink{class_profile}{Profile} object to load data into. \\
+\hline
+{\em goals} & The \doxylink{class_goals}{Goals} object to load data into. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if both profile and goals are loaded successfully, otherwise false. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source_l00364}{364}} of file \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source}{Nutrition\+Plan\+View\+Model.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00365\ \{}
+\DoxyCodeLine{00366\ \ \ \ \ \textcolor{keywordflow}{if}\ (!profile.\mbox{\hyperlink{class_profile_a7bde404a039d876b77f6355658cff7a5}{loadFromCSV}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{profileFilename}})\ ||\ !goals.\mbox{\hyperlink{class_goals_ab4b87f662423160ff10be63eed2382b2}{loadFromCSV}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalsFilename}}))}
+\DoxyCodeLine{00367\ \ \ \ \ \{}
+\DoxyCodeLine{00368\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error\ loading\ profile\ or\ goals.\(\backslash\)n"{}};}
+\DoxyCodeLine{00369\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00370\ \ \ \ \ \}}
+\DoxyCodeLine{00371\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00372\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_goals_8cpp_source_l00156}{Goals\+::load\+From\+CSV()}}, \mbox{\hyperlink{_profile_8cpp_source_l00130}{Profile\+::load\+From\+CSV()}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_nutrition_plan_view_model_8cpp_a366721059816872a8788b34bb7f02e1e}\label{_nutrition_plan_view_model_8cpp_a366721059816872a8788b34bb7f02e1e} 
+\index{NutritionPlanViewModel.cpp@{NutritionPlanViewModel.cpp}!viewOptions@{viewOptions}}
+\index{viewOptions@{viewOptions}!NutritionPlanViewModel.cpp@{NutritionPlanViewModel.cpp}}
+\doxysubsubsection{\texorpdfstring{viewOptions()}{viewOptions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} view\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Display view options for the user. 
+
+\begin{DoxyReturn}{Returns}
+The number of options available. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source_l00211}{211}} of file \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source}{Nutrition\+Plan\+View\+Model.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00212\ \{}
+\DoxyCodeLine{00213\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}View\ Options:\(\backslash\)n"{}};}
+\DoxyCodeLine{00214\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ View\ All\(\backslash\)n"{}};}
+\DoxyCodeLine{00215\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Generate\ Plan\ by\ Goals\(\backslash\)n"{}};}
+\DoxyCodeLine{00216\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3.\ Cancel\(\backslash\)n"{}};}
+\DoxyCodeLine{00217\ }
+\DoxyCodeLine{00218\ \ \ \ \ \textcolor{keywordflow}{return}\ 3;}
+\DoxyCodeLine{00219\ \}}
+
+\end{DoxyCode}

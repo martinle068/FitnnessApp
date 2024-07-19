@@ -1,0 +1,39 @@
+\doxysection{Nutrition\+Plan.\+h}
+\hypertarget{_nutrition_plan_8h_source}{}\label{_nutrition_plan_8h_source}\mbox{\hyperlink{_nutrition_plan_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ NUTRITION\_PLAN\_H}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ NUTRITION\_PLAN\_H}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_food_item_8h}{FoodItem.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00013}\mbox{\hyperlink{class_nutrition_plan}{00013}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_nutrition_plan}{NutritionPlan}}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00015}00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00016}\mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{00016}}\ \ \ \ \ std::string\ \mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}};\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00017}\mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{00017}}\ \ \ \ \ std::map<std::string,\ std::vector<std::pair<FoodItem,\ float>>>\ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}};\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00022}\mbox{\hyperlink{class_nutrition_plan_a1ecc6fb59679857a6100d78e7295d873}{00022}}\ \ \ \ \ \mbox{\hyperlink{class_nutrition_plan_a1ecc6fb59679857a6100d78e7295d873}{NutritionPlan}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00029}\mbox{\hyperlink{class_nutrition_plan_a426079cd6184522e931133c63f3af5fd}{00029}}\ \ \ \ \ \mbox{\hyperlink{class_nutrition_plan_a426079cd6184522e931133c63f3af5fd}{NutritionPlan}}(std::string\ \mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}},\ std::map<std::string,\ std::vector<std::pair<FoodItem,\ float>>>\ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}})}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std}}::\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{move}}(\mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}})),\ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std}}::\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{move}}(\mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}}))}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00031}00031\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00032}00032\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00038}00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nutrition_plan_a0bce62fdc106b4f890494d9bc22c6405}{toCSV}}(std::ostream\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_nutrition_plan_a3b8f7d12b42f792747a70c9819e52953}{fromCSV}}(std::istream\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \textcolor{keyword}{const}\ std::map<std::string,\ FoodItem>\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}});}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00051}00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nutrition_plan_a714a170e48b817e21d7af82dce5869a4}{display}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00057}00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nutrition_plan_a88a02c82559483d43eebe395e2298a09}{adjustPortionSizes}}(\textcolor{keywordtype}{float}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{factor}});}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00065}00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nutrition_plan_a61a675a8f1deeaf80976738274b07f42}{getNewNutritionPlan}}(std::istringstream\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \textcolor{keyword}{const}\ std::map<std::string,\ FoodItem>\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}},\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealName}});}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00066}00066\ \};}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_8h_source_l00068}00068\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NUTRITION\_PLAN\_H}}
+
+\end{DoxyCode}

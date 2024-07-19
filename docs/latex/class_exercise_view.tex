@@ -1,0 +1,215 @@
+\doxysection{Exercise\+View Class Reference}
+\hypertarget{class_exercise_view}{}\label{class_exercise_view}\index{ExerciseView@{ExerciseView}}
+
+
+Handles the user interface for displaying and managing exercises.  
+
+
+
+
+{\ttfamily \#include $<$Exercise\+View.\+h$>$}
+
+
+
+Inheritance diagram for Exercise\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{class_exercise_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Exercise\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{class_exercise_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_exercise_view_a643a90f4ba1478301fa2770f742332d6}{Exercise\+View}} (\mbox{\hyperlink{class_exercise_view_model}{Exercise\+View\+Model}} \&\mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{view\+Model}})
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{class_exercise_view}{Exercise\+View} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_exercise_view_a44c4781dc6b8185a4e8deafc55ea754d}{display}} ()
+\begin{DoxyCompactList}\small\item\em Displays the exercise menu and handles user interactions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_view}{View}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{virtual}} \mbox{\hyperlink{class_view_ad0f3ade04bca4e74b8868e63729bad86}{\texorpdfstring{$\sim$}{\string~}\+View}} ()=\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{default}}
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_view}{View} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{display\+And\+Handle\+Sub\+Menu}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \&menu\+Options, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ask\+For\+Enter\+At\+The\+End}})
+\begin{DoxyCompactList}\small\item\em Displays a submenu and handles user input to navigate the options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_exercise_view_a76af48581962807b6df407908b64a93c}{import\+From\+File}} ()
+\begin{DoxyCompactList}\small\item\em Imports exercises from a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_exercise_view_model}{Exercise\+View\+Model}} \& \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{view\+Model}}
+\begin{DoxyCompactList}\small\item\em Reference to the \doxylink{class_exercise_view_model}{Exercise\+View\+Model} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \mbox{\hyperlink{class_exercise_view_acf84293f53e74ecfa787c0f369b1fa2f}{menu\+Options}}
+\begin{DoxyCompactList}\small\item\em List of menu options for the exercise view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the user interface for displaying and managing exercises. 
+
+This class provides methods to display the exercise menu and handle user interactions. 
+
+Definition at line \mbox{\hyperlink{_exercise_view_8h_source_l00015}{15}} of file \mbox{\hyperlink{_exercise_view_8h_source}{Exercise\+View.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_exercise_view_a643a90f4ba1478301fa2770f742332d6}\label{class_exercise_view_a643a90f4ba1478301fa2770f742332d6} 
+\index{ExerciseView@{ExerciseView}!ExerciseView@{ExerciseView}}
+\index{ExerciseView@{ExerciseView}!ExerciseView@{ExerciseView}}
+\doxysubsubsection{\texorpdfstring{ExerciseView()}{ExerciseView()}}
+{\footnotesize\ttfamily Exercise\+View\+::\+Exercise\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_exercise_view_model}{Exercise\+View\+Model}} \&}]{vm }\end{DoxyParamCaption})}
+
+
+
+Constructs an \doxylink{class_exercise_view}{Exercise\+View} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Model} & A reference to the \doxylink{class_exercise_view_model}{Exercise\+View\+Model} object.\\
+\hline
+\end{DoxyParams}
+Initializes the menu options for the exercise view.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vm} & A reference to the \doxylink{class_exercise_view_model}{Exercise\+View\+Model} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_exercise_view_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{_exercise_view_8cpp_source}{Exercise\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}}) }
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_exercise_view_acf84293f53e74ecfa787c0f369b1fa2f}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}View\ Exercises"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Viewing\ Exercises"{}});\ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_ad5a129b99e0b7141be97c472cc5ab747}{view}}();\ \}\},}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Add\ Exercise"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Adding\ Exercise"{}});\ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_aa58b10331e1509c47cdf8f05e97b980d}{add}}();\ \}\},}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Modify\ Exercise"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Modifying\ Exercise"{}});\ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_adc3061dd89508f09dfcf5e04173801ab}{modify}}();\ \}\},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Delete\ Exercise"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Deleting\ Exercise"{}});\ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_a26f5244c57c4469cfc5165d44d5b9725}{remove}}();\ \}\},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Import\ from\ file"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_exercise_view_a76af48581962807b6df407908b64a93c}{importFromFile}}();\ \}\},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Back"{}},\ [\textcolor{keyword}{this}]()\ \{\ \textcolor{keywordflow}{return};\ \}\}}
+\DoxyCodeLine{00019\ \ \ \ \ \};}
+\DoxyCodeLine{00020\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_exercise_view_model_8cpp_source_l00133}{Exercise\+View\+Model\+::add()}}, \mbox{\hyperlink{_exercise_view_8cpp_source_l00039}{import\+From\+File()}}, \mbox{\hyperlink{_exercise_view_8h_source_l00032}{menu\+Options}}, \mbox{\hyperlink{_exercise_view_model_8cpp_source_l00176}{Exercise\+View\+Model\+::modify()}}, \mbox{\hyperlink{_utils_8h_source_l00372}{print\+Label()}}, \mbox{\hyperlink{_exercise_view_model_8cpp_source_l00216}{Exercise\+View\+Model\+::remove()}}, \mbox{\hyperlink{_exercise_view_model_8cpp_source_l00107}{Exercise\+View\+Model\+::view()}}, and \mbox{\hyperlink{_exercise_view_8h_source_l00031}{view\+Model}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_exercise_view_a44c4781dc6b8185a4e8deafc55ea754d}\label{class_exercise_view_a44c4781dc6b8185a4e8deafc55ea754d} 
+\index{ExerciseView@{ExerciseView}!display@{display}}
+\index{display@{display}!ExerciseView@{ExerciseView}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Exercise\+View\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the exercise menu and handles user interactions. 
+
+This method reloads the view model data and displays the exercise menu. It allows the user to select various actions related to exercises. 
+
+Implements \mbox{\hyperlink{class_view_a2d83a628b932739742a943ccaa3385d0}{View}}.
+
+
+
+Definition at line \mbox{\hyperlink{_exercise_view_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{_exercise_view_8cpp_source}{Exercise\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_acc21073369e6c107edc594a54263beef}{reload}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Exercises"{}},\ \mbox{\hyperlink{class_exercise_view_acf84293f53e74ecfa787c0f369b1fa2f}{menuOptions}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00032\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_view_8h_source_l00032}{View\+::display\+And\+Handle\+Sub\+Menu()}}, \mbox{\hyperlink{_exercise_view_8h_source_l00032}{menu\+Options}}, \mbox{\hyperlink{_exercise_view_model_8cpp_source_l00255}{Exercise\+View\+Model\+::reload()}}, and \mbox{\hyperlink{_exercise_view_8h_source_l00031}{view\+Model}}.
+
+\Hypertarget{class_exercise_view_a76af48581962807b6df407908b64a93c}\label{class_exercise_view_a76af48581962807b6df407908b64a93c} 
+\index{ExerciseView@{ExerciseView}!importFromFile@{importFromFile}}
+\index{importFromFile@{importFromFile}!ExerciseView@{ExerciseView}}
+\doxysubsubsection{\texorpdfstring{importFromFile()}{importFromFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Exercise\+View\+::import\+From\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Imports exercises from a file. 
+
+This method is used to import exercises from a specified file.
+
+Prompts the user to enter a filename and imports exercises from the specified file. 
+
+Definition at line \mbox{\hyperlink{_exercise_view_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{_exercise_view_8cpp_source}{Exercise\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00040\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ std::string\ filename;}
+\DoxyCodeLine{00042\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ the\ filename\ to\ import\ exercises\ from:\ "{}};}
+\DoxyCodeLine{00043\ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ filename);}
+\DoxyCodeLine{00044\ \ \ \ \ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_a9952d334b11b426e2f5cea14436b3d60}{importFromFile}}(filename);}
+\DoxyCodeLine{00045\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Exercises\ imported\ from\ file:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{00046\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_exercise_view_model_8cpp_source_l00235}{Exercise\+View\+Model\+::import\+From\+File()}}, and \mbox{\hyperlink{_exercise_view_8h_source_l00031}{view\+Model}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_exercise_view_acf84293f53e74ecfa787c0f369b1fa2f}\label{class_exercise_view_acf84293f53e74ecfa787c0f369b1fa2f} 
+\index{ExerciseView@{ExerciseView}!menuOptions@{menuOptions}}
+\index{menuOptions@{menuOptions}!ExerciseView@{ExerciseView}}
+\doxysubsubsection{\texorpdfstring{menuOptions}{menuOptions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}}$>$ Exercise\+View\+::menu\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of menu options for the exercise view. 
+
+
+
+Definition at line \mbox{\hyperlink{_exercise_view_8h_source_l00032}{32}} of file \mbox{\hyperlink{_exercise_view_8h_source}{Exercise\+View.\+h}}.
+
+\Hypertarget{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}\label{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58} 
+\index{ExerciseView@{ExerciseView}!viewModel@{viewModel}}
+\index{viewModel@{viewModel}!ExerciseView@{ExerciseView}}
+\doxysubsubsection{\texorpdfstring{viewModel}{viewModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_exercise_view_model}{Exercise\+View\+Model}}\& Exercise\+View\+::view\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the \doxylink{class_exercise_view_model}{Exercise\+View\+Model} object. 
+
+
+
+Definition at line \mbox{\hyperlink{_exercise_view_8h_source_l00031}{31}} of file \mbox{\hyperlink{_exercise_view_8h_source}{Exercise\+View.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_exercise_view_8h}{Exercise\+View.\+h}}\item 
+\mbox{\hyperlink{_exercise_view_8cpp}{Exercise\+View.\+cpp}}\end{DoxyCompactItemize}

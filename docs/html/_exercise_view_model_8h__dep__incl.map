@@ -1,0 +1,21 @@
+<map id="ExerciseViewModel.h" name="ExerciseViewModel.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="118,5,264,32"/>
+<area shape="rect" id="Node000002" href="$_exercise_view_8h.html" title=" " alt="" coords="135,80,246,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,48,194,80,188,80,188,48"/>
+<area shape="rect" id="Node000004" href="$_fitness_app_8h.html" title=" " alt="" coords="71,229,169,256"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="158,43,139,60,125,81,114,121,112,163,115,201,120,228,115,229,109,201,106,163,109,120,120,79,135,57,155,39"/>
+<area shape="rect" id="Node000009" href="$_exercise_view_model_8cpp.html" title=" " alt="" coords="271,80,431,107"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="234,36,324,77,322,82,232,41"/>
+<area shape="rect" id="Node000003" href="$_exercise_view_8cpp.html" title=" " alt="" coords="158,155,283,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="204,120,218,153,213,155,199,122"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="172,120,148,156,133,196,125,230,120,228,128,194,143,153,167,117"/>
+<area shape="rect" id="Node000007" href="$_main_view_8h.html" title=" " alt="" coords="307,155,395,181"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="234,111,324,152,322,156,232,116"/>
+<area shape="rect" id="Node000005" href="$_fitness_app_8cpp.html" title=" " alt="" coords="5,304,118,331"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="102,270,74,305,70,302,98,267"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html" title=" " alt="" coords="142,304,216,331"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="142,267,171,302,167,305,138,270"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="297,189,161,231,160,226,295,184"/>
+<area shape="rect" id="Node000008" href="$_main_view_8cpp.html" title=" " alt="" coords="300,229,402,256"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="354,197,354,229,348,229,348,197"/>
+</map>

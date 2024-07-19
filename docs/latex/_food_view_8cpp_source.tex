@@ -1,0 +1,33 @@
+\doxysection{Food\+View.\+cpp}
+\hypertarget{_food_view_8cpp_source}{}\label{_food_view_8cpp_source}\mbox{\hyperlink{_food_view_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_food_view_8h}{FoodView.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00010}\mbox{\hyperlink{class_food_view_a198cf59697bbf6934ff1985dbf636ff9}{00010}}\ \mbox{\hyperlink{class_food_view_a198cf59697bbf6934ff1985dbf636ff9}{FoodView::FoodView}}(\mbox{\hyperlink{class_food_view_model}{FoodViewModel}}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}})\ :\ viewModel(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}})}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00012}00012\ \ \ \ \ \mbox{\hyperlink{class_food_view_a734d9dc004a4b31eca4c17e83c72309c}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}View\ Food\ Items"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Viewing\ Food\ Items"{}});\ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_aaac3e264ceecc385902046738d00a2cb}{view}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Add\ Food\ Item"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Adding\ a\ Food\ Item"{}});\ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_aca65c993b1d928f337cfc5c5e51c84b1}{add}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Modify\ Food\ Item"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Modifying\ Food\ Item"{}});\ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_a666770a1b3df97ba8176ed504eb08369}{modify}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Delete\ Food\ Item"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Deleting\ Food\ Item"{}});\ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_af27a71d40dbb0263cd7a5d33b91eb291}{remove}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Import\ from\ file"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_food_view_a9bd9a48639f236da42f556a98bfb69b0}{importFromFile}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Back"{}},\ [\textcolor{keyword}{this}]()\ \{\ \textcolor{keywordflow}{return};\ \}\}}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00019}00019\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00027}\mbox{\hyperlink{class_food_view_a03a62f43536e2fb31cbdfb2d496f0c6f}{00027}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_view_a03a62f43536e2fb31cbdfb2d496f0c6f}{FoodView::display}}()}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00028}00028\ \{}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_ac347ec0a002249238c9deac9cb32cdc3}{reload}}();}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00030}00030\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Food"{}},\ \mbox{\hyperlink{class_food_view_a734d9dc004a4b31eca4c17e83c72309c}{menuOptions}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00031}00031\ \}}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00038}\mbox{\hyperlink{class_food_view_a9bd9a48639f236da42f556a98bfb69b0}{00038}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_view_a9bd9a48639f236da42f556a98bfb69b0}{FoodView::importFromFile}}()}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00039}00039\ \{}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00040}00040\ \ \ \ \ std::string\ filename;}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00041}00041\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ the\ filename\ to\ import\ food\ items\ from:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00042}00042\ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ filename);}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00043}00043\ \ \ \ \ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_a83b06170f7b4814b66b8e1424c03e161}{importFromFile}}(filename);}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00044}00044\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Food\ items\ imported\ from\ file:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_food_view_8cpp_source_l00045}00045\ \}}
+
+\end{DoxyCode}

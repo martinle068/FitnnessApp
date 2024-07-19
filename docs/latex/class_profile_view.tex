@@ -1,0 +1,538 @@
+\doxysection{Profile\+View Class Reference}
+\hypertarget{class_profile_view}{}\label{class_profile_view}\index{ProfileView@{ProfileView}}
+
+
+The \doxylink{class_profile_view}{Profile\+View} class is responsible for managing the profile and goals settings. It inherits from the \doxylink{class_view}{View} class and provides options for viewing and modifying profile information and goals.  
+
+
+
+
+{\ttfamily \#include $<$Profile\+View.\+h$>$}
+
+
+
+Inheritance diagram for Profile\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{class_profile_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Profile\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{class_profile_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_profile_view_a5c847b12a176b1daed731163038756d4}{Profile\+View}} (\mbox{\hyperlink{class_profile}{Profile}} \&\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}, \mbox{\hyperlink{class_goals}{Goals}} \&\mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_profile_view}{Profile\+View} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_profile_view_a175d94b9f25b5baef17252ed9fd8c087}{display}} ()
+\begin{DoxyCompactList}\small\item\em Displays the profile view menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_view}{View}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{virtual}} \mbox{\hyperlink{class_view_ad0f3ade04bca4e74b8868e63729bad86}{\texorpdfstring{$\sim$}{\string~}\+View}} ()=\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{default}}
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_view}{View} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{display\+And\+Handle\+Sub\+Menu}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \&menu\+Options, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ask\+For\+Enter\+At\+The\+End}})
+\begin{DoxyCompactList}\small\item\em Displays a submenu and handles user input to navigate the options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_profile_view_aa11e57597414e5159c98924cc1c7ffdb}{set\+Profile\+Information}} ()
+\begin{DoxyCompactList}\small\item\em Sets the profile information with optional inputs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_profile_view_afe9edfeddf26aadbb1d803895ffc7e87}{set\+Goals}} ()
+\begin{DoxyCompactList}\small\item\em Sets the goals with optional inputs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_profile_view_afb3770038b5a4d7dfabd02ab3040fd9e}{set\+Custom\+Calories}} ()
+\begin{DoxyCompactList}\small\item\em Sets custom daily calories. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_profile_view_aee3c8e12e74d79723db9be435212d046}{reset\+To\+Calculated\+Calories}} ()
+\begin{DoxyCompactList}\small\item\em Resets to calculated daily calories. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals\+::\+Fitness\+Goal}} \mbox{\hyperlink{class_profile_view_ac35b98d3c3a90ac5314c0bacad24c679}{get\+Fitness\+Goal}} (\mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals\+::\+Fitness\+Goal}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{current\+Goal}})
+\begin{DoxyCompactList}\small\item\em Prompts the user to select a fitness goal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile\+::\+Gender}} \mbox{\hyperlink{class_profile_view_a559fec2f5a84e6001636dae98222cfec}{get\+Gender}} (\mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile\+::\+Gender}} gender)
+\begin{DoxyCompactList}\small\item\em Prompts the user to select a gender. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile\+::\+Activity\+Level}} \mbox{\hyperlink{class_profile_view_aa6e6bc40edec2864bfa655f06e5f9288}{get\+Activity\+Level}} (\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile\+::\+Activity\+Level}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{current\+Activity\+Level}})
+\begin{DoxyCompactList}\small\item\em Prompts the user to select an activity level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_profile}{Profile}} \& \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}
+\begin{DoxyCompactList}\small\item\em Reference to the \doxylink{class_profile}{Profile} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_goals}{Goals}} \& \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}
+\begin{DoxyCompactList}\small\item\em Reference to the \doxylink{class_goals}{Goals} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \mbox{\hyperlink{class_profile_view_acc8d633fbf6e3cd673d2eac7fce3a2d9}{menu\+Options}}
+\begin{DoxyCompactList}\small\item\em Vector to store menu options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_profile_view}{Profile\+View} class is responsible for managing the profile and goals settings. It inherits from the \doxylink{class_view}{View} class and provides options for viewing and modifying profile information and goals. 
+
+Definition at line \mbox{\hyperlink{_profile_view_8h_source_l00012}{12}} of file \mbox{\hyperlink{_profile_view_8h_source}{Profile\+View.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_profile_view_a5c847b12a176b1daed731163038756d4}\label{class_profile_view_a5c847b12a176b1daed731163038756d4} 
+\index{ProfileView@{ProfileView}!ProfileView@{ProfileView}}
+\index{ProfileView@{ProfileView}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{ProfileView()}{ProfileView()}}
+{\footnotesize\ttfamily Profile\+View\+::\+Profile\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_profile}{Profile}} \&}]{profile,  }\item[{\mbox{\hyperlink{class_goals}{Goals}} \&}]{goals }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_profile_view}{Profile\+View} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em profile} & Reference to the \doxylink{class_profile}{Profile} object. \\
+\hline
+{\em goals} & Reference to the \doxylink{class_goals}{Goals} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{_profile_view_8cpp_source}{Profile\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}(\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}),\ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}(\mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}) }
+\DoxyCodeLine{00080\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{class_profile_view_acc8d633fbf6e3cd673d2eac7fce3a2d9}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}View\ Profile"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Viewing\ Profile"{}});\ this-\/>profile.\mbox{\hyperlink{class_profile_a5e1a4f7716d60c3373a5ca24f6fe9c7a}{displayProfileInformation}}();\ this-\/>goals.\mbox{\hyperlink{class_goals_af7c56dbc1c11c6aede0391953669f21e}{displayGoals}}();\ \}\},}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Set\ Profile\ Information"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Setting\ Profile\ Information"{}});\ \mbox{\hyperlink{class_profile_view_aa11e57597414e5159c98924cc1c7ffdb}{setProfileInformation}}();\ \}\},}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Set\ Goals"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Setting\ Goals"{}});\ \mbox{\hyperlink{class_profile_view_afe9edfeddf26aadbb1d803895ffc7e87}{setGoals}}();\ \}\},}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Set\ Custom\ Calories"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Setting\ Custom\ Calories"{}});\ \mbox{\hyperlink{class_profile_view_afb3770038b5a4d7dfabd02ab3040fd9e}{setCustomCalories}}();\ \}\},}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Reset\ to\ Calculated\ Calories"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Resetting\ to\ Calculated\ Calories"{}});\ \mbox{\hyperlink{class_profile_view_aee3c8e12e74d79723db9be435212d046}{resetToCalculatedCalories}}();\ \}\},}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Back"{}},\ [\textcolor{keyword}{this}]()\ \{\ \textcolor{keywordflow}{return};\ \}\}}
+\DoxyCodeLine{00088\ \ \ \ \ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{comment}{//\ Load\ profile\ information\ from\ file}}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a7bde404a039d876b77f6355658cff7a5}{loadFromCSV}}(\textcolor{stringliteral}{"{}profile.csv"{}}))}
+\DoxyCodeLine{00092\ \ \ \ \ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ab08a39b1ee4d75837a0d6d5d28a76e6e}{setProfile}}(\&\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}});}
+\DoxyCodeLine{00094\ \ \ \ \ \}}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{//\ Load\ goals\ information\ from\ file}}
+\DoxyCodeLine{00097\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ab4b87f662423160ff10be63eed2382b2}{loadFromCSV}}(\textcolor{stringliteral}{"{}goals.csv"{}});}
+\DoxyCodeLine{00098\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_goals_8cpp_source_l00041}{Goals\+::display\+Goals()}}, \mbox{\hyperlink{_profile_8cpp_source_l00034}{Profile\+::display\+Profile\+Information()}}, \mbox{\hyperlink{_profile_view_8h_source_l00030}{goals}}, \mbox{\hyperlink{_goals_8cpp_source_l00156}{Goals\+::load\+From\+CSV()}}, \mbox{\hyperlink{_profile_8cpp_source_l00130}{Profile\+::load\+From\+CSV()}}, \mbox{\hyperlink{_profile_view_8h_source_l00031}{menu\+Options}}, \mbox{\hyperlink{_utils_8h_source_l00372}{print\+Label()}}, \mbox{\hyperlink{_profile_view_8h_source_l00029}{profile}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00308}{reset\+To\+Calculated\+Calories()}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00297}{set\+Custom\+Calories()}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00283}{set\+Goals()}}, \mbox{\hyperlink{_goals_8cpp_source_l00016}{Goals\+::set\+Profile()}}, and \mbox{\hyperlink{_profile_view_8cpp_source_l00201}{set\+Profile\+Information()}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_profile_view_a175d94b9f25b5baef17252ed9fd8c087}\label{class_profile_view_a175d94b9f25b5baef17252ed9fd8c087} 
+\index{ProfileView@{ProfileView}!display@{display}}
+\index{display@{display}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Profile\+View\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the profile view menu. 
+
+
+
+Implements \mbox{\hyperlink{class_view_a2d83a628b932739742a943ccaa3385d0}{View}}.
+
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8cpp_source_l00103}{103}} of file \mbox{\hyperlink{_profile_view_8cpp_source}{Profile\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00104\ \{}
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Profile"{}},\ \mbox{\hyperlink{class_profile_view_acc8d633fbf6e3cd673d2eac7fce3a2d9}{menuOptions}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00106\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_view_8h_source_l00032}{View\+::display\+And\+Handle\+Sub\+Menu()}}, and \mbox{\hyperlink{_profile_view_8h_source_l00031}{menu\+Options}}.
+
+\Hypertarget{class_profile_view_aa6e6bc40edec2864bfa655f06e5f9288}\label{class_profile_view_aa6e6bc40edec2864bfa655f06e5f9288} 
+\index{ProfileView@{ProfileView}!getActivityLevel@{getActivityLevel}}
+\index{getActivityLevel@{getActivityLevel}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{getActivityLevel()}{getActivityLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile\+::\+Activity\+Level}} Profile\+View\+::get\+Activity\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile\+::\+Activity\+Level}}}]{current\+Activity\+Level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prompts the user to select an activity level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Activity\+Level} & The current activity level to display as default. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile\+::\+Activity\+Level} The selected activity level or the current value if no input was given. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8cpp_source_l00114}{114}} of file \mbox{\hyperlink{_profile_view_8cpp_source}{Profile\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00115\ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityChoice}};}
+\DoxyCodeLine{00117\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Select\ activity\ level:\(\backslash\)n"{}};}
+\DoxyCodeLine{00120\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ Sedentary:\ little\ or\ no\ exercise\(\backslash\)n"{}};}
+\DoxyCodeLine{00121\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Lightly\ Active:\ exercise\ 1-\/3\ times/week\(\backslash\)n"{}};}
+\DoxyCodeLine{00122\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3.\ Moderately\ Active:\ daily\ exercise\ or\ intense\ exercise\ 4-\/5\ times/week\(\backslash\)n"{}};}
+\DoxyCodeLine{00123\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}4.\ Very\ Active:\ intense\ exercise\ 6-\/7\ times/week\(\backslash\)n"{}};}
+\DoxyCodeLine{00124\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}5.\ Extra\ Active:\ physical\ job\ or\ daily\ intense\ exercise\(\backslash\)n"{}};}
+\DoxyCodeLine{00125\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ choice\ ("{}}\ <<\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a0f7b8f25b9d78d6724f83682d4880c47}{getActivityLevelString}}()\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00128\ \ \ \ \ \{}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.empty())}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentActivityLevel}};}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_acf86ae23fc05e6ce7db95d940e95e7d1}{stringToInt}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityChoice}})\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityChoice}}\ >=\ 1\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityChoice}}\ <=\ 5)}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityChoice}})}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{Profile::ActivityLevel::SEDENTARY}};}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{Profile::ActivityLevel::LIGHTLY\_ACTIVE}};}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{Profile::ActivityLevel::MODERATELY\_ACTIVE}};}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 4:}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{Profile::ActivityLevel::VERY\_ACTIVE}};}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 5:}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{Profile::ActivityLevel::EXTRA\_ACTIVE}};}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice,\ setting\ to\ Sedentary.\(\backslash\)n"{}};}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{Profile::ActivityLevel::SEDENTARY}};}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ number\ between\ 1\ and\ 5,\ or\ press\ Enter\ to\ keep\ current\ activity\ level:\ "{}};}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00158\ \ \ \ \ \}}
+\DoxyCodeLine{00159\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{Profile\+::\+EXTRA\+\_\+\+ACTIVE}}, \mbox{\hyperlink{_profile_8cpp_source_l00246}{Profile\+::get\+Activity\+Level\+String()}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{Profile\+::\+LIGHTLY\+\_\+\+ACTIVE}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{Profile\+::\+MODERATELY\+\_\+\+ACTIVE}}, \mbox{\hyperlink{_profile_view_8h_source_l00029}{profile}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{Profile\+::\+SEDENTARY}}, \mbox{\hyperlink{_utils_8h_source_l00223}{string\+To\+Int()}}, and \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{Profile\+::\+VERY\+\_\+\+ACTIVE}}.
+
+\Hypertarget{class_profile_view_ac35b98d3c3a90ac5314c0bacad24c679}\label{class_profile_view_ac35b98d3c3a90ac5314c0bacad24c679} 
+\index{ProfileView@{ProfileView}!getFitnessGoal@{getFitnessGoal}}
+\index{getFitnessGoal@{getFitnessGoal}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{getFitnessGoal()}{getFitnessGoal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals\+::\+Fitness\+Goal}} Profile\+View\+::get\+Fitness\+Goal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals\+::\+Fitness\+Goal}}}]{current\+Goal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prompts the user to select a fitness goal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Goal} & The current fitness goal to display as default. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals\+::\+Fitness\+Goal} The selected fitness goal or the current value if no input was given. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8cpp_source_l00239}{239}} of file \mbox{\hyperlink{_profile_view_8cpp_source}{Profile\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00240\ \{}
+\DoxyCodeLine{00241\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalChoice}};}
+\DoxyCodeLine{00242\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00244\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Select\ fitness\ goal:\(\backslash\)n"{}};}
+\DoxyCodeLine{00245\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ Weight\ Loss\(\backslash\)n"{}};}
+\DoxyCodeLine{00246\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Muscle\ Gain\(\backslash\)n"{}};}
+\DoxyCodeLine{00247\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3.\ Maintenance\(\backslash\)n"{}};}
+\DoxyCodeLine{00248\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ choice\ ("{}}\ <<\ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ad2add4cd7ff96e26ae99d9b040be956e}{getFitnessGoalString}}()\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00250\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00251\ \ \ \ \ \{}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.empty())}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentGoal}};}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00257\ }
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_acf86ae23fc05e6ce7db95d940e95e7d1}{stringToInt}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalChoice}})\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalChoice}}\ >=\ 1\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalChoice}}\ <=\ 3)}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalChoice}})}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aa756a8457aadfb8b9ed9ef2fda83fdf66}{Goals::FitnessGoal::WEIGHT\_LOSS}};}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aa907bc875a47ab8db15c598d2dfe505fd}{Goals::FitnessGoal::MUSCLE\_GAIN}};}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aaa49182544bf417d2e02cae1f35c9c8b8}{Goals::FitnessGoal::MAINTENANCE}};}
+\DoxyCodeLine{00268\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice,\ setting\ to\ Weight\ Loss.\(\backslash\)n"{}};}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aa756a8457aadfb8b9ed9ef2fda83fdf66}{Goals::FitnessGoal::WEIGHT\_LOSS}};}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ number\ between\ 1\ and\ 3,\ or\ press\ Enter\ to\ keep\ current\ goal:\ "{}};}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00277\ \ \ \ \ \}}
+\DoxyCodeLine{00278\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_goals_8cpp_source_l00233}{Goals\+::get\+Fitness\+Goal\+String()}}, \mbox{\hyperlink{_profile_view_8h_source_l00030}{goals}}, \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aaa49182544bf417d2e02cae1f35c9c8b8}{Goals\+::\+MAINTENANCE}}, \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aa907bc875a47ab8db15c598d2dfe505fd}{Goals\+::\+MUSCLE\+\_\+\+GAIN}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, \mbox{\hyperlink{_utils_8h_source_l00223}{string\+To\+Int()}}, and \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aa756a8457aadfb8b9ed9ef2fda83fdf66}{Goals\+::\+WEIGHT\+\_\+\+LOSS}}.
+
+\Hypertarget{class_profile_view_a559fec2f5a84e6001636dae98222cfec}\label{class_profile_view_a559fec2f5a84e6001636dae98222cfec} 
+\index{ProfileView@{ProfileView}!getGender@{getGender}}
+\index{getGender@{getGender}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{getGender()}{getGender()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile\+::\+Gender}} Profile\+View\+::get\+Gender (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile\+::\+Gender}}}]{gender }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prompts the user to select a gender. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gender} & The current gender to display as default. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile\+::\+Gender} The selected gender or the current value if no input was given. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8cpp_source_l00167}{167}} of file \mbox{\hyperlink{_profile_view_8cpp_source}{Profile\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00168\ \{}
+\DoxyCodeLine{00169\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{genderChoice}};}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00172\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Select\ gender\ ("{}}\ <<\ (gender\ ==\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Profile::Gender::MALE}}\ ?\ \textcolor{stringliteral}{"{}Male"{}}\ :\ \textcolor{stringliteral}{"{}Female"{}})\ <<\ \textcolor{stringliteral}{"{}):\(\backslash\)n"{}};}
+\DoxyCodeLine{00173\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ Male\(\backslash\)n"{}};}
+\DoxyCodeLine{00174\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Female\(\backslash\)n"{}};}
+\DoxyCodeLine{00175\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ choice\ ("{}}\ <<\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a82f6653066dce20b3eceeed18973bf95}{getGenderString}}()\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{00176\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00177\ \ \ \ \ \{}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.empty())}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_acf86ae23fc05e6ce7db95d940e95e7d1}{stringToInt}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{genderChoice}})\ \&\&\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{genderChoice}}\ ==\ 1\ ||\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{genderChoice}}\ ==\ 2))}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ gender\ =\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{genderChoice}}\ ==\ 1)\ ?\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Profile::Gender::MALE}}\ :\ \mbox{\hyperlink{class_profile}{Profile}}::Gender::FEMALE;}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice,\ please\ enter\ 1\ or\ 2.\(\backslash\)n"{}};}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00193\ \ \ \ \ \}}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{keywordflow}{return}\ gender;}
+\DoxyCodeLine{00196\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a4bf2e31c60d6a605954e399524cae56b}{Profile\+::\+FEMALE}}, \mbox{\hyperlink{_profile_8cpp_source_l00228}{Profile\+::get\+Gender\+String()}}, \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Profile\+::\+MALE}}, \mbox{\hyperlink{_profile_view_8h_source_l00029}{profile}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, and \mbox{\hyperlink{_utils_8h_source_l00223}{string\+To\+Int()}}.
+
+\Hypertarget{class_profile_view_aee3c8e12e74d79723db9be435212d046}\label{class_profile_view_aee3c8e12e74d79723db9be435212d046} 
+\index{ProfileView@{ProfileView}!resetToCalculatedCalories@{resetToCalculatedCalories}}
+\index{resetToCalculatedCalories@{resetToCalculatedCalories}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{resetToCalculatedCalories()}{resetToCalculatedCalories()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Profile\+View\+::reset\+To\+Calculated\+Calories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Resets to calculated daily calories. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8cpp_source_l00308}{308}} of file \mbox{\hyperlink{_profile_view_8cpp_source}{Profile\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00309\ \{}
+\DoxyCodeLine{00310\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a58054b6aad3ce3e8a4bbd3afecd06431}{resetToCalculatedCalories}}();}
+\DoxyCodeLine{00311\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a064d95d57bb436f259ae161c149e356c}{saveToCSV}}(\textcolor{stringliteral}{"{}goals.csv"{}});}
+\DoxyCodeLine{00312\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_view_8h_source_l00030}{goals}}, \mbox{\hyperlink{_goals_8cpp_source_l00076}{Goals\+::reset\+To\+Calculated\+Calories()}}, and \mbox{\hyperlink{_goals_8cpp_source_l00134}{Goals\+::save\+To\+CSV()}}.
+
+\Hypertarget{class_profile_view_afb3770038b5a4d7dfabd02ab3040fd9e}\label{class_profile_view_afb3770038b5a4d7dfabd02ab3040fd9e} 
+\index{ProfileView@{ProfileView}!setCustomCalories@{setCustomCalories}}
+\index{setCustomCalories@{setCustomCalories}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{setCustomCalories()}{setCustomCalories()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Profile\+View\+::set\+Custom\+Calories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets custom daily calories. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8cpp_source_l00297}{297}} of file \mbox{\hyperlink{_profile_view_8cpp_source}{Profile\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00298\ \{}
+\DoxyCodeLine{00299\ \ \ \ \ \textcolor{keywordtype}{float}\ customCalories;}
+\DoxyCodeLine{00300\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{getValidInput}}(customCalories,\ \textcolor{stringliteral}{"{}Enter\ custom\ daily\ calories:\ "{}});}
+\DoxyCodeLine{00301\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a6bc7245ce7b6191b2d781ad4b484c453}{setCustomCalories}}(customCalories);}
+\DoxyCodeLine{00302\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a064d95d57bb436f259ae161c149e356c}{saveToCSV}}(\textcolor{stringliteral}{"{}goals.csv"{}});}
+\DoxyCodeLine{00303\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00136}{get\+Valid\+Input()}}, \mbox{\hyperlink{_profile_view_8h_source_l00030}{goals}}, \mbox{\hyperlink{_goals_8cpp_source_l00134}{Goals\+::save\+To\+CSV()}}, and \mbox{\hyperlink{_goals_8cpp_source_l00066}{Goals\+::set\+Custom\+Calories()}}.
+
+\Hypertarget{class_profile_view_afe9edfeddf26aadbb1d803895ffc7e87}\label{class_profile_view_afe9edfeddf26aadbb1d803895ffc7e87} 
+\index{ProfileView@{ProfileView}!setGoals@{setGoals}}
+\index{setGoals@{setGoals}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{setGoals()}{setGoals()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Profile\+View\+::set\+Goals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the goals with optional inputs. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8cpp_source_l00283}{283}} of file \mbox{\hyperlink{_profile_view_8cpp_source}{Profile\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00284\ \{}
+\DoxyCodeLine{00285\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ new\ value\ (or\ press\ enter\ to\ keep\ current\ value)\(\backslash\)n"{}};}
+\DoxyCodeLine{00286\ \ \ \ \ \textcolor{keywordtype}{float}\ targetWeight\ =\ \mbox{\hyperlink{_profile_view_8cpp_a412ce7c2cfb1795ce6d27610c0d1870e}{getOptionalFloatInput}}(\textcolor{stringliteral}{"{}Enter\ target\ weight\ (kg)"{}},\ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ab15a195e87ceb0663dfb51d0bb782db3}{getTargetWeight}}());}
+\DoxyCodeLine{00287\ \ \ \ \ \textcolor{keywordtype}{float}\ bodyFatPercentage\ =\ \mbox{\hyperlink{_profile_view_8cpp_a412ce7c2cfb1795ce6d27610c0d1870e}{getOptionalFloatInput}}(\textcolor{stringliteral}{"{}Enter\ body\ fat\ percentage"{}},\ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_acb8a5a6a8ffaf5d12bfae14d47186505}{getBodyFatPercentage}}());}
+\DoxyCodeLine{00288\ \ \ \ \ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals::FitnessGoal}}\ fitnessGoal\ =\ \mbox{\hyperlink{class_profile_view_ac35b98d3c3a90ac5314c0bacad24c679}{getFitnessGoal}}(\mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ac717f724e4c4acdbd2483544e16ef75b}{getFitnessGoal}}());}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00290\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a98f694444eb362fa35c2d80e04f7d2ae}{setGoals}}(targetWeight,\ bodyFatPercentage,\ fitnessGoal);}
+\DoxyCodeLine{00291\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a064d95d57bb436f259ae161c149e356c}{saveToCSV}}(\textcolor{stringliteral}{"{}goals.csv"{}});}
+\DoxyCodeLine{00292\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_goals_8cpp_source_l00213}{Goals\+::get\+Body\+Fat\+Percentage()}}, \mbox{\hyperlink{_goals_8cpp_source_l00193}{Goals\+::get\+Fitness\+Goal()}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00239}{get\+Fitness\+Goal()}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00053}{get\+Optional\+Float\+Input()}}, \mbox{\hyperlink{_goals_8cpp_source_l00223}{Goals\+::get\+Target\+Weight()}}, \mbox{\hyperlink{_profile_view_8h_source_l00030}{goals}}, \mbox{\hyperlink{_goals_8cpp_source_l00134}{Goals\+::save\+To\+CSV()}}, and \mbox{\hyperlink{_goals_8cpp_source_l00029}{Goals\+::set\+Goals()}}.
+
+\Hypertarget{class_profile_view_aa11e57597414e5159c98924cc1c7ffdb}\label{class_profile_view_aa11e57597414e5159c98924cc1c7ffdb} 
+\index{ProfileView@{ProfileView}!setProfileInformation@{setProfileInformation}}
+\index{setProfileInformation@{setProfileInformation}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{setProfileInformation()}{setProfileInformation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Profile\+View\+::set\+Profile\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Sets the profile information with optional inputs. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8cpp_source_l00201}{201}} of file \mbox{\hyperlink{_profile_view_8cpp_source}{Profile\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00202\ \{}
+\DoxyCodeLine{00203\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ new\ value\ (or\ press\ enter\ to\ keep\ current\ value)\(\backslash\)n"{}};}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ std::string\ name\ =\ \mbox{\hyperlink{_profile_view_8cpp_a12f7a1c28b48737e64b541c3e2859702}{getOptionalStringInput}}(\textcolor{stringliteral}{"{}Enter\ name"{}},\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_ae8fcd0309d9f65f7a08df24b16a032fe}{getName}}());}
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keywordtype}{int}\ age\ =\ \mbox{\hyperlink{_profile_view_8cpp_a03ee91b62e0c05c65ef98af1c5c0b719}{getOptionalIntInput}}(\textcolor{stringliteral}{"{}Enter\ age"{}},\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a60a2349a40b25fb72777d30459af815e}{getAge}}());}
+\DoxyCodeLine{00207\ \ \ \ \ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile::Gender}}\ gender\ =\ \mbox{\hyperlink{class_profile_view_a559fec2f5a84e6001636dae98222cfec}{getGender}}(\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a42e1e3a23cb0d9276fe56e1fa2c9c93f}{getGender}}());}
+\DoxyCodeLine{00208\ \ \ \ \ \textcolor{keywordtype}{float}\ height\ =\ \mbox{\hyperlink{_profile_view_8cpp_a412ce7c2cfb1795ce6d27610c0d1870e}{getOptionalFloatInput}}(\textcolor{stringliteral}{"{}Enter\ height\ (cm)"{}},\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a44937be5dbbcbfdc22b6308ec222009f}{getHeight}}());}
+\DoxyCodeLine{00209\ \ \ \ \ \textcolor{keywordtype}{float}\ weight\ =\ \mbox{\hyperlink{_profile_view_8cpp_a412ce7c2cfb1795ce6d27610c0d1870e}{getOptionalFloatInput}}(\textcolor{stringliteral}{"{}Enter\ weight\ (kg)"{}},\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a7323efaf8fa25d5a2895f4836f5203cc}{getWeight}}());}
+\DoxyCodeLine{00210\ \ \ \ \ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile::ActivityLevel}}\ activityLevel\ =\ \mbox{\hyperlink{class_profile_view_aa6e6bc40edec2864bfa655f06e5f9288}{getActivityLevel}}(\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a105a1dc2f2a029134b5863645919cf2c}{getActivityLevel}}());}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_ac62716940298be8090995fdae9baeb64}{setProfileInformation}}(name,\ age,\ gender,\ height,\ weight,\ activityLevel);}
+\DoxyCodeLine{00213\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a4870e055a5d2db5dda2bc4cbf1e21166}{saveToCSV}}(\textcolor{stringliteral}{"{}profile.csv"{}});}
+\DoxyCodeLine{00214\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ab08a39b1ee4d75837a0d6d5d28a76e6e}{setProfile}}(\&\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}});}
+\DoxyCodeLine{00215\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a064d95d57bb436f259ae161c149e356c}{saveToCSV}}(\textcolor{stringliteral}{"{}goals.csv"{}});}
+\DoxyCodeLine{00216\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8cpp_source_l00218}{Profile\+::get\+Activity\+Level()}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00114}{get\+Activity\+Level()}}, \mbox{\hyperlink{_profile_8cpp_source_l00178}{Profile\+::get\+Age()}}, \mbox{\hyperlink{_profile_8cpp_source_l00198}{Profile\+::get\+Gender()}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00167}{get\+Gender()}}, \mbox{\hyperlink{_profile_8cpp_source_l00208}{Profile\+::get\+Height()}}, \mbox{\hyperlink{_profile_8cpp_source_l00188}{Profile\+::get\+Name()}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00053}{get\+Optional\+Float\+Input()}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00026}{get\+Optional\+Int\+Input()}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00011}{get\+Optional\+String\+Input()}}, \mbox{\hyperlink{_profile_8cpp_source_l00168}{Profile\+::get\+Weight()}}, \mbox{\hyperlink{_profile_view_8h_source_l00030}{goals}}, \mbox{\hyperlink{_profile_view_8h_source_l00029}{profile}}, \mbox{\hyperlink{_goals_8cpp_source_l00134}{Goals\+::save\+To\+CSV()}}, \mbox{\hyperlink{_profile_8cpp_source_l00107}{Profile\+::save\+To\+CSV()}}, \mbox{\hyperlink{_goals_8cpp_source_l00016}{Goals\+::set\+Profile()}}, and \mbox{\hyperlink{_profile_8cpp_source_l00021}{Profile\+::set\+Profile\+Information()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}\label{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9} 
+\index{ProfileView@{ProfileView}!goals@{goals}}
+\index{goals@{goals}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{goals}{goals}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_goals}{Goals}}\& Profile\+View\+::goals\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the \doxylink{class_goals}{Goals} object. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8h_source_l00030}{30}} of file \mbox{\hyperlink{_profile_view_8h_source}{Profile\+View.\+h}}.
+
+\Hypertarget{class_profile_view_acc8d633fbf6e3cd673d2eac7fce3a2d9}\label{class_profile_view_acc8d633fbf6e3cd673d2eac7fce3a2d9} 
+\index{ProfileView@{ProfileView}!menuOptions@{menuOptions}}
+\index{menuOptions@{menuOptions}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{menuOptions}{menuOptions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}}$>$ Profile\+View\+::menu\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector to store menu options. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8h_source_l00031}{31}} of file \mbox{\hyperlink{_profile_view_8h_source}{Profile\+View.\+h}}.
+
+\Hypertarget{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}\label{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c} 
+\index{ProfileView@{ProfileView}!profile@{profile}}
+\index{profile@{profile}!ProfileView@{ProfileView}}
+\doxysubsubsection{\texorpdfstring{profile}{profile}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_profile}{Profile}}\& Profile\+View\+::profile\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the \doxylink{class_profile}{Profile} object. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_view_8h_source_l00029}{29}} of file \mbox{\hyperlink{_profile_view_8h_source}{Profile\+View.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_profile_view_8h}{Profile\+View.\+h}}\item 
+\mbox{\hyperlink{_profile_view_8cpp}{Profile\+View.\+cpp}}\end{DoxyCompactItemize}

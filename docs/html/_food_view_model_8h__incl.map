@@ -1,0 +1,22 @@
+<map id="FoodViewModel.h" name="FoodViewModel.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="52,5,176,32"/>
+<area shape="rect" id="Node000002" href="$_view_model_8h.html" title=" " alt="" coords="66,80,162,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,33,116,64,111,64,111,33"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="5,155,52,181"/>
+<area shape="poly" id="edge11_Node000001_Node000004" title=" " alt="" coords="99,35,77,55,56,81,43,111,35,140,30,138,38,109,52,79,73,52,95,31"/>
+<area shape="rect" id="Node000006" href="$_food_item_8h.html" title=" " alt="" coords="205,80,292,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="139,30,213,70,210,75,136,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="75,155,128,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="114,108,109,140,104,139,109,107"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="101,109,56,147,53,143,97,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="153,155,224,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="129,105,167,142,163,146,125,109"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="224,110,142,150,140,145,222,105"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="240,109,210,145,206,141,236,106"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="312,155,380,181"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="267,105,319,143,316,148,264,109"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="404,155,459,181"/>
+<area shape="poly" id="edge9_Node000006_Node000008" title=" " alt="" coords="281,105,390,148,388,153,279,110"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="249,155,288,181"/>
+<area shape="poly" id="edge10_Node000006_Node000009" title=" " alt="" coords="255,106,264,139,258,141,249,108"/>
+</map>

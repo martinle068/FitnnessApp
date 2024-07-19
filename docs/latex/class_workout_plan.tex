@@ -1,0 +1,518 @@
+\doxysection{Workout\+Plan Class Reference}
+\hypertarget{class_workout_plan}{}\label{class_workout_plan}\index{WorkoutPlan@{WorkoutPlan}}
+
+
+Represents a workout plan consisting of a name, type, and weekly schedule of exercises.  
+
+
+
+
+{\ttfamily \#include $<$Workout\+Plan.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details}}
+\begin{DoxyCompactList}\small\item\em Represents details of an exercise including name, sets, and reps. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}{Plan\+Type}} \{ \newline
+\mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa3963049b60ddd6534b219d3767af0dfc}{STRENGTH}}
+, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffac9c9c146c630ca5ef9197c73c032f4a6}{POWER}}
+, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa9f3d2a8f0b5097953e1a708a6fabfc58}{HYPERTROPHY}}
+, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa50d55c1ad01d08b6bd6b2210c9868037}{CONDITIONING}}
+, \newline
+\mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa73dabe4437725eedc05a1824a2c31550}{PUSH}}
+, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa0068f4e18cb828499dbc0708bc9820ad}{PULL}}
+, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa994822189b7aa270c0ef47c2b1825379}{LEGS}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum representing different types of workout plans. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_workout_plan_a3bfc0cfcd5524115f2347ccf09197cb7}{Workout\+Plan}} ()=\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{default}}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_workout_plan_a99e5fd71534154f1b4e06bc8bdf87dee}{Workout\+Plan}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{class_workout_plan_a2f964aa228ac8a1a8c793b946bf13cc5}{name}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}{Plan\+Type}} \mbox{\hyperlink{class_workout_plan_a5107e02911c0c7dc3524acdb80b40ebf}{type}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details}} $>$ $>$ \&\mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weekly\+Plan}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_workout_plan}{Workout\+Plan} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_workout_plan_a20e02a32ad816b6dd2cd86dcaef55633}{to\+CSV}} (std\+::ofstream \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}) \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Writes the workout plan to a CSV file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{class_workout_plan_a734811e220afc79d951b1430d7fd8d4f}{from\+CSV}} (std\+::stringstream \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}})
+\begin{DoxyCompactList}\small\item\em Reads a workout plan from a CSV string stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{static}} std\+::string \mbox{\hyperlink{class_workout_plan_a81aa4bcfb7a2ec82efe764c3f40ddd18}{plan\+Type\+To\+String}} (\mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}{Plan\+Type}} \mbox{\hyperlink{class_workout_plan_a5107e02911c0c7dc3524acdb80b40ebf}{type}})
+\begin{DoxyCompactList}\small\item\em Converts the Plan\+Type enum to a string representation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{static}} \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}{Plan\+Type}} \mbox{\hyperlink{class_workout_plan_a10b338db5b38ea6308ff163ddf84626f}{string\+To\+Plan\+Type}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{str}})
+\begin{DoxyCompactList}\small\item\em Converts a string representation of a plan type to the corresponding Plan\+Type enum. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_workout_plan_a2f964aa228ac8a1a8c793b946bf13cc5}{name}}
+\begin{DoxyCompactList}\small\item\em The name of the workout plan. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}{Plan\+Type}} \mbox{\hyperlink{class_workout_plan_a5107e02911c0c7dc3524acdb80b40ebf}{type}}
+\begin{DoxyCompactList}\small\item\em The type of the workout plan. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details}} $>$ $>$ \mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weekly\+Plan}}
+\begin{DoxyCompactList}\small\item\em Key\+: Day of the week, Value\+: List of exercises. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_workout_plan_a8424b2f72e1cbf5134e4e4a0aff94b1f}{process\+Exercises}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{day}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{day\+Exercises}}, std\+::map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details}} $>$ $>$ \&\mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weekly\+Plan}})
+\begin{DoxyCompactList}\small\item\em Processes exercises for a given day and adds them to the weekly plan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a workout plan consisting of a name, type, and weekly schedule of exercises. 
+
+Definition at line \mbox{\hyperlink{_workout_plan_8h_source_l00013}{13}} of file \mbox{\hyperlink{_workout_plan_8h_source}{Workout\+Plan.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}\label{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff} 
+\index{WorkoutPlan@{WorkoutPlan}!PlanType@{PlanType}}
+\index{PlanType@{PlanType}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{PlanType}{PlanType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{enum}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{class}} \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}{Workout\+Plan\+::\+Plan\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum representing different types of workout plans. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STRENGTH@{STRENGTH}!WorkoutPlan@{WorkoutPlan}}\index{WorkoutPlan@{WorkoutPlan}!STRENGTH@{STRENGTH}}}\Hypertarget{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa3963049b60ddd6534b219d3767af0dfc}\label{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa3963049b60ddd6534b219d3767af0dfc} 
+STRENGTH&Strength training. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{POWER@{POWER}!WorkoutPlan@{WorkoutPlan}}\index{WorkoutPlan@{WorkoutPlan}!POWER@{POWER}}}\Hypertarget{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffac9c9c146c630ca5ef9197c73c032f4a6}\label{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffac9c9c146c630ca5ef9197c73c032f4a6} 
+POWER&Power training. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HYPERTROPHY@{HYPERTROPHY}!WorkoutPlan@{WorkoutPlan}}\index{WorkoutPlan@{WorkoutPlan}!HYPERTROPHY@{HYPERTROPHY}}}\Hypertarget{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa9f3d2a8f0b5097953e1a708a6fabfc58}\label{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa9f3d2a8f0b5097953e1a708a6fabfc58} 
+HYPERTROPHY&Hypertrophy training. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONDITIONING@{CONDITIONING}!WorkoutPlan@{WorkoutPlan}}\index{WorkoutPlan@{WorkoutPlan}!CONDITIONING@{CONDITIONING}}}\Hypertarget{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa50d55c1ad01d08b6bd6b2210c9868037}\label{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa50d55c1ad01d08b6bd6b2210c9868037} 
+CONDITIONING&Conditioning training. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PUSH@{PUSH}!WorkoutPlan@{WorkoutPlan}}\index{WorkoutPlan@{WorkoutPlan}!PUSH@{PUSH}}}\Hypertarget{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa73dabe4437725eedc05a1824a2c31550}\label{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa73dabe4437725eedc05a1824a2c31550} 
+PUSH&Push workouts. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PULL@{PULL}!WorkoutPlan@{WorkoutPlan}}\index{WorkoutPlan@{WorkoutPlan}!PULL@{PULL}}}\Hypertarget{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa0068f4e18cb828499dbc0708bc9820ad}\label{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa0068f4e18cb828499dbc0708bc9820ad} 
+PULL&Pull workouts. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEGS@{LEGS}!WorkoutPlan@{WorkoutPlan}}\index{WorkoutPlan@{WorkoutPlan}!LEGS@{LEGS}}}\Hypertarget{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa994822189b7aa270c0ef47c2b1825379}\label{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa994822189b7aa270c0ef47c2b1825379} 
+LEGS&Leg workouts. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8h_source_l00020}{20}} of file \mbox{\hyperlink{_workout_plan_8h_source}{Workout\+Plan.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ \ \ \ \ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa3963049b60ddd6534b219d3767af0dfc}{STRENGTH}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffac9c9c146c630ca5ef9197c73c032f4a6}{POWER}},\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa9f3d2a8f0b5097953e1a708a6fabfc58}{HYPERTROPHY}},\ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa50d55c1ad01d08b6bd6b2210c9868037}{CONDITIONING}},\ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa73dabe4437725eedc05a1824a2c31550}{PUSH}},\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa0068f4e18cb828499dbc0708bc9820ad}{PULL}},\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa994822189b7aa270c0ef47c2b1825379}{LEGS}},\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Add\ more\ types\ as\ needed}}
+\DoxyCodeLine{00030\ \ \ \ \ \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_workout_plan_a3bfc0cfcd5524115f2347ccf09197cb7}\label{class_workout_plan_a3bfc0cfcd5524115f2347ccf09197cb7} 
+\index{WorkoutPlan@{WorkoutPlan}!WorkoutPlan@{WorkoutPlan}}
+\index{WorkoutPlan@{WorkoutPlan}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{WorkoutPlan()}{WorkoutPlan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Workout\+Plan\+::\+Workout\+Plan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\Hypertarget{class_workout_plan_a99e5fd71534154f1b4e06bc8bdf87dee}\label{class_workout_plan_a99e5fd71534154f1b4e06bc8bdf87dee} 
+\index{WorkoutPlan@{WorkoutPlan}!WorkoutPlan@{WorkoutPlan}}
+\index{WorkoutPlan@{WorkoutPlan}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{WorkoutPlan()}{WorkoutPlan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Workout\+Plan\+::\+Workout\+Plan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}{Plan\+Type}}}]{type,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details}} $>$ $>$ \&}]{weekly\+Plan }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_workout_plan}{Workout\+Plan} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the workout plan \\
+\hline
+{\em type} & The type of the workout plan \\
+\hline
+{\em weekly\+Plan} & A map containing the weekly plan with days as keys and a vector of \doxylink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details} as values\\
+\hline
+{\em name} & The name of the workout plan. \\
+\hline
+{\em type} & The type of the workout plan. \\
+\hline
+{\em weekly\+Plan} & A map containing the weekly plan with days as keys and a vector of \doxylink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details} as values. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{_workout_plan_8cpp_source}{Workout\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013\ \ \ \ \ :\ \mbox{\hyperlink{class_workout_plan_a2f964aa228ac8a1a8c793b946bf13cc5}{name}}(\mbox{\hyperlink{class_workout_plan_a2f964aa228ac8a1a8c793b946bf13cc5}{name}}),\ \mbox{\hyperlink{class_workout_plan_a5107e02911c0c7dc3524acdb80b40ebf}{type}}(\mbox{\hyperlink{class_workout_plan_a5107e02911c0c7dc3524acdb80b40ebf}{type}}),\ \mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weeklyPlan}}(\mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weeklyPlan}}) }
+\DoxyCodeLine{00014\ \{}
+\DoxyCodeLine{00015\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_workout_plan_a734811e220afc79d951b1430d7fd8d4f}\label{class_workout_plan_a734811e220afc79d951b1430d7fd8d4f} 
+\index{WorkoutPlan@{WorkoutPlan}!fromCSV@{fromCSV}}
+\index{fromCSV@{fromCSV}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{fromCSV()}{fromCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} Workout\+Plan\+::from\+CSV (\begin{DoxyParamCaption}\item[{std\+::stringstream \&}]{ss }\end{DoxyParamCaption})}
+
+
+
+Reads a workout plan from a CSV string stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ss} & The stringstream to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if reading was successful, false otherwise
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em ss} & The stringstream to read from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if reading was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8cpp_source_l00140}{140}} of file \mbox{\hyperlink{_workout_plan_8cpp_source}{Workout\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00141\ \{}
+\DoxyCodeLine{00142\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typeStr}};}
+\DoxyCodeLine{00143\ \ \ \ \ \textcolor{keywordflow}{if}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{class_workout_plan_a2f964aa228ac8a1a8c793b946bf13cc5}{name}},\ \textcolor{charliteral}{','})\ \&\&\ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typeStr}},\ \textcolor{charliteral}{','}))}
+\DoxyCodeLine{00144\ \ \ \ \ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_a5107e02911c0c7dc3524acdb80b40ebf}{type}}\ =\ \mbox{\hyperlink{class_workout_plan_a10b338db5b38ea6308ff163ddf84626f}{stringToPlanType}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typeStr}});}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weeklyPlan}}.clear();}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{dayExercises}};}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{day}}\ :\ \mbox{\hyperlink{_utils_8h_a55deed90000e4bc802702dba36009535}{DAYS\_OF\_WEEK}})}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{dayExercises}},\ \textcolor{charliteral}{','}))}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_a8424b2f72e1cbf5134e4e4a0aff94b1f}{processExercises}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{day}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{dayExercises}},\ \mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weeklyPlan}});}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00158\ \ \ \ \ \}}
+\DoxyCodeLine{00159\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00160\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00272}{DAYS\+\_\+\+OF\+\_\+\+WEEK}}, \mbox{\hyperlink{_workout_plan_8h_source_l00074}{name}}, \mbox{\hyperlink{_workout_plan_8cpp_source_l00110}{process\+Exercises()}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, \mbox{\hyperlink{_workout_plan_8cpp_source_l00052}{string\+To\+Plan\+Type()}}, \mbox{\hyperlink{_workout_plan_8h_source_l00075}{type}}, and \mbox{\hyperlink{_workout_plan_8h_source_l00076}{weekly\+Plan}}.
+
+\Hypertarget{class_workout_plan_a81aa4bcfb7a2ec82efe764c3f40ddd18}\label{class_workout_plan_a81aa4bcfb7a2ec82efe764c3f40ddd18} 
+\index{WorkoutPlan@{WorkoutPlan}!planTypeToString@{planTypeToString}}
+\index{planTypeToString@{planTypeToString}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{planTypeToString()}{planTypeToString()}}
+{\footnotesize\ttfamily std\+::string Workout\+Plan\+::plan\+Type\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}{Plan\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts the Plan\+Type enum to a string representation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The Plan\+Type to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the Plan\+Type
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The Plan\+Type to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string representation of the Plan\+Type. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{_workout_plan_8cpp_source}{Workout\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_workout_plan_a5107e02911c0c7dc3524acdb80b40ebf}{type}})}
+\DoxyCodeLine{00026\ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa3963049b60ddd6534b219d3767af0dfc}{PlanType::STRENGTH}}:}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Strength"{}};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffac9c9c146c630ca5ef9197c73c032f4a6}{PlanType::POWER}}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Power"{}};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa9f3d2a8f0b5097953e1a708a6fabfc58}{PlanType::HYPERTROPHY}}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Hypertrophy"{}};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa50d55c1ad01d08b6bd6b2210c9868037}{PlanType::CONDITIONING}}:}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Conditioning"{}};}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa73dabe4437725eedc05a1824a2c31550}{PlanType::PUSH}}:}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Push"{}};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa0068f4e18cb828499dbc0708bc9820ad}{PlanType::PULL}}:}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Pull"{}};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa994822189b7aa270c0ef47c2b1825379}{PlanType::LEGS}}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Legs"{}};}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Unknown"{}};}
+\DoxyCodeLine{00043\ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa50d55c1ad01d08b6bd6b2210c9868037}{CONDITIONING}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa9f3d2a8f0b5097953e1a708a6fabfc58}{HYPERTROPHY}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa994822189b7aa270c0ef47c2b1825379}{LEGS}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffac9c9c146c630ca5ef9197c73c032f4a6}{POWER}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa0068f4e18cb828499dbc0708bc9820ad}{PULL}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa73dabe4437725eedc05a1824a2c31550}{PUSH}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa3963049b60ddd6534b219d3767af0dfc}{STRENGTH}}, and \mbox{\hyperlink{_workout_plan_8h_source_l00075}{type}}.
+
+\Hypertarget{class_workout_plan_a8424b2f72e1cbf5134e4e4a0aff94b1f}\label{class_workout_plan_a8424b2f72e1cbf5134e4e4a0aff94b1f} 
+\index{WorkoutPlan@{WorkoutPlan}!processExercises@{processExercises}}
+\index{processExercises@{processExercises}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{processExercises()}{processExercises()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Workout\+Plan\+::process\+Exercises (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&}]{day,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&}]{day\+Exercises,  }\item[{std\+::map$<$ std\+::string, std\+::vector$<$ \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details}} $>$ $>$ \&}]{weekly\+Plan }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Processes exercises for a given day and adds them to the weekly plan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day} & The day of the week \\
+\hline
+{\em day\+Exercises} & The exercises for the day in string format \\
+\hline
+{\em weekly\+Plan} & The map to add the processed exercises to\\
+\hline
+{\em day} & The day of the week. \\
+\hline
+{\em day\+Exercises} & The exercises for the day in string format. \\
+\hline
+{\em weekly\+Plan} & The map to add the processed exercises to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8cpp_source_l00110}{110}} of file \mbox{\hyperlink{_workout_plan_8cpp_source}{Workout\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00111\ \{}
+\DoxyCodeLine{00112\ \ \ \ \ std::vector<ExerciseDetails>\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercises}};}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{dayExercises}}.empty()\ ||\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{dayExercises}}\ ==\ \textcolor{stringliteral}{"{}\ "{}})}
+\DoxyCodeLine{00114\ \ \ \ \ \{}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weeklyPlan}}[\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{day}}]\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercises}};}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00117\ \ \ \ \ \}}
+\DoxyCodeLine{00118\ \ \ \ \ std::stringstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ess}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{dayExercises}});}
+\DoxyCodeLine{00119\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exerciseDetails}};}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordflow}{while}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ess}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exerciseDetails}},\ \textcolor{charliteral}{';'}))}
+\DoxyCodeLine{00121\ \ \ \ \ \{}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exerciseDetails}}.empty())\ \textcolor{keywordflow}{continue};\ \textcolor{comment}{//\ Skip\ empty\ entries}}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ ExerciseDetails\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{details}};}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ std::string\ exerciseName\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exerciseDetails}}.substr(0,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exerciseDetails}}.find(\textcolor{charliteral}{'='}));}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{setsReps}}\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exerciseDetails}}.substr(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exerciseDetails}}.find(\textcolor{charliteral}{'='})\ +\ 1);}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{details}}.exerciseName\ =\ exerciseName;}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{details}}.sets\ =\ std::stoi(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{setsReps}}.substr(0,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{setsReps}}.find(\textcolor{charliteral}{'x'})));}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{details}}.reps\ =\ std::stoi(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{setsReps}}.substr(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{setsReps}}.find(\textcolor{charliteral}{'x'})\ +\ 1));}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercises}}.push\_back(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{details}});}
+\DoxyCodeLine{00130\ \ \ \ \ \}}
+\DoxyCodeLine{00131\ \ \ \ \ \mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weeklyPlan}}[\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{day}}]\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercises}};}
+\DoxyCodeLine{00132\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_workout_plan_8h_source_l00038}{Workout\+Plan\+::\+Exercise\+Details\+::exercise\+Name}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, and \mbox{\hyperlink{_workout_plan_8h_source_l00076}{weekly\+Plan}}.
+
+\Hypertarget{class_workout_plan_a10b338db5b38ea6308ff163ddf84626f}\label{class_workout_plan_a10b338db5b38ea6308ff163ddf84626f} 
+\index{WorkoutPlan@{WorkoutPlan}!stringToPlanType@{stringToPlanType}}
+\index{stringToPlanType@{stringToPlanType}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{stringToPlanType()}{stringToPlanType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}{Workout\+Plan\+::\+Plan\+Type}} Workout\+Plan\+::string\+To\+Plan\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts a string representation of a plan type to the corresponding Plan\+Type enum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string representation of the plan type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding Plan\+Type enum
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string representation of the plan type. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The corresponding Plan\+Type enum. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{_workout_plan_8cpp_source}{Workout\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00053\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{strLower}}\ =\ \mbox{\hyperlink{_utils_8h_a96432d89bc886bc9cdd1d73f86b2bbca}{toLower}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{str}});}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{strLower}}\ ==\ \textcolor{stringliteral}{"{}strength"{}})}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa3963049b60ddd6534b219d3767af0dfc}{PlanType::STRENGTH}};}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{strLower}}\ ==\ \textcolor{stringliteral}{"{}power"{}})}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffac9c9c146c630ca5ef9197c73c032f4a6}{PlanType::POWER}};}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{strLower}}\ ==\ \textcolor{stringliteral}{"{}hypertrophy"{}})}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa9f3d2a8f0b5097953e1a708a6fabfc58}{PlanType::HYPERTROPHY}};}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{strLower}}\ ==\ \textcolor{stringliteral}{"{}conditioning"{}})}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa50d55c1ad01d08b6bd6b2210c9868037}{PlanType::CONDITIONING}};}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{strLower}}\ ==\ \textcolor{stringliteral}{"{}push"{}})}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa73dabe4437725eedc05a1824a2c31550}{PlanType::PUSH}};}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{strLower}}\ ==\ \textcolor{stringliteral}{"{}pull"{}})}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa0068f4e18cb828499dbc0708bc9820ad}{PlanType::PULL}};}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{strLower}}\ ==\ \textcolor{stringliteral}{"{}legs"{}})}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa994822189b7aa270c0ef47c2b1825379}{PlanType::LEGS}};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa3963049b60ddd6534b219d3767af0dfc}{PlanType::STRENGTH}};\ \textcolor{comment}{//\ Default}}
+\DoxyCodeLine{00071\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa50d55c1ad01d08b6bd6b2210c9868037}{CONDITIONING}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa9f3d2a8f0b5097953e1a708a6fabfc58}{HYPERTROPHY}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa994822189b7aa270c0ef47c2b1825379}{LEGS}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffac9c9c146c630ca5ef9197c73c032f4a6}{POWER}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa0068f4e18cb828499dbc0708bc9820ad}{PULL}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa73dabe4437725eedc05a1824a2c31550}{PUSH}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afffa3963049b60ddd6534b219d3767af0dfc}{STRENGTH}}, and \mbox{\hyperlink{_utils_8h_source_l00386}{to\+Lower()}}.
+
+\Hypertarget{class_workout_plan_a20e02a32ad816b6dd2cd86dcaef55633}\label{class_workout_plan_a20e02a32ad816b6dd2cd86dcaef55633} 
+\index{WorkoutPlan@{WorkoutPlan}!toCSV@{toCSV}}
+\index{toCSV@{toCSV}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{toCSV()}{toCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Workout\+Plan\+::to\+CSV (\begin{DoxyParamCaption}\item[{std\+::ofstream \&}]{file }\end{DoxyParamCaption}) const}
+
+
+
+Writes the workout plan to a CSV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The ofstream object to write to\\
+\hline
+{\em file} & The ofstream object to write to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{_workout_plan_8cpp_source}{Workout\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00079\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}\ <<\ \mbox{\hyperlink{class_workout_plan_a2f964aa228ac8a1a8c793b946bf13cc5}{name}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ \mbox{\hyperlink{class_workout_plan_a81aa4bcfb7a2ec82efe764c3f40ddd18}{planTypeToString}}(\mbox{\hyperlink{class_workout_plan_a5107e02911c0c7dc3524acdb80b40ebf}{type}})\ <<\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{day}}\ :\ \mbox{\hyperlink{_utils_8h_a55deed90000e4bc802702dba36009535}{DAYS\_OF\_WEEK}})}
+\DoxyCodeLine{00083\ \ \ \ \ \{}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}\ =\ \mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weeklyPlan}}.find(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{day}});}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}\ !=\ \mbox{\hyperlink{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}{weeklyPlan}}.end())}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}\ =\ 0;\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}\ <\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}-\/>second.size();\ ++\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}})}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercise}}\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}-\/>second[\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}];}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercise}}.exerciseName\ <<\ \textcolor{stringliteral}{"{}="{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercise}}.sets\ <<\ \textcolor{stringliteral}{"{}x"{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercise}}.reps;}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i\ <\ it-\/>}}\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{second}}.size()\ -\/\ 1)}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}\ <<\ \textcolor{stringliteral}{"{};"{}};}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}\ <<\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00099\ \ \ \ \ \}}
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00101\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00272}{DAYS\+\_\+\+OF\+\_\+\+WEEK}}, \mbox{\hyperlink{_workout_plan_8h_source_l00074}{name}}, \mbox{\hyperlink{_workout_plan_8cpp_source_l00023}{plan\+Type\+To\+String()}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, \mbox{\hyperlink{_workout_plan_8h_source_l00075}{type}}, and \mbox{\hyperlink{_workout_plan_8h_source_l00076}{weekly\+Plan}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_workout_plan_a2f964aa228ac8a1a8c793b946bf13cc5}\label{class_workout_plan_a2f964aa228ac8a1a8c793b946bf13cc5} 
+\index{WorkoutPlan@{WorkoutPlan}!name@{name}}
+\index{name@{name}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Workout\+Plan\+::name}
+
+
+
+The name of the workout plan. 
+
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8h_source_l00074}{74}} of file \mbox{\hyperlink{_workout_plan_8h_source}{Workout\+Plan.\+h}}.
+
+\Hypertarget{class_workout_plan_a5107e02911c0c7dc3524acdb80b40ebf}\label{class_workout_plan_a5107e02911c0c7dc3524acdb80b40ebf} 
+\index{WorkoutPlan@{WorkoutPlan}!type@{type}}
+\index{type@{type}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_workout_plan_ac8313b9aca61de7758b5062baaf1afff}{Plan\+Type}} Workout\+Plan\+::type}
+
+
+
+The type of the workout plan. 
+
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8h_source_l00075}{75}} of file \mbox{\hyperlink{_workout_plan_8h_source}{Workout\+Plan.\+h}}.
+
+\Hypertarget{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87}\label{class_workout_plan_acbc37700a7a8a3269a9ec4e3d8beac87} 
+\index{WorkoutPlan@{WorkoutPlan}!weeklyPlan@{weeklyPlan}}
+\index{weeklyPlan@{weeklyPlan}!WorkoutPlan@{WorkoutPlan}}
+\doxysubsubsection{\texorpdfstring{weeklyPlan}{weeklyPlan}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::vector$<$\mbox{\hyperlink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details}}$>$ $>$ Workout\+Plan\+::weekly\+Plan}
+
+
+
+Key\+: Day of the week, Value\+: List of exercises. 
+
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8h_source_l00076}{76}} of file \mbox{\hyperlink{_workout_plan_8h_source}{Workout\+Plan.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_workout_plan_8h}{Workout\+Plan.\+h}}\item 
+\mbox{\hyperlink{_workout_plan_8cpp}{Workout\+Plan.\+cpp}}\end{DoxyCompactItemize}

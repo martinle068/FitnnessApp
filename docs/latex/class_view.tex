@@ -1,0 +1,156 @@
+\doxysection{View Class Reference}
+\hypertarget{class_view}{}\label{class_view}\index{View@{View}}
+
+
+Abstract base class for all views in the application.  
+
+
+
+
+{\ttfamily \#include $<$View.\+h$>$}
+
+
+
+Inheritance diagram for View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_view__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{virtual}} \mbox{\hyperlink{class_view_ad0f3ade04bca4e74b8868e63729bad86}{\texorpdfstring{$\sim$}{\string~}\+View}} ()=\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{default}}
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_view}{View} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{virtual}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_view_a2d83a628b932739742a943ccaa3385d0}{display}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function to display the view. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{display\+And\+Handle\+Sub\+Menu}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \&menu\+Options, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ask\+For\+Enter\+At\+The\+End}})
+\begin{DoxyCompactList}\small\item\em Displays a submenu and handles user input to navigate the options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for all views in the application. 
+
+Definition at line \mbox{\hyperlink{_view_8h_source_l00012}{12}} of file \mbox{\hyperlink{_view_8h_source}{View.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_view_ad0f3ade04bca4e74b8868e63729bad86}\label{class_view_ad0f3ade04bca4e74b8868e63729bad86} 
+\index{View@{View}!````~View@{\texorpdfstring{$\sim$}{\string~}View}}
+\index{````~View@{\texorpdfstring{$\sim$}{\string~}View}!View@{View}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}View()}{\string~View()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{virtual}} View\+::\texorpdfstring{$\sim$}{\string~}\+View (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor for the \doxylink{class_view}{View} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_view_a2d83a628b932739742a943ccaa3385d0}\label{class_view_a2d83a628b932739742a943ccaa3385d0} 
+\index{View@{View}!display@{display}}
+\index{display@{display}!View@{View}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{virtual}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} View\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function to display the view. 
+
+
+
+Implemented in \mbox{\hyperlink{class_exercise_view_a44c4781dc6b8185a4e8deafc55ea754d}{Exercise\+View}}, \mbox{\hyperlink{class_food_view_a03a62f43536e2fb31cbdfb2d496f0c6f}{Food\+View}}, \mbox{\hyperlink{class_main_view_a8086f0b1974b2621b9342ffc44eaf981}{Main\+View}}, \mbox{\hyperlink{class_nutrition_plan_view_addc95c5d4f887a07a48ae923a94549af}{Nutrition\+Plan\+View}}, \mbox{\hyperlink{class_profile_view_a175d94b9f25b5baef17252ed9fd8c087}{Profile\+View}}, and \mbox{\hyperlink{class_workout_plan_view_a925e9d7b90e458a4f5b051bae12188b2}{Workout\+Plan\+View}}.
+
+\Hypertarget{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}\label{class_view_ab7b1812236e25cc25929e6f7ddcc1b10} 
+\index{View@{View}!displayAndHandleSubMenu@{displayAndHandleSubMenu}}
+\index{displayAndHandleSubMenu@{displayAndHandleSubMenu}!View@{View}}
+\doxysubsubsection{\texorpdfstring{displayAndHandleSubMenu()}{displayAndHandleSubMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} View\+::display\+And\+Handle\+Sub\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&}]{title,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \&}]{menu\+Options,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}}}]{ask\+For\+Enter\+At\+The\+End }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Displays a submenu and handles user input to navigate the options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the submenu. \\
+\hline
+{\em menu\+Options} & A vector of menu options to display. \\
+\hline
+{\em ask\+For\+Enter\+At\+The\+End} & A boolean indicating whether to ask for Enter key press at the end. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_view_8h_source_l00032}{32}} of file \mbox{\hyperlink{_view_8h_source}{View.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \ \ \ \ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}}();\ \textcolor{comment}{//\ Clear\ the\ screen\ before\ displaying\ the\ menu}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a8fcbccbd74fee29a94755024f0359239}{displayMenu}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}},\ menuOptions);}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Select\ an\ action:\ "{}};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pos}};}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}}\ =\ std::stoi(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}},\ \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pos}});}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ pos\ is\ not\ at\ the\ end\ of\ the\ string,\ then\ not\ all\ characters\ were\ valid\ numbers}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pos}}\ !=\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.length())}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}}\ =\ 0;\ \textcolor{comment}{//\ Invalid\ choice}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ std::exception\&)}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}}\ =\ 0;\ \textcolor{comment}{//\ Invalid\ choice}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice\ <\ 1\ ||\ choice\ >}}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(menuOptions.size()))}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input,\ please\ enter\ a\ number\ between\ 1\ and\ "{}}\ <<\ menuOptions.size()\ <<\ \textcolor{stringliteral}{"{}.\(\backslash\)n"{}};}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Press\ Enter\ to\ continue..."{}};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.get();}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}}();\ \textcolor{comment}{//\ Clear\ the\ screen\ for\ the\ next\ iteration}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}}();}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}}\ ==\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(menuOptions.size()))}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ \textcolor{comment}{//\ Exit\ the\ loop\ and\ return\ to\ the\ previous\ menu}}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ menuOptions[\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}}\ -\/\ 1].second();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{askForEnterAtTheEnd}})}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ After\ performing\ the\ action,\ display\ a\ message\ and\ show\ options\ again}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Press\ Enter\ to\ continue..."{}};}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.get();\ \textcolor{comment}{//\ Actually\ get\ the\ Enter\ key}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}}();\ \textcolor{comment}{//\ Clear\ the\ screen\ for\ the\ next\ iteration}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00287}{clear\+Screen()}}, \mbox{\hyperlink{_utils_8h_source_l00434}{display\+Menu()}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_view_8h}{View.\+h}}\end{DoxyCompactItemize}

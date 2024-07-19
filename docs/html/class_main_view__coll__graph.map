@@ -1,0 +1,38 @@
+<map id="MainView" name="MainView">
+<area shape="rect" id="Node000001" title="The MainView class provides the main interface for the application." alt="" coords="722,217,800,244"/>
+<area shape="rect" id="Node000002" href="$class_view.html" title="Abstract base class for all views in the application." alt="" coords="231,221,280,248"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="296,232,722,228,722,234,296,237"/>
+<area shape="rect" id="Node000003" href="$class_exercise_view.html" title="Handles the user interface for displaying and managing exercises." alt="" coords="458,137,558,164"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="294,219,464,162,466,167,296,224"/>
+<area shape="rect" id="Node000006" href="$class_food_view.html" title="Handles the user interface for displaying and managing food items." alt="" coords="469,188,547,215"/>
+<area shape="poly" id="edge7_Node000006_Node000002" title=" " alt="" coords="295,227,468,204,469,209,296,232"/>
+<area shape="rect" id="Node000008" href="$class_profile_view.html" title="The ProfileView class is responsible for managing the profile and goals settings. It inherits from th..." alt="" coords="466,364,551,391"/>
+<area shape="poly" id="edge11_Node000008_Node000002" title=" " alt="" coords="295,253,484,361,481,366,292,258"/>
+<area shape="rect" id="Node000011" href="$class_workout_plan_view.html" title="The WorkoutPlanView class represents the view for managing workout plans. It provides a user interfac..." alt="" coords="446,87,570,113"/>
+<area shape="poly" id="edge16_Node000011_Node000002" title=" " alt="" coords="279,208,321,166,358,136,401,118,445,106,446,111,403,123,360,141,324,170,282,212"/>
+<area shape="rect" id="Node000013" href="$class_nutrition_plan_view.html" title="Class representing the view for managing nutrition plans." alt="" coords="446,289,570,316"/>
+<area shape="poly" id="edge20_Node000013_Node000002" title=" " alt="" coords="296,245,360,264,447,286,446,291,358,269,294,250"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="574,156,636,168,699,188,744,215,741,219,697,193,634,173,573,161"/>
+<area shape="rect" id="Node000004" href="$class_exercise_view_model.html" title="ViewModel class for managing and displaying exercises." alt="" coords="188,59,323,85"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="316,88,464,134,462,139,315,93"/>
+<area shape="rect" id="Node000005" href="$class_view_model.html" title="Abstract base class for ViewModel, providing a common interface for managing items." alt="" coords="5,92,90,119"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="105,94,187,80,188,85,105,99"/>
+<area shape="rect" id="Node000007" href="$class_food_view_model.html" title="ViewModel class for handling food items." alt="" coords="199,116,312,143"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="105,109,199,120,198,125,105,115"/>
+<area shape="rect" id="Node000012" href="$class_workout_plan_view_model.html" title=" " alt="" coords="176,5,335,32"/>
+<area shape="poly" id="edge18_Node000012_Node000005" title=" " alt="" coords="88,83,113,71,175,44,213,30,214,35,177,49,115,76,90,88"/>
+<area shape="rect" id="Node000014" href="$class_nutrition_plan_view_model.html" title="ViewModel class for managing and manipulating nutrition plans." alt="" coords="176,308,334,335"/>
+<area shape="poly" id="edge22_Node000014_Node000005" title=" " alt="" coords="69,130,116,190,178,258,235,305,232,309,174,262,112,194,65,133"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="562,205,722,224,721,229,562,210"/>
+<area shape="poly" id="edge8_Node000006_Node000007" title=" " alt="" coords="320,145,469,188,468,193,319,150"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="566,371,632,358,666,345,697,327,717,308,733,285,753,243,757,246,737,288,721,312,700,331,668,350,634,363,567,377"/>
+<area shape="rect" id="Node000009" href="$class_profile.html" title="The Profile class represents a user&#39;s profile with personal information and activity level." alt="" coords="19,411,76,437"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="92,427,176,435,256,440,290,440,334,435,378,423,421,406,468,389,470,394,423,410,380,428,336,440,291,445,256,446,175,440,91,432"/>
+<area shape="rect" id="Node000010" href="$class_goals.html" title="The Goals class represents a user&#39;s fitness goals and calculates daily caloric needs based on the pro..." alt="" coords="228,383,283,409"/>
+<area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="91,416,227,397,228,402,92,421"/>
+<area shape="poly" id="edge13_Node000008_Node000010" title=" " alt="" coords="298,398,357,401,422,397,464,388,466,393,422,403,357,406,298,403"/>
+<area shape="poly" id="edge15_Node000001_Node000011" title=" " alt="" coords="587,101,644,114,673,124,700,139,720,156,736,177,756,215,752,218,731,180,716,160,697,144,671,129,643,119,586,106"/>
+<area shape="poly" id="edge17_Node000011_Node000012" title=" " alt="" coords="315,35,465,84,463,89,313,40"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="585,305,642,300,697,284,726,265,747,243,751,246,729,269,699,289,643,305,586,310"/>
+<area shape="poly" id="edge21_Node000013_Node000014" title=" " alt="" coords="350,321,422,317,446,314,446,319,422,323,350,326"/>
+</map>

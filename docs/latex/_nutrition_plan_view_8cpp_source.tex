@@ -1,0 +1,34 @@
+\doxysection{Nutrition\+Plan\+View.\+cpp}
+\hypertarget{_nutrition_plan_view_8cpp_source}{}\label{_nutrition_plan_view_8cpp_source}\mbox{\hyperlink{_nutrition_plan_view_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_nutrition_plan_view_8h}{NutritionPlanView.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00009}\mbox{\hyperlink{class_nutrition_plan_view_ad97438dd8b6997ed0d783bf063293212}{00009}}\ \mbox{\hyperlink{class_nutrition_plan_view_ad97438dd8b6997ed0d783bf063293212}{NutritionPlanView::NutritionPlanView}}(\mbox{\hyperlink{class_nutrition_plan_view_model}{NutritionPlanViewModel}}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}})\ :\ viewModel(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}})}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00010}00010\ \{}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00011}00011\ \ \ \ \ \mbox{\hyperlink{class_nutrition_plan_view_a26ca9d59f88829f083363bcbbf809866}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00012}00012\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}View\ Nutrition\ Plans"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Viewing\ Nutrition\ Plans"{}});\ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_aa4523716820766fca1fd98fe3ab888ad}{view}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Add\ Nutrition\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Adding\ Nutrition\ Plan"{}});\ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_abdeadc9e42618e4d02ac6f900b208b84}{add}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Modify\ Nutrition\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Modifying\ Nutrition\ Plan"{}});\ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_a79233c92a66972487e270d47bff35a0c}{modify}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Delete\ Nutrition\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Deleting\ Nutrition\ Plan"{}});\ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_a35ae8d4bb86cc1d0c49e67077df1be1f}{remove}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Import\ from\ file"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_nutrition_plan_view_a1a0d28eda7393e45fc7f98ee60c7d942}{importFromFile}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Back"{}},\ [\textcolor{keyword}{this}]()\ \{\ \textcolor{keywordflow}{return};\ \}\}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00018}00018\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00019}00019\ \}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00024}\mbox{\hyperlink{class_nutrition_plan_view_addc95c5d4f887a07a48ae923a94549af}{00024}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nutrition_plan_view_addc95c5d4f887a07a48ae923a94549af}{NutritionPlanView::display}}()}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_a96c29d2910051c0c023cc7c3af473584}{reload}}();}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Nutrition\ Plans"{}},\ \mbox{\hyperlink{class_nutrition_plan_view_a26ca9d59f88829f083363bcbbf809866}{menuOptions}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00033}\mbox{\hyperlink{class_nutrition_plan_view_a1a0d28eda7393e45fc7f98ee60c7d942}{00033}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nutrition_plan_view_a1a0d28eda7393e45fc7f98ee60c7d942}{NutritionPlanView::importFromFile}}()}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00034}00034\ \{}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00035}00035\ \ \ \ \ std::string\ filename;}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00036}00036\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ the\ filename\ to\ import\ nutrition\ plans\ from:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00037}00037\ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ filename);}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00038}00038\ \ \ \ \ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_a351fc894d640b420f763f49c93ac50e4}{importFromFile}}(filename);}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00039}00039\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Nutrition\ plans\ imported\ from\ file:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_nutrition_plan_view_8cpp_source_l00040}00040\ \}}
+
+\end{DoxyCode}

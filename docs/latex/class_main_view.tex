@@ -1,0 +1,251 @@
+\doxysection{Main\+View Class Reference}
+\hypertarget{class_main_view}{}\label{class_main_view}\index{MainView@{MainView}}
+
+
+The \doxylink{class_main_view}{Main\+View} class provides the main interface for the application.  
+
+
+
+
+{\ttfamily \#include $<$Main\+View.\+h$>$}
+
+
+
+Inheritance diagram for Main\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=138pt]{class_main_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Main\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_main_view_a5d50e0525f13728c8e53d62a28de43b2}{Main\+View}} (\mbox{\hyperlink{class_exercise_view}{Exercise\+View}} \&\mbox{\hyperlink{class_main_view_a3bd1a1359bc4357147b10c31ad7b2768}{exercise\+View}}, \mbox{\hyperlink{class_food_view}{Food\+View}} \&\mbox{\hyperlink{class_main_view_a429cb94a38e62374a03c8d4a13662551}{food\+View}}, \mbox{\hyperlink{class_profile_view}{Profile\+View}} \&\mbox{\hyperlink{class_main_view_a51bc051dab1dc1f23a29107e06157f86}{profile\+View}}, \mbox{\hyperlink{class_workout_plan_view}{Workout\+Plan\+View}} \&\mbox{\hyperlink{class_main_view_ac026de6587d430a2164cb3dc06db5260}{workout\+Plan\+View}}, \mbox{\hyperlink{class_nutrition_plan_view}{Nutrition\+Plan\+View}} \&\mbox{\hyperlink{class_main_view_aee2e32f6ec80576f82de46bf367fc0e7}{nutrition\+Plan\+View}})
+\begin{DoxyCompactList}\small\item\em Constructs the \doxylink{class_main_view}{Main\+View} with references to the specific view components. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_main_view_a8086f0b1974b2621b9342ffc44eaf981}{display}} ()
+\begin{DoxyCompactList}\small\item\em Displays the main view menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_view}{View}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{virtual}} \mbox{\hyperlink{class_view_ad0f3ade04bca4e74b8868e63729bad86}{\texorpdfstring{$\sim$}{\string~}\+View}} ()=\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{default}}
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_view}{View} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{display\+And\+Handle\+Sub\+Menu}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \&menu\+Options, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ask\+For\+Enter\+At\+The\+End}})
+\begin{DoxyCompactList}\small\item\em Displays a submenu and handles user input to navigate the options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_exercise_view}{Exercise\+View}} \& \mbox{\hyperlink{class_main_view_a3bd1a1359bc4357147b10c31ad7b2768}{exercise\+View}}
+\begin{DoxyCompactList}\small\item\em Reference to the \doxylink{class_exercise_view}{Exercise\+View} component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_food_view}{Food\+View}} \& \mbox{\hyperlink{class_main_view_a429cb94a38e62374a03c8d4a13662551}{food\+View}}
+\begin{DoxyCompactList}\small\item\em Reference to the \doxylink{class_food_view}{Food\+View} component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_profile_view}{Profile\+View}} \& \mbox{\hyperlink{class_main_view_a51bc051dab1dc1f23a29107e06157f86}{profile\+View}}
+\begin{DoxyCompactList}\small\item\em Reference to the \doxylink{class_profile_view}{Profile\+View} component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_workout_plan_view}{Workout\+Plan\+View}} \& \mbox{\hyperlink{class_main_view_ac026de6587d430a2164cb3dc06db5260}{workout\+Plan\+View}}
+\begin{DoxyCompactList}\small\item\em Reference to the \doxylink{class_workout_plan_view}{Workout\+Plan\+View} component. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nutrition_plan_view}{Nutrition\+Plan\+View}} \& \mbox{\hyperlink{class_main_view_aee2e32f6ec80576f82de46bf367fc0e7}{nutrition\+Plan\+View}}
+\begin{DoxyCompactList}\small\item\em Reference to the \doxylink{class_nutrition_plan_view}{Nutrition\+Plan\+View} component. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \mbox{\hyperlink{class_main_view_afd71e2b0da7da71c168cf32154e4116d}{menu\+Options}}
+\begin{DoxyCompactList}\small\item\em Vector of menu options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_main_view}{Main\+View} class provides the main interface for the application. 
+
+Definition at line \mbox{\hyperlink{_main_view_8h_source_l00015}{15}} of file \mbox{\hyperlink{_main_view_8h_source}{Main\+View.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_main_view_a5d50e0525f13728c8e53d62a28de43b2}\label{class_main_view_a5d50e0525f13728c8e53d62a28de43b2} 
+\index{MainView@{MainView}!MainView@{MainView}}
+\index{MainView@{MainView}!MainView@{MainView}}
+\doxysubsubsection{\texorpdfstring{MainView()}{MainView()}}
+{\footnotesize\ttfamily Main\+View\+::\+Main\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_exercise_view}{Exercise\+View}} \&}]{ev,  }\item[{\mbox{\hyperlink{class_food_view}{Food\+View}} \&}]{fv,  }\item[{\mbox{\hyperlink{class_profile_view}{Profile\+View}} \&}]{pv,  }\item[{\mbox{\hyperlink{class_workout_plan_view}{Workout\+Plan\+View}} \&}]{wpv,  }\item[{\mbox{\hyperlink{class_nutrition_plan_view}{Nutrition\+Plan\+View}} \&}]{nv }\end{DoxyParamCaption})}
+
+
+
+Constructs the \doxylink{class_main_view}{Main\+View} with references to the specific view components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em exercise\+View} & Reference to the \doxylink{class_exercise_view}{Exercise\+View} component. \\
+\hline
+{\em food\+View} & Reference to the \doxylink{class_food_view}{Food\+View} component. \\
+\hline
+{\em profile\+View} & Reference to the \doxylink{class_profile_view}{Profile\+View} component. \\
+\hline
+{\em workout\+Plan\+View} & Reference to the \doxylink{class_workout_plan_view}{Workout\+Plan\+View} component. \\
+\hline
+{\em nutrition\+Plan\+View} & Reference to the \doxylink{class_nutrition_plan_view}{Nutrition\+Plan\+View} component.\\
+\hline
+{\em ev} & Reference to the \doxylink{class_exercise_view}{Exercise\+View} component. \\
+\hline
+{\em fv} & Reference to the \doxylink{class_food_view}{Food\+View} component. \\
+\hline
+{\em pv} & Reference to the \doxylink{class_profile_view}{Profile\+View} component. \\
+\hline
+{\em wpv} & Reference to the \doxylink{class_workout_plan_view}{Workout\+Plan\+View} component. \\
+\hline
+{\em nv} & Reference to the \doxylink{class_nutrition_plan_view}{Nutrition\+Plan\+View} component. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_main_view_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{_main_view_8cpp_source}{Main\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015\ \ \ \ \ :\ \mbox{\hyperlink{class_main_view_a3bd1a1359bc4357147b10c31ad7b2768}{exerciseView}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ev}}),\ \mbox{\hyperlink{class_main_view_a429cb94a38e62374a03c8d4a13662551}{foodView}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{fv}}),\ \mbox{\hyperlink{class_main_view_a51bc051dab1dc1f23a29107e06157f86}{profileView}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pv}}),\ \mbox{\hyperlink{class_main_view_ac026de6587d430a2164cb3dc06db5260}{workoutPlanView}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{wpv}}),\ \mbox{\hyperlink{class_main_view_aee2e32f6ec80576f82de46bf367fc0e7}{nutritionPlanView}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{nv}}) }
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{class_main_view_afd71e2b0da7da71c168cf32154e4116d}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Profile"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_main_view_a51bc051dab1dc1f23a29107e06157f86}{profileView}}.\mbox{\hyperlink{class_profile_view_a175d94b9f25b5baef17252ed9fd8c087}{display}}();\ \}\},}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Exercises"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_main_view_a3bd1a1359bc4357147b10c31ad7b2768}{exerciseView}}.\mbox{\hyperlink{class_exercise_view_a44c4781dc6b8185a4e8deafc55ea754d}{display}}();\ \}\},}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Food"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_main_view_a429cb94a38e62374a03c8d4a13662551}{foodView}}.\mbox{\hyperlink{class_food_view_a03a62f43536e2fb31cbdfb2d496f0c6f}{display}}();\ \}\},}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Workout\ Plans"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_main_view_ac026de6587d430a2164cb3dc06db5260}{workoutPlanView}}.\mbox{\hyperlink{class_workout_plan_view_a925e9d7b90e458a4f5b051bae12188b2}{display}}();\ \}\},}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Nutrition\ Plans"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_main_view_aee2e32f6ec80576f82de46bf367fc0e7}{nutritionPlanView}}.\mbox{\hyperlink{class_nutrition_plan_view_addc95c5d4f887a07a48ae923a94549af}{display}}();\ \}\},}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Exit"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exit}}(0);\ \}\}}
+\DoxyCodeLine{00024\ \ \ \ \ \};}
+\DoxyCodeLine{00025\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_exercise_view_8cpp_source_l00028}{Exercise\+View\+::display()}}, \mbox{\hyperlink{_food_view_8cpp_source_l00027}{Food\+View\+::display()}}, \mbox{\hyperlink{_nutrition_plan_view_8cpp_source_l00024}{Nutrition\+Plan\+View\+::display()}}, \mbox{\hyperlink{_profile_view_8cpp_source_l00103}{Profile\+View\+::display()}}, \mbox{\hyperlink{_workout_plan_view_8cpp_source_l00024}{Workout\+Plan\+View\+::display()}}, \mbox{\hyperlink{_main_view_8h_source_l00035}{exercise\+View}}, \mbox{\hyperlink{_main_view_8h_source_l00036}{food\+View}}, \mbox{\hyperlink{_main_view_8h_source_l00040}{menu\+Options}}, \mbox{\hyperlink{_main_view_8h_source_l00039}{nutrition\+Plan\+View}}, \mbox{\hyperlink{_main_view_8h_source_l00037}{profile\+View}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, and \mbox{\hyperlink{_main_view_8h_source_l00038}{workout\+Plan\+View}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_main_view_a8086f0b1974b2621b9342ffc44eaf981}\label{class_main_view_a8086f0b1974b2621b9342ffc44eaf981} 
+\index{MainView@{MainView}!display@{display}}
+\index{display@{display}!MainView@{MainView}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Main\+View\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the main view menu. 
+
+
+
+Implements \mbox{\hyperlink{class_view_a2d83a628b932739742a943ccaa3385d0}{View}}.
+
+
+
+Definition at line \mbox{\hyperlink{_main_view_8cpp_source_l00030}{30}} of file \mbox{\hyperlink{_main_view_8cpp_source}{Main\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00031\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Welcome\ to\ the\ Fitness\ Database"{}},\ \mbox{\hyperlink{class_main_view_afd71e2b0da7da71c168cf32154e4116d}{menuOptions}},\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00033\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_view_8h_source_l00032}{View\+::display\+And\+Handle\+Sub\+Menu()}}, and \mbox{\hyperlink{_main_view_8h_source_l00040}{menu\+Options}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_main_view_a3bd1a1359bc4357147b10c31ad7b2768}\label{class_main_view_a3bd1a1359bc4357147b10c31ad7b2768} 
+\index{MainView@{MainView}!exerciseView@{exerciseView}}
+\index{exerciseView@{exerciseView}!MainView@{MainView}}
+\doxysubsubsection{\texorpdfstring{exerciseView}{exerciseView}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_exercise_view}{Exercise\+View}}\& Main\+View\+::exercise\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the \doxylink{class_exercise_view}{Exercise\+View} component. 
+
+
+
+Definition at line \mbox{\hyperlink{_main_view_8h_source_l00035}{35}} of file \mbox{\hyperlink{_main_view_8h_source}{Main\+View.\+h}}.
+
+\Hypertarget{class_main_view_a429cb94a38e62374a03c8d4a13662551}\label{class_main_view_a429cb94a38e62374a03c8d4a13662551} 
+\index{MainView@{MainView}!foodView@{foodView}}
+\index{foodView@{foodView}!MainView@{MainView}}
+\doxysubsubsection{\texorpdfstring{foodView}{foodView}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_food_view}{Food\+View}}\& Main\+View\+::food\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the \doxylink{class_food_view}{Food\+View} component. 
+
+
+
+Definition at line \mbox{\hyperlink{_main_view_8h_source_l00036}{36}} of file \mbox{\hyperlink{_main_view_8h_source}{Main\+View.\+h}}.
+
+\Hypertarget{class_main_view_afd71e2b0da7da71c168cf32154e4116d}\label{class_main_view_afd71e2b0da7da71c168cf32154e4116d} 
+\index{MainView@{MainView}!menuOptions@{menuOptions}}
+\index{menuOptions@{menuOptions}!MainView@{MainView}}
+\doxysubsubsection{\texorpdfstring{menuOptions}{menuOptions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}}$>$ Main\+View\+::menu\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vector of menu options. 
+
+
+
+Definition at line \mbox{\hyperlink{_main_view_8h_source_l00040}{40}} of file \mbox{\hyperlink{_main_view_8h_source}{Main\+View.\+h}}.
+
+\Hypertarget{class_main_view_aee2e32f6ec80576f82de46bf367fc0e7}\label{class_main_view_aee2e32f6ec80576f82de46bf367fc0e7} 
+\index{MainView@{MainView}!nutritionPlanView@{nutritionPlanView}}
+\index{nutritionPlanView@{nutritionPlanView}!MainView@{MainView}}
+\doxysubsubsection{\texorpdfstring{nutritionPlanView}{nutritionPlanView}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nutrition_plan_view}{Nutrition\+Plan\+View}}\& Main\+View\+::nutrition\+Plan\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the \doxylink{class_nutrition_plan_view}{Nutrition\+Plan\+View} component. 
+
+
+
+Definition at line \mbox{\hyperlink{_main_view_8h_source_l00039}{39}} of file \mbox{\hyperlink{_main_view_8h_source}{Main\+View.\+h}}.
+
+\Hypertarget{class_main_view_a51bc051dab1dc1f23a29107e06157f86}\label{class_main_view_a51bc051dab1dc1f23a29107e06157f86} 
+\index{MainView@{MainView}!profileView@{profileView}}
+\index{profileView@{profileView}!MainView@{MainView}}
+\doxysubsubsection{\texorpdfstring{profileView}{profileView}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_profile_view}{Profile\+View}}\& Main\+View\+::profile\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the \doxylink{class_profile_view}{Profile\+View} component. 
+
+
+
+Definition at line \mbox{\hyperlink{_main_view_8h_source_l00037}{37}} of file \mbox{\hyperlink{_main_view_8h_source}{Main\+View.\+h}}.
+
+\Hypertarget{class_main_view_ac026de6587d430a2164cb3dc06db5260}\label{class_main_view_ac026de6587d430a2164cb3dc06db5260} 
+\index{MainView@{MainView}!workoutPlanView@{workoutPlanView}}
+\index{workoutPlanView@{workoutPlanView}!MainView@{MainView}}
+\doxysubsubsection{\texorpdfstring{workoutPlanView}{workoutPlanView}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_workout_plan_view}{Workout\+Plan\+View}}\& Main\+View\+::workout\+Plan\+View\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the \doxylink{class_workout_plan_view}{Workout\+Plan\+View} component. 
+
+
+
+Definition at line \mbox{\hyperlink{_main_view_8h_source_l00038}{38}} of file \mbox{\hyperlink{_main_view_8h_source}{Main\+View.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_main_view_8h}{Main\+View.\+h}}\item 
+\mbox{\hyperlink{_main_view_8cpp}{Main\+View.\+cpp}}\end{DoxyCompactItemize}

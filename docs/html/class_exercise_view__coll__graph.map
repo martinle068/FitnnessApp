@@ -1,0 +1,9 @@
+<map id="ExerciseView" name="ExerciseView">
+<area shape="rect" id="Node000001" title="Handles the user interface for displaying and managing exercises." alt="" coords="20,172,120,199"/>
+<area shape="rect" id="Node000002" href="$class_view.html" title="Abstract base class for all views in the application." alt="" coords="5,81,55,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,121,67,170,62,173,39,123"/>
+<area shape="rect" id="Node000003" href="$class_exercise_view_model.html" title="ViewModel class for managing and displaying exercises." alt="" coords="78,81,214,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,122,83,173,79,170,123,118"/>
+<area shape="rect" id="Node000004" href="$class_view_model.html" title="Abstract base class for ViewModel, providing a common interface for managing items." alt="" coords="104,5,188,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="149,47,149,81,143,81,143,47"/>
+</map>

@@ -1,0 +1,123 @@
+\doxysection{Workout\+Plan\+::Exercise\+Details Struct Reference}
+\hypertarget{struct_workout_plan_1_1_exercise_details}{}\label{struct_workout_plan_1_1_exercise_details}\index{WorkoutPlan::ExerciseDetails@{WorkoutPlan::ExerciseDetails}}
+
+
+Represents details of an exercise including name, sets, and reps.  
+
+
+
+
+{\ttfamily \#include $<$Workout\+Plan.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details_aca3435a3abd034d2d4baa2831591a501}{exercise\+Name}}
+\begin{DoxyCompactList}\small\item\em Name of the exercise. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details_a8cd85a315b19d6d0a15308af46ce22fb}{sets}}
+\begin{DoxyCompactList}\small\item\em Number of sets. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details_a4042d6bd8f8de8e1d8c0a7bb88f1548f}{reps}}
+\begin{DoxyCompactList}\small\item\em Number of reps. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details_a506e92ddaaf1e9c42a391c0de16439b3}{operator$>$$>$}} (std\+::istream \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}}, \mbox{\hyperlink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ed}})
+\begin{DoxyCompactList}\small\item\em Overload the \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} operator for \doxylink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details} to read from a stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents details of an exercise including name, sets, and reps. 
+
+Definition at line \mbox{\hyperlink{_workout_plan_8h_source_l00036}{36}} of file \mbox{\hyperlink{_workout_plan_8h_source}{Workout\+Plan.\+h}}.
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{struct_workout_plan_1_1_exercise_details_a506e92ddaaf1e9c42a391c0de16439b3}\label{struct_workout_plan_1_1_exercise_details_a506e92ddaaf1e9c42a391c0de16439b3} 
+\index{WorkoutPlan::ExerciseDetails@{WorkoutPlan::ExerciseDetails}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!WorkoutPlan::ExerciseDetails@{WorkoutPlan::ExerciseDetails}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily std\+::istream \& \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{operator}}$>$$>$ (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details}} \&}]{ed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Overload the \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} operator for \doxylink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details} to read from a stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream \\
+\hline
+{\em ed} & The \doxylink{struct_workout_plan_1_1_exercise_details}{Exercise\+Details} object to read into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input stream 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8h_source_l00048}{48}} of file \mbox{\hyperlink{_workout_plan_8h_source}{Workout\+Plan.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}},\ \textcolor{charliteral}{'-\/'});}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ed}}.exerciseName\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}},\ \textcolor{charliteral}{'x'});}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ed}}.sets\ =\ std::stoi(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}});}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}});}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ed}}.reps\ =\ std::stoi(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}});}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{struct_workout_plan_1_1_exercise_details_aca3435a3abd034d2d4baa2831591a501}\label{struct_workout_plan_1_1_exercise_details_aca3435a3abd034d2d4baa2831591a501} 
+\index{WorkoutPlan::ExerciseDetails@{WorkoutPlan::ExerciseDetails}!exerciseName@{exerciseName}}
+\index{exerciseName@{exerciseName}!WorkoutPlan::ExerciseDetails@{WorkoutPlan::ExerciseDetails}}
+\doxysubsubsection{\texorpdfstring{exerciseName}{exerciseName}}
+{\footnotesize\ttfamily std\+::string Workout\+Plan\+::\+Exercise\+Details\+::exercise\+Name}
+
+
+
+Name of the exercise. 
+
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8h_source_l00038}{38}} of file \mbox{\hyperlink{_workout_plan_8h_source}{Workout\+Plan.\+h}}.
+
+\Hypertarget{struct_workout_plan_1_1_exercise_details_a4042d6bd8f8de8e1d8c0a7bb88f1548f}\label{struct_workout_plan_1_1_exercise_details_a4042d6bd8f8de8e1d8c0a7bb88f1548f} 
+\index{WorkoutPlan::ExerciseDetails@{WorkoutPlan::ExerciseDetails}!reps@{reps}}
+\index{reps@{reps}!WorkoutPlan::ExerciseDetails@{WorkoutPlan::ExerciseDetails}}
+\doxysubsubsection{\texorpdfstring{reps}{reps}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} Workout\+Plan\+::\+Exercise\+Details\+::reps}
+
+
+
+Number of reps. 
+
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8h_source_l00040}{40}} of file \mbox{\hyperlink{_workout_plan_8h_source}{Workout\+Plan.\+h}}.
+
+\Hypertarget{struct_workout_plan_1_1_exercise_details_a8cd85a315b19d6d0a15308af46ce22fb}\label{struct_workout_plan_1_1_exercise_details_a8cd85a315b19d6d0a15308af46ce22fb} 
+\index{WorkoutPlan::ExerciseDetails@{WorkoutPlan::ExerciseDetails}!sets@{sets}}
+\index{sets@{sets}!WorkoutPlan::ExerciseDetails@{WorkoutPlan::ExerciseDetails}}
+\doxysubsubsection{\texorpdfstring{sets}{sets}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} Workout\+Plan\+::\+Exercise\+Details\+::sets}
+
+
+
+Number of sets. 
+
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_8h_source_l00039}{39}} of file \mbox{\hyperlink{_workout_plan_8h_source}{Workout\+Plan.\+h}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_workout_plan_8h}{Workout\+Plan.\+h}}\end{DoxyCompactItemize}

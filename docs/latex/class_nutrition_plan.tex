@@ -1,0 +1,368 @@
+\doxysection{Nutrition\+Plan Class Reference}
+\hypertarget{class_nutrition_plan}{}\label{class_nutrition_plan}\index{NutritionPlan@{NutritionPlan}}
+
+
+Represents a nutrition plan consisting of meals and their respective food items and portion sizes.  
+
+
+
+
+{\ttfamily \#include $<$Nutrition\+Plan.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nutrition_plan_a1ecc6fb59679857a6100d78e7295d873}{Nutrition\+Plan}} ()=\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{default}}
+\begin{DoxyCompactList}\small\item\em Default constructor for \doxylink{class_nutrition_plan}{Nutrition\+Plan}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nutrition_plan_a426079cd6184522e931133c63f3af5fd}{Nutrition\+Plan}} (std\+::string \mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}}, std\+::map$<$ std\+::string, std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_food_item}{Food\+Item}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} $>$ $>$ $>$ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}})
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for \doxylink{class_nutrition_plan}{Nutrition\+Plan}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_nutrition_plan_a0bce62fdc106b4f890494d9bc22c6405}{to\+CSV}} (std\+::ostream \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}}) \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Converts the nutrition plan to CSV format and writes it to the given output stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{class_nutrition_plan_a3b8f7d12b42f792747a70c9819e52953}{from\+CSV}} (std\+::istream \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::map$<$ std\+::string, \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}})
+\begin{DoxyCompactList}\small\item\em Loads the nutrition plan from CSV format from the given input stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_nutrition_plan_a714a170e48b817e21d7af82dce5869a4}{display}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Displays the nutrition plan details to the standard output. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_nutrition_plan_a88a02c82559483d43eebe395e2298a09}{adjust\+Portion\+Sizes}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{factor}})
+\begin{DoxyCompactList}\small\item\em Adjusts the portion sizes of all meals in the nutrition plan by a given factor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_nutrition_plan_a61a675a8f1deeaf80976738274b07f42}{get\+New\+Nutrition\+Plan}} (std\+::istringstream \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::map$<$ std\+::string, \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{meal\+Name}})
+\begin{DoxyCompactList}\small\item\em Gets a new nutrition plan for a specific meal name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}}
+\begin{DoxyCompactList}\small\item\em The name of the nutrition plan. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_food_item}{Food\+Item}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} $>$ $>$ $>$ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}}
+\begin{DoxyCompactList}\small\item\em Meal name to list of (\doxylink{class_food_item}{Food\+Item}, portion size). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a nutrition plan consisting of meals and their respective food items and portion sizes. 
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_8h_source_l00013}{13}} of file \mbox{\hyperlink{_nutrition_plan_8h_source}{Nutrition\+Plan.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_nutrition_plan_a1ecc6fb59679857a6100d78e7295d873}\label{class_nutrition_plan_a1ecc6fb59679857a6100d78e7295d873} 
+\index{NutritionPlan@{NutritionPlan}!NutritionPlan@{NutritionPlan}}
+\index{NutritionPlan@{NutritionPlan}!NutritionPlan@{NutritionPlan}}
+\doxysubsubsection{\texorpdfstring{NutritionPlan()}{NutritionPlan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Nutrition\+Plan\+::\+Nutrition\+Plan (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor for \doxylink{class_nutrition_plan}{Nutrition\+Plan}. 
+
+\Hypertarget{class_nutrition_plan_a426079cd6184522e931133c63f3af5fd}\label{class_nutrition_plan_a426079cd6184522e931133c63f3af5fd} 
+\index{NutritionPlan@{NutritionPlan}!NutritionPlan@{NutritionPlan}}
+\index{NutritionPlan@{NutritionPlan}!NutritionPlan@{NutritionPlan}}
+\doxysubsubsection{\texorpdfstring{NutritionPlan()}{NutritionPlan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Nutrition\+Plan\+::\+Nutrition\+Plan (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::map$<$ std\+::string, std\+::vector$<$ std\+::pair$<$ \mbox{\hyperlink{class_food_item}{Food\+Item}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} $>$ $>$ $>$}]{meals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parameterized constructor for \doxylink{class_nutrition_plan}{Nutrition\+Plan}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the nutrition plan. \\
+\hline
+{\em meals} & A map of meal names to their respective food items and portion sizes. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_8h_source_l00029}{29}} of file \mbox{\hyperlink{_nutrition_plan_8h_source}{Nutrition\+Plan.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}}(std::move(\mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}})),\ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}}(std::move(\mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}})) }
+\DoxyCodeLine{00031\ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nutrition_plan_a88a02c82559483d43eebe395e2298a09}\label{class_nutrition_plan_a88a02c82559483d43eebe395e2298a09} 
+\index{NutritionPlan@{NutritionPlan}!adjustPortionSizes@{adjustPortionSizes}}
+\index{adjustPortionSizes@{adjustPortionSizes}!NutritionPlan@{NutritionPlan}}
+\doxysubsubsection{\texorpdfstring{adjustPortionSizes()}{adjustPortionSizes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Nutrition\+Plan\+::adjust\+Portion\+Sizes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}}}]{factor }\end{DoxyParamCaption})}
+
+
+
+Adjusts the portion sizes of all meals in the nutrition plan by a given factor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em factor} & The factor by which to adjust the portion sizes. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_8cpp_source_l00154}{154}} of file \mbox{\hyperlink{_nutrition_plan_8cpp_source}{Nutrition\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00155\ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{meal}}\ :\ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}})}
+\DoxyCodeLine{00157\ \ \ \ \ \{}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}\ :\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{meal}}.\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{second}})}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second\ *=\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{factor}};}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00162\ \ \ \ \ \}}
+\DoxyCodeLine{00163\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_nutrition_plan_8h_source_l00017}{meals}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{class_nutrition_plan_a714a170e48b817e21d7af82dce5869a4}\label{class_nutrition_plan_a714a170e48b817e21d7af82dce5869a4} 
+\index{NutritionPlan@{NutritionPlan}!display@{display}}
+\index{display@{display}!NutritionPlan@{NutritionPlan}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Nutrition\+Plan\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Displays the nutrition plan details to the standard output. 
+
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_8cpp_source_l00137}{137}} of file \mbox{\hyperlink{_nutrition_plan_8cpp_source}{Nutrition\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00138\ \{}
+\DoxyCodeLine{00139\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Nutrition\ Plan:\ "{}}\ <<\ \mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{meal}}\ :\ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}})}
+\DoxyCodeLine{00141\ \ \ \ \ \{}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{meal}}.first\ <<\ \textcolor{stringliteral}{"{}:\(\backslash\)n"{}};}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}\ :\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{meal}}.\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{second}})}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\ \ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.first.name\ <<\ \textcolor{stringliteral}{"{}\ -\/\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second\ <<\ \textcolor{stringliteral}{"{}\ grams\(\backslash\)n"{}};}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00147\ \ \ \ \ \}}
+\DoxyCodeLine{00148\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_nutrition_plan_8h_source_l00017}{meals}}, \mbox{\hyperlink{_nutrition_plan_8h_source_l00016}{name}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{class_nutrition_plan_a3b8f7d12b42f792747a70c9819e52953}\label{class_nutrition_plan_a3b8f7d12b42f792747a70c9819e52953} 
+\index{NutritionPlan@{NutritionPlan}!fromCSV@{fromCSV}}
+\index{fromCSV@{fromCSV}!NutritionPlan@{NutritionPlan}}
+\doxysubsubsection{\texorpdfstring{fromCSV()}{fromCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} Nutrition\+Plan\+::from\+CSV (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::map$<$ std\+::string, \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&}]{items }\end{DoxyParamCaption})}
+
+
+
+Loads the nutrition plan from CSV format from the given input stream. 
+
+Loads the nutrition plan from a CSV format from the given input stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & The input stream to read the CSV data from. \\
+\hline
+{\em items} & A map of available food items to look up by name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the nutrition plan was successfully loaded, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_8cpp_source_l00116}{116}} of file \mbox{\hyperlink{_nutrition_plan_8cpp_source}{Nutrition\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00117\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}};}
+\DoxyCodeLine{00119\ \ \ \ \ \textcolor{keywordflow}{if}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}}))}
+\DoxyCodeLine{00120\ \ \ \ \ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ std::istringstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}});}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}},\ \textcolor{charliteral}{','}))}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealName}}\ :\ \mbox{\hyperlink{_utils_8h_aa54bad96bc93c575daf1d3abcddd58f7}{MEAL\_NAMES}})}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_nutrition_plan_a61a675a8f1deeaf80976738274b07f42}{getNewNutritionPlan}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealName}});}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00130\ \ \ \ \ \}}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00132\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_nutrition_plan_8cpp_source_l00072}{get\+New\+Nutrition\+Plan()}}, \mbox{\hyperlink{_utils_8h_source_l00277}{MEAL\+\_\+\+NAMES}}, \mbox{\hyperlink{_nutrition_plan_8h_source_l00016}{name}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{class_nutrition_plan_a61a675a8f1deeaf80976738274b07f42}\label{class_nutrition_plan_a61a675a8f1deeaf80976738274b07f42} 
+\index{NutritionPlan@{NutritionPlan}!getNewNutritionPlan@{getNewNutritionPlan}}
+\index{getNewNutritionPlan@{getNewNutritionPlan}!NutritionPlan@{NutritionPlan}}
+\doxysubsubsection{\texorpdfstring{getNewNutritionPlan()}{getNewNutritionPlan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Nutrition\+Plan\+::get\+New\+Nutrition\+Plan (\begin{DoxyParamCaption}\item[{std\+::istringstream \&}]{ss,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::map$<$ std\+::string, \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&}]{items,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&}]{meal\+Name }\end{DoxyParamCaption})}
+
+
+
+Gets a new nutrition plan for a specific meal name. 
+
+Reads a new nutrition plan from a CSV string stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ss} & The input string stream containing the CSV data. \\
+\hline
+{\em items} & A map of available food items to look up by name. \\
+\hline
+{\em meal\+Name} & The name of the meal to get the nutrition plan for.\\
+\hline
+{\em ss} & The stringstream to read the CSV data from. \\
+\hline
+{\em items} & A map of available food items to look up by name. \\
+\hline
+{\em meal\+Name} & The name of the meal to read. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_8cpp_source_l00072}{72}} of file \mbox{\hyperlink{_nutrition_plan_8cpp_source}{Nutrition\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00073\ \{}
+\DoxyCodeLine{00074\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{if}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}},\ \textcolor{charliteral}{','}))}
+\DoxyCodeLine{00077\ \ \ \ \ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ std::vector<std::pair<FoodItem,\ float>>\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealItems}};}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ std::stringstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealStream}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemToken}};}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealStream}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemToken}},\ \textcolor{charliteral}{';'}))}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ std::istringstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemStream}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemToken}});}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemName}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{portionStr}};}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemStream}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemName}},\ \textcolor{charliteral}{'='})\ \&\&\ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemStream}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{portionStr}}))}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ portion\ =\ std::stof(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{portionStr}});}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}}.find(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemName}});}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}\ !=\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}}.end())}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealItems}}.emplace\_back(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}-\/>second,\ portion);}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Food\ item\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemName}}\ <<\ \textcolor{stringliteral}{"{}\ not\ found\ in\ the\ provided\ items\ map.\(\backslash\)n"{}};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_food_item}{FoodItem}}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{foodItem}}\ =\ \mbox{\hyperlink{_nutrition_plan_8cpp_ad0d7d33792722ca412fe1552a5f86fb4}{getNewFoodItem}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemName}});}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{getValidInput}}(portion,\ \textcolor{stringliteral}{"{}Enter\ portion\ size\ for\ this\ meal\ in\ grams:\ "{}});}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealItems}}.emplace\_back(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{foodItem}},\ portion);}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a5280f2f8d4eda5275f5555cf42e3204e}{writeToCSV}}(\textcolor{stringliteral}{"{}food\_items.csv"{}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{foodItem}});}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}}[\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealName}}]\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealItems}};}
+\DoxyCodeLine{00107\ \ \ \ \ \}}
+\DoxyCodeLine{00108\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_nutrition_plan_8cpp_source_l00039}{get\+New\+Food\+Item()}}, \mbox{\hyperlink{_utils_8h_source_l00136}{get\+Valid\+Input()}}, \mbox{\hyperlink{_nutrition_plan_8h_source_l00017}{meals}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, and \mbox{\hyperlink{_utils_8h_source_l00021}{write\+To\+CSV()}}.
+
+\Hypertarget{class_nutrition_plan_a0bce62fdc106b4f890494d9bc22c6405}\label{class_nutrition_plan_a0bce62fdc106b4f890494d9bc22c6405} 
+\index{NutritionPlan@{NutritionPlan}!toCSV@{toCSV}}
+\index{toCSV@{toCSV}!NutritionPlan@{NutritionPlan}}
+\doxysubsubsection{\texorpdfstring{toCSV()}{toCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Nutrition\+Plan\+::to\+CSV (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+Converts the nutrition plan to CSV format and writes it to the given output stream. 
+
+Converts the nutrition plan to a CSV format and writes it to the given output stream.
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & The output stream to write the CSV data to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{_nutrition_plan_8cpp_source}{Nutrition\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}}\ <<\ \mbox{\hyperlink{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}{name}}\ <<\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealName}}\ :\ \mbox{\hyperlink{_utils_8h_aa54bad96bc93c575daf1d3abcddd58f7}{MEAL\_NAMES}})}
+\DoxyCodeLine{00015\ \ \ \ \ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}\ =\ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}}.find(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{mealName}});}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}\ !=\ \mbox{\hyperlink{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}{meals}}.end())}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}\ =\ 0;\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}\ <\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}-\/>second.size();\ ++\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}})}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{foodPair}}\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}-\/>second[\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}];}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{foodPair}}.first.name\ <<\ \textcolor{stringliteral}{"{}="{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{foodPair}}.second;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i\ <\ it-\/>}}\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{second}}.size()\ -\/\ 1)}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}}\ <<\ \textcolor{stringliteral}{"{};"{}};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}}\ <<\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00032\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00277}{MEAL\+\_\+\+NAMES}}, \mbox{\hyperlink{_nutrition_plan_8h_source_l00017}{meals}}, \mbox{\hyperlink{_nutrition_plan_8h_source_l00016}{name}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9}\label{class_nutrition_plan_a59aec0ca6a7f180b21cd9d1852569ba9} 
+\index{NutritionPlan@{NutritionPlan}!meals@{meals}}
+\index{meals@{meals}!NutritionPlan@{NutritionPlan}}
+\doxysubsubsection{\texorpdfstring{meals}{meals}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::vector$<$std\+::pair$<$\mbox{\hyperlink{class_food_item}{Food\+Item}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}}$>$ $>$ $>$ Nutrition\+Plan\+::meals}
+
+
+
+Meal name to list of (\doxylink{class_food_item}{Food\+Item}, portion size). 
+
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_8h_source_l00017}{17}} of file \mbox{\hyperlink{_nutrition_plan_8h_source}{Nutrition\+Plan.\+h}}.
+
+\Hypertarget{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10}\label{class_nutrition_plan_a727705650266761c4cd83d5fc4eb5f10} 
+\index{NutritionPlan@{NutritionPlan}!name@{name}}
+\index{name@{name}!NutritionPlan@{NutritionPlan}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Nutrition\+Plan\+::name}
+
+
+
+The name of the nutrition plan. 
+
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_8h_source_l00016}{16}} of file \mbox{\hyperlink{_nutrition_plan_8h_source}{Nutrition\+Plan.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_nutrition_plan_8h}{Nutrition\+Plan.\+h}}\item 
+\mbox{\hyperlink{_nutrition_plan_8cpp}{Nutrition\+Plan.\+cpp}}\end{DoxyCompactItemize}

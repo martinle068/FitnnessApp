@@ -1,0 +1,204 @@
+\doxysection{Nutrition\+Plan\+View Class Reference}
+\hypertarget{class_nutrition_plan_view}{}\label{class_nutrition_plan_view}\index{NutritionPlanView@{NutritionPlanView}}
+
+
+Class representing the view for managing nutrition plans.  
+
+
+
+
+{\ttfamily \#include $<$Nutrition\+Plan\+View.\+h$>$}
+
+
+
+Inheritance diagram for Nutrition\+Plan\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_nutrition_plan_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Nutrition\+Plan\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{class_nutrition_plan_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nutrition_plan_view_ad97438dd8b6997ed0d783bf063293212}{Nutrition\+Plan\+View}} (\mbox{\hyperlink{class_nutrition_plan_view_model}{Nutrition\+Plan\+View\+Model}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}})
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_nutrition_plan_view}{Nutrition\+Plan\+View} with the given \doxylink{class_view_model}{View\+Model}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_nutrition_plan_view_addc95c5d4f887a07a48ae923a94549af}{display}} ()
+\begin{DoxyCompactList}\small\item\em Displays the Nutrition Plan menu and handles user interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_view}{View}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{virtual}} \mbox{\hyperlink{class_view_ad0f3ade04bca4e74b8868e63729bad86}{\texorpdfstring{$\sim$}{\string~}\+View}} ()=\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{default}}
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_view}{View} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{display\+And\+Handle\+Sub\+Menu}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \&menu\+Options, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ask\+For\+Enter\+At\+The\+End}})
+\begin{DoxyCompactList}\small\item\em Displays a submenu and handles user input to navigate the options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_nutrition_plan_view_a1a0d28eda7393e45fc7f98ee60c7d942}{import\+From\+File}} ()
+\begin{DoxyCompactList}\small\item\em Prompts the user for a filename and imports nutrition plans from the specified file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_nutrition_plan_view_model}{Nutrition\+Plan\+View\+Model}} \& \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{view\+Model}}
+\begin{DoxyCompactList}\small\item\em The \doxylink{class_view_model}{View\+Model} used by this view. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \mbox{\hyperlink{class_nutrition_plan_view_a26ca9d59f88829f083363bcbbf809866}{menu\+Options}}
+\begin{DoxyCompactList}\small\item\em Menu options for the Nutrition Plan view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing the view for managing nutrition plans. 
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_view_8h_source_l00010}{10}} of file \mbox{\hyperlink{_nutrition_plan_view_8h_source}{Nutrition\+Plan\+View.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_nutrition_plan_view_ad97438dd8b6997ed0d783bf063293212}\label{class_nutrition_plan_view_ad97438dd8b6997ed0d783bf063293212} 
+\index{NutritionPlanView@{NutritionPlanView}!NutritionPlanView@{NutritionPlanView}}
+\index{NutritionPlanView@{NutritionPlanView}!NutritionPlanView@{NutritionPlanView}}
+\doxysubsubsection{\texorpdfstring{NutritionPlanView()}{NutritionPlanView()}}
+{\footnotesize\ttfamily Nutrition\+Plan\+View\+::\+Nutrition\+Plan\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nutrition_plan_view_model}{Nutrition\+Plan\+View\+Model}} \&}]{vm }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_nutrition_plan_view}{Nutrition\+Plan\+View} with the given \doxylink{class_view_model}{View\+Model}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vm} & The \doxylink{class_view_model}{View\+Model} to be used by this view. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_view_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_nutrition_plan_view_8cpp_source}{Nutrition\+Plan\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}}) }
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_nutrition_plan_view_a26ca9d59f88829f083363bcbbf809866}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}View\ Nutrition\ Plans"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Viewing\ Nutrition\ Plans"{}});\ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_aa4523716820766fca1fd98fe3ab888ad}{view}}();\ \}\},}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Add\ Nutrition\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Adding\ Nutrition\ Plan"{}});\ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_abdeadc9e42618e4d02ac6f900b208b84}{add}}();\ \}\},}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Modify\ Nutrition\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Modifying\ Nutrition\ Plan"{}});\ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_a79233c92a66972487e270d47bff35a0c}{modify}}();\ \}\},}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Delete\ Nutrition\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Deleting\ Nutrition\ Plan"{}});\ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_a35ae8d4bb86cc1d0c49e67077df1be1f}{remove}}();\ \}\},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Import\ from\ file"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_nutrition_plan_view_a1a0d28eda7393e45fc7f98ee60c7d942}{importFromFile}}();\ \}\},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Back"{}},\ [\textcolor{keyword}{this}]()\ \{\ \textcolor{keywordflow}{return};\ \}\}}
+\DoxyCodeLine{00018\ \ \ \ \ \};}
+\DoxyCodeLine{00019\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source_l00427}{Nutrition\+Plan\+View\+Model\+::add()}}, \mbox{\hyperlink{_nutrition_plan_view_8cpp_source_l00033}{import\+From\+File()}}, \mbox{\hyperlink{_nutrition_plan_view_8h_source_l00027}{menu\+Options}}, \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source_l00454}{Nutrition\+Plan\+View\+Model\+::modify()}}, \mbox{\hyperlink{_utils_8h_source_l00372}{print\+Label()}}, \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source_l00478}{Nutrition\+Plan\+View\+Model\+::remove()}}, \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source_l00224}{Nutrition\+Plan\+View\+Model\+::view()}}, and \mbox{\hyperlink{_nutrition_plan_view_8h_source_l00026}{view\+Model}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_nutrition_plan_view_addc95c5d4f887a07a48ae923a94549af}\label{class_nutrition_plan_view_addc95c5d4f887a07a48ae923a94549af} 
+\index{NutritionPlanView@{NutritionPlanView}!display@{display}}
+\index{display@{display}!NutritionPlanView@{NutritionPlanView}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Nutrition\+Plan\+View\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the Nutrition Plan menu and handles user interaction. 
+
+
+
+Implements \mbox{\hyperlink{class_view_a2d83a628b932739742a943ccaa3385d0}{View}}.
+
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_view_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_nutrition_plan_view_8cpp_source}{Nutrition\+Plan\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_a96c29d2910051c0c023cc7c3af473584}{reload}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Nutrition\ Plans"{}},\ \mbox{\hyperlink{class_nutrition_plan_view_a26ca9d59f88829f083363bcbbf809866}{menuOptions}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00028\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_view_8h_source_l00032}{View\+::display\+And\+Handle\+Sub\+Menu()}}, \mbox{\hyperlink{_nutrition_plan_view_8h_source_l00027}{menu\+Options}}, \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source_l00537}{Nutrition\+Plan\+View\+Model\+::reload()}}, and \mbox{\hyperlink{_nutrition_plan_view_8h_source_l00026}{view\+Model}}.
+
+\Hypertarget{class_nutrition_plan_view_a1a0d28eda7393e45fc7f98ee60c7d942}\label{class_nutrition_plan_view_a1a0d28eda7393e45fc7f98ee60c7d942} 
+\index{NutritionPlanView@{NutritionPlanView}!importFromFile@{importFromFile}}
+\index{importFromFile@{importFromFile}!NutritionPlanView@{NutritionPlanView}}
+\doxysubsubsection{\texorpdfstring{importFromFile()}{importFromFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Nutrition\+Plan\+View\+::import\+From\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prompts the user for a filename and imports nutrition plans from the specified file. 
+
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_view_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{_nutrition_plan_view_8cpp_source}{Nutrition\+Plan\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ filename;}
+\DoxyCodeLine{00036\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ the\ filename\ to\ import\ nutrition\ plans\ from:\ "{}};}
+\DoxyCodeLine{00037\ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ filename);}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}{viewModel}}.\mbox{\hyperlink{class_nutrition_plan_view_model_a351fc894d640b420f763f49c93ac50e4}{importFromFile}}(filename);}
+\DoxyCodeLine{00039\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Nutrition\ plans\ imported\ from\ file:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{00040\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_nutrition_plan_view_model_8cpp_source_l00501}{Nutrition\+Plan\+View\+Model\+::import\+From\+File()}}, and \mbox{\hyperlink{_nutrition_plan_view_8h_source_l00026}{view\+Model}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_nutrition_plan_view_a26ca9d59f88829f083363bcbbf809866}\label{class_nutrition_plan_view_a26ca9d59f88829f083363bcbbf809866} 
+\index{NutritionPlanView@{NutritionPlanView}!menuOptions@{menuOptions}}
+\index{menuOptions@{menuOptions}!NutritionPlanView@{NutritionPlanView}}
+\doxysubsubsection{\texorpdfstring{menuOptions}{menuOptions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}}$>$ Nutrition\+Plan\+View\+::menu\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Menu options for the Nutrition Plan view. 
+
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_view_8h_source_l00027}{27}} of file \mbox{\hyperlink{_nutrition_plan_view_8h_source}{Nutrition\+Plan\+View.\+h}}.
+
+\Hypertarget{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb}\label{class_nutrition_plan_view_abf40997e97dc4d2606d4fe99d85a5dfb} 
+\index{NutritionPlanView@{NutritionPlanView}!viewModel@{viewModel}}
+\index{viewModel@{viewModel}!NutritionPlanView@{NutritionPlanView}}
+\doxysubsubsection{\texorpdfstring{viewModel}{viewModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nutrition_plan_view_model}{Nutrition\+Plan\+View\+Model}}\& Nutrition\+Plan\+View\+::view\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The \doxylink{class_view_model}{View\+Model} used by this view. 
+
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_view_8h_source_l00026}{26}} of file \mbox{\hyperlink{_nutrition_plan_view_8h_source}{Nutrition\+Plan\+View.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_nutrition_plan_view_8h}{Nutrition\+Plan\+View.\+h}}\item 
+\mbox{\hyperlink{_nutrition_plan_view_8cpp}{Nutrition\+Plan\+View.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,204 @@
+\doxysection{Workout\+Plan\+View Class Reference}
+\hypertarget{class_workout_plan_view}{}\label{class_workout_plan_view}\index{WorkoutPlanView@{WorkoutPlanView}}
+
+
+The \doxylink{class_workout_plan_view}{Workout\+Plan\+View} class represents the view for managing workout plans. It provides a user interface for viewing, adding, modifying, and deleting workout plans.  
+
+
+
+
+{\ttfamily \#include $<$Workout\+Plan\+View.\+h$>$}
+
+
+
+Inheritance diagram for Workout\+Plan\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{class_workout_plan_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Workout\+Plan\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{class_workout_plan_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_workout_plan_view_a99080e469744b45538b65eca6fef6900}{Workout\+Plan\+View}} (\mbox{\hyperlink{class_workout_plan_view_model}{Workout\+Plan\+View\+Model}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_workout_plan_view}{Workout\+Plan\+View} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_workout_plan_view_a925e9d7b90e458a4f5b051bae12188b2}{display}} ()
+\begin{DoxyCompactList}\small\item\em Displays the workout plan view menu and handles user interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_view}{View}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{virtual}} \mbox{\hyperlink{class_view_ad0f3ade04bca4e74b8868e63729bad86}{\texorpdfstring{$\sim$}{\string~}\+View}} ()=\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{default}}
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_view}{View} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{display\+And\+Handle\+Sub\+Menu}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \&menu\+Options, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ask\+For\+Enter\+At\+The\+End}})
+\begin{DoxyCompactList}\small\item\em Displays a submenu and handles user input to navigate the options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_workout_plan_view_a95ad38d7400224cb87089eef66def180}{import\+From\+File}} ()
+\begin{DoxyCompactList}\small\item\em Prompts the user to enter a filename and imports workout plans from the specified file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_workout_plan_view_model}{Workout\+Plan\+View\+Model}} \& \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{view\+Model}}
+\begin{DoxyCompactList}\small\item\em Reference to the view model for workout plans. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \mbox{\hyperlink{class_workout_plan_view_ab8996deb119d4418831ac710729c3cf2}{menu\+Options}}
+\begin{DoxyCompactList}\small\item\em List of menu options for user interaction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_workout_plan_view}{Workout\+Plan\+View} class represents the view for managing workout plans. It provides a user interface for viewing, adding, modifying, and deleting workout plans. 
+
+Definition at line \mbox{\hyperlink{_workout_plan_view_8h_source_l00011}{11}} of file \mbox{\hyperlink{_workout_plan_view_8h_source}{Workout\+Plan\+View.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_workout_plan_view_a99080e469744b45538b65eca6fef6900}\label{class_workout_plan_view_a99080e469744b45538b65eca6fef6900} 
+\index{WorkoutPlanView@{WorkoutPlanView}!WorkoutPlanView@{WorkoutPlanView}}
+\index{WorkoutPlanView@{WorkoutPlanView}!WorkoutPlanView@{WorkoutPlanView}}
+\doxysubsubsection{\texorpdfstring{WorkoutPlanView()}{WorkoutPlanView()}}
+{\footnotesize\ttfamily Workout\+Plan\+View\+::\+Workout\+Plan\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_workout_plan_view_model}{Workout\+Plan\+View\+Model}} \&}]{vm }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_workout_plan_view}{Workout\+Plan\+View} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vm} & The \doxylink{class_workout_plan_view_model}{Workout\+Plan\+View\+Model} to be used by this view. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_view_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{_workout_plan_view_8cpp_source}{Workout\+Plan\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}}) }
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{class_workout_plan_view_ab8996deb119d4418831ac710729c3cf2}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}View\ Workout\ Plans"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Viewing\ Workout\ Plans"{}});\ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_a174d20882b287d34d69d73d3498afa48}{view}}();\ \}\},}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Add\ Workout\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Adding\ Workout\ Plan"{}});\ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_aa1c870da9793eceaa1b28560f9a8bdd5}{add}}();\ \}\},}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Modify\ Workout\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Modifying\ Workout\ Plan"{}});\ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_a8beff42855b5a28e944218839c76db52}{modify}}();\ \}\},}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Delete\ Workout\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Deleting\ Workout\ Plan"{}});\ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_ac0efc332d0ecdaa25876fd7a785a529e}{remove}}();\ \}\},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Import\ Workout\ Plan\ from\ File"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_workout_plan_view_a95ad38d7400224cb87089eef66def180}{importFromFile}}();\ \}\},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Back"{}},\ [\textcolor{keyword}{this}]()\ \{\ \textcolor{keywordflow}{return};\ \}\}}
+\DoxyCodeLine{00018\ \ \ \ \ \};}
+\DoxyCodeLine{00019\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_workout_plan_view_model_8cpp_source_l00430}{Workout\+Plan\+View\+Model\+::add()}}, \mbox{\hyperlink{_workout_plan_view_8cpp_source_l00033}{import\+From\+File()}}, \mbox{\hyperlink{_workout_plan_view_8h_source_l00027}{menu\+Options}}, \mbox{\hyperlink{_workout_plan_view_model_8cpp_source_l00480}{Workout\+Plan\+View\+Model\+::modify()}}, \mbox{\hyperlink{_utils_8h_source_l00372}{print\+Label()}}, \mbox{\hyperlink{_workout_plan_view_model_8cpp_source_l00571}{Workout\+Plan\+View\+Model\+::remove()}}, \mbox{\hyperlink{_workout_plan_view_model_8cpp_source_l00035}{Workout\+Plan\+View\+Model\+::view()}}, and \mbox{\hyperlink{_workout_plan_view_8h_source_l00026}{view\+Model}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_workout_plan_view_a925e9d7b90e458a4f5b051bae12188b2}\label{class_workout_plan_view_a925e9d7b90e458a4f5b051bae12188b2} 
+\index{WorkoutPlanView@{WorkoutPlanView}!display@{display}}
+\index{display@{display}!WorkoutPlanView@{WorkoutPlanView}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Workout\+Plan\+View\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the workout plan view menu and handles user interaction. 
+
+
+
+Implements \mbox{\hyperlink{class_view_a2d83a628b932739742a943ccaa3385d0}{View}}.
+
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_view_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_workout_plan_view_8cpp_source}{Workout\+Plan\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_a07bdf96f818ea0a0f58269281e13d539}{reload}}();}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Workout\ Plans"{}},\ \mbox{\hyperlink{class_workout_plan_view_ab8996deb119d4418831ac710729c3cf2}{menuOptions}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00028\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_view_8h_source_l00032}{View\+::display\+And\+Handle\+Sub\+Menu()}}, \mbox{\hyperlink{_workout_plan_view_8h_source_l00027}{menu\+Options}}, \mbox{\hyperlink{_workout_plan_view_model_8cpp_source_l00667}{Workout\+Plan\+View\+Model\+::reload()}}, and \mbox{\hyperlink{_workout_plan_view_8h_source_l00026}{view\+Model}}.
+
+\Hypertarget{class_workout_plan_view_a95ad38d7400224cb87089eef66def180}\label{class_workout_plan_view_a95ad38d7400224cb87089eef66def180} 
+\index{WorkoutPlanView@{WorkoutPlanView}!importFromFile@{importFromFile}}
+\index{importFromFile@{importFromFile}!WorkoutPlanView@{WorkoutPlanView}}
+\doxysubsubsection{\texorpdfstring{importFromFile()}{importFromFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Workout\+Plan\+View\+::import\+From\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Prompts the user to enter a filename and imports workout plans from the specified file. 
+
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_view_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{_workout_plan_view_8cpp_source}{Workout\+Plan\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ filename;}
+\DoxyCodeLine{00036\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ the\ filename\ to\ import\ workout\ plans\ from:\ "{}};}
+\DoxyCodeLine{00037\ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ filename);}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_a0239603dfe6e09085cf2a28e83409cfc}{importFromFile}}(filename);}
+\DoxyCodeLine{00039\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Workout\ plans\ imported\ from\ file:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{00040\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_workout_plan_view_model_8cpp_source_l00611}{Workout\+Plan\+View\+Model\+::import\+From\+File()}}, and \mbox{\hyperlink{_workout_plan_view_8h_source_l00026}{view\+Model}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_workout_plan_view_ab8996deb119d4418831ac710729c3cf2}\label{class_workout_plan_view_ab8996deb119d4418831ac710729c3cf2} 
+\index{WorkoutPlanView@{WorkoutPlanView}!menuOptions@{menuOptions}}
+\index{menuOptions@{menuOptions}!WorkoutPlanView@{WorkoutPlanView}}
+\doxysubsubsection{\texorpdfstring{menuOptions}{menuOptions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}}$>$ Workout\+Plan\+View\+::menu\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of menu options for user interaction. 
+
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_view_8h_source_l00027}{27}} of file \mbox{\hyperlink{_workout_plan_view_8h_source}{Workout\+Plan\+View.\+h}}.
+
+\Hypertarget{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}\label{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a} 
+\index{WorkoutPlanView@{WorkoutPlanView}!viewModel@{viewModel}}
+\index{viewModel@{viewModel}!WorkoutPlanView@{WorkoutPlanView}}
+\doxysubsubsection{\texorpdfstring{viewModel}{viewModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_workout_plan_view_model}{Workout\+Plan\+View\+Model}}\& Workout\+Plan\+View\+::view\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the view model for workout plans. 
+
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_view_8h_source_l00026}{26}} of file \mbox{\hyperlink{_workout_plan_view_8h_source}{Workout\+Plan\+View.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_workout_plan_view_8h}{Workout\+Plan\+View.\+h}}\item 
+\mbox{\hyperlink{_workout_plan_view_8cpp}{Workout\+Plan\+View.\+cpp}}\end{DoxyCompactItemize}

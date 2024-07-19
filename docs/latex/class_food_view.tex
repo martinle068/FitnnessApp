@@ -1,0 +1,217 @@
+\doxysection{Food\+View Class Reference}
+\hypertarget{class_food_view}{}\label{class_food_view}\index{FoodView@{FoodView}}
+
+
+Handles the user interface for displaying and managing food items.  
+
+
+
+
+{\ttfamily \#include $<$Food\+View.\+h$>$}
+
+
+
+Inheritance diagram for Food\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{class_food_view__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Food\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_food_view__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_view_a198cf59697bbf6934ff1985dbf636ff9}{Food\+View}} (\mbox{\hyperlink{class_food_view_model}{Food\+View\+Model}} \&\mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{view\+Model}})
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_food_view}{Food\+View} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_food_view_a03a62f43536e2fb31cbdfb2d496f0c6f}{display}} ()
+\begin{DoxyCompactList}\small\item\em Displays the food items menu and handles user interactions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_view}{View}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{virtual}} \mbox{\hyperlink{class_view_ad0f3ade04bca4e74b8868e63729bad86}{\texorpdfstring{$\sim$}{\string~}\+View}} ()=\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{default}}
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{class_view}{View} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{display\+And\+Handle\+Sub\+Menu}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \&menu\+Options, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ask\+For\+Enter\+At\+The\+End}})
+\begin{DoxyCompactList}\small\item\em Displays a submenu and handles user input to navigate the options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_food_view_a9bd9a48639f236da42f556a98bfb69b0}{import\+From\+File}} ()
+\begin{DoxyCompactList}\small\item\em Imports food items from a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_view_model}{Food\+View\+Model}} \& \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{view\+Model}}
+\begin{DoxyCompactList}\small\item\em Reference to the \doxylink{class_food_view_model}{Food\+View\+Model} object. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \mbox{\hyperlink{class_food_view_a734d9dc004a4b31eca4c17e83c72309c}{menu\+Options}}
+\begin{DoxyCompactList}\small\item\em List of menu options for the food view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles the user interface for displaying and managing food items. 
+
+This class provides methods to display the food items menu and handle user interactions. 
+
+Definition at line \mbox{\hyperlink{_food_view_8h_source_l00015}{15}} of file \mbox{\hyperlink{_food_view_8h_source}{Food\+View.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_food_view_a198cf59697bbf6934ff1985dbf636ff9}\label{class_food_view_a198cf59697bbf6934ff1985dbf636ff9} 
+\index{FoodView@{FoodView}!FoodView@{FoodView}}
+\index{FoodView@{FoodView}!FoodView@{FoodView}}
+\doxysubsubsection{\texorpdfstring{FoodView()}{FoodView()}}
+{\footnotesize\ttfamily Food\+View\+::\+Food\+View (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_food_view_model}{Food\+View\+Model}} \&}]{vm }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_food_view}{Food\+View} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Model} & A reference to the \doxylink{class_food_view_model}{Food\+View\+Model} object.\\
+\hline
+\end{DoxyParams}
+Initializes the menu options for food-\/related actions.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vm} & A reference to the \doxylink{class_food_view_model}{Food\+View\+Model} object. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_food_view_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{_food_view_8cpp_source}{Food\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}}) }
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_food_view_a734d9dc004a4b31eca4c17e83c72309c}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}View\ Food\ Items"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Viewing\ Food\ Items"{}});\ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_aaac3e264ceecc385902046738d00a2cb}{view}}();\ \}\},}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Add\ Food\ Item"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Adding\ a\ Food\ Item"{}});\ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_aca65c993b1d928f337cfc5c5e51c84b1}{add}}();\ \}\},}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Modify\ Food\ Item"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Modifying\ Food\ Item"{}});\ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_a666770a1b3df97ba8176ed504eb08369}{modify}}();\ \}\},}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Delete\ Food\ Item"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Deleting\ Food\ Item"{}});\ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_af27a71d40dbb0263cd7a5d33b91eb291}{remove}}();\ \}\},}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Import\ from\ file"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_food_view_a9bd9a48639f236da42f556a98bfb69b0}{importFromFile}}();\ \}\},}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Back"{}},\ [\textcolor{keyword}{this}]()\ \{\ \textcolor{keywordflow}{return};\ \}\}}
+\DoxyCodeLine{00019\ \ \ \ \ \};}
+\DoxyCodeLine{00020\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_food_view_model_8cpp_source_l00144}{Food\+View\+Model\+::add()}}, \mbox{\hyperlink{_food_view_8cpp_source_l00038}{import\+From\+File()}}, \mbox{\hyperlink{_food_view_8h_source_l00032}{menu\+Options}}, \mbox{\hyperlink{_food_view_model_8cpp_source_l00243}{Food\+View\+Model\+::modify()}}, \mbox{\hyperlink{_utils_8h_source_l00372}{print\+Label()}}, \mbox{\hyperlink{_food_view_model_8cpp_source_l00385}{Food\+View\+Model\+::remove()}}, \mbox{\hyperlink{_food_view_model_8cpp_source_l00118}{Food\+View\+Model\+::view()}}, and \mbox{\hyperlink{_food_view_8h_source_l00031}{view\+Model}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_food_view_a03a62f43536e2fb31cbdfb2d496f0c6f}\label{class_food_view_a03a62f43536e2fb31cbdfb2d496f0c6f} 
+\index{FoodView@{FoodView}!display@{display}}
+\index{display@{display}!FoodView@{FoodView}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Food\+View\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the food items menu and handles user interactions. 
+
+Reloads the food items from the view model and displays the menu options. 
+
+Implements \mbox{\hyperlink{class_view_a2d83a628b932739742a943ccaa3385d0}{View}}.
+
+
+
+Definition at line \mbox{\hyperlink{_food_view_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{_food_view_8cpp_source}{Food\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_ac347ec0a002249238c9deac9cb32cdc3}{reload}}();}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Food"{}},\ \mbox{\hyperlink{class_food_view_a734d9dc004a4b31eca4c17e83c72309c}{menuOptions}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00031\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_view_8h_source_l00032}{View\+::display\+And\+Handle\+Sub\+Menu()}}, \mbox{\hyperlink{_food_view_8h_source_l00032}{menu\+Options}}, \mbox{\hyperlink{_food_view_model_8cpp_source_l00478}{Food\+View\+Model\+::reload()}}, and \mbox{\hyperlink{_food_view_8h_source_l00031}{view\+Model}}.
+
+\Hypertarget{class_food_view_a9bd9a48639f236da42f556a98bfb69b0}\label{class_food_view_a9bd9a48639f236da42f556a98bfb69b0} 
+\index{FoodView@{FoodView}!importFromFile@{importFromFile}}
+\index{importFromFile@{importFromFile}!FoodView@{FoodView}}
+\doxysubsubsection{\texorpdfstring{importFromFile()}{importFromFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Food\+View\+::import\+From\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Imports food items from a file. 
+
+Imports food items from a specified file.
+
+This method is used to import food items from a specified file.
+
+Prompts the user to enter a filename and imports food items from that file. 
+
+Definition at line \mbox{\hyperlink{_food_view_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{_food_view_8cpp_source}{Food\+View.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00039\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ std::string\ filename;}
+\DoxyCodeLine{00041\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ the\ filename\ to\ import\ food\ items\ from:\ "{}};}
+\DoxyCodeLine{00042\ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ filename);}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_food_view_aff5e153dc3cf491961cca95ae63952cc}{viewModel}}.\mbox{\hyperlink{class_food_view_model_a83b06170f7b4814b66b8e1424c03e161}{importFromFile}}(filename);}
+\DoxyCodeLine{00044\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Food\ items\ imported\ from\ file:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{00045\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_food_view_model_8cpp_source_l00423}{Food\+View\+Model\+::import\+From\+File()}}, and \mbox{\hyperlink{_food_view_8h_source_l00031}{view\+Model}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_food_view_a734d9dc004a4b31eca4c17e83c72309c}\label{class_food_view_a734d9dc004a4b31eca4c17e83c72309c} 
+\index{FoodView@{FoodView}!menuOptions@{menuOptions}}
+\index{menuOptions@{menuOptions}!FoodView@{FoodView}}
+\doxysubsubsection{\texorpdfstring{menuOptions}{menuOptions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}}$>$ Food\+View\+::menu\+Options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+List of menu options for the food view. 
+
+
+
+Definition at line \mbox{\hyperlink{_food_view_8h_source_l00032}{32}} of file \mbox{\hyperlink{_food_view_8h_source}{Food\+View.\+h}}.
+
+\Hypertarget{class_food_view_aff5e153dc3cf491961cca95ae63952cc}\label{class_food_view_aff5e153dc3cf491961cca95ae63952cc} 
+\index{FoodView@{FoodView}!viewModel@{viewModel}}
+\index{viewModel@{viewModel}!FoodView@{FoodView}}
+\doxysubsubsection{\texorpdfstring{viewModel}{viewModel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_food_view_model}{Food\+View\+Model}}\& Food\+View\+::view\+Model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the \doxylink{class_food_view_model}{Food\+View\+Model} object. 
+
+
+
+Definition at line \mbox{\hyperlink{_food_view_8h_source_l00031}{31}} of file \mbox{\hyperlink{_food_view_8h_source}{Food\+View.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_food_view_8h}{Food\+View.\+h}}\item 
+\mbox{\hyperlink{_food_view_8cpp}{Food\+View.\+cpp}}\end{DoxyCompactItemize}

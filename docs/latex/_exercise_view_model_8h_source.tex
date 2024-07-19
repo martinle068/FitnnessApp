@@ -1,0 +1,61 @@
+\doxysection{Exercise\+View\+Model.\+h}
+\hypertarget{_exercise_view_model_8h_source}{}\label{_exercise_view_model_8h_source}\mbox{\hyperlink{_exercise_view_model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ EXERCISE\_VIEW\_MODEL\_H}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ EXERCISE\_VIEW\_MODEL\_H}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_exercise_8h}{Exercise.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_view_model_8h}{ViewModel.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00013}\mbox{\hyperlink{class_exercise_view_model}{00013}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_exercise_view_model}{ExerciseViewModel}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_view_model}{ViewModel}}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00015}00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{class_exercise_view_model_ac0ff3f4d9cb234f32b90ff849415cf0c}{ExerciseViewModel}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}});}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_ad5a129b99e0b7141be97c472cc5ab747}{view}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_aa58b10331e1509c47cdf8f05e97b980d}{add}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00036}00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_adc3061dd89508f09dfcf5e04173801ab}{modify}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00041}00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_a26f5244c57c4469cfc5165d44d5b9725}{remove}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_a9952d334b11b426e2f5cea14436b3d60}{importFromFile}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{class_exercise_view_model_abbfe57b5cef070c81141a3f516c44f4d}{filename}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00053}00053\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_acc21073369e6c107edc594a54263beef}{reload}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00055}00055\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00056}\mbox{\hyperlink{class_exercise_view_model_abbfe57b5cef070c81141a3f516c44f4d}{00056}}\ \ \ \ \ std::string\ \mbox{\hyperlink{class_exercise_view_model_abbfe57b5cef070c81141a3f516c44f4d}{filename}};\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00057}\mbox{\hyperlink{class_exercise_view_model_a438c9f2f429f6bf090ab0874dbb83b61}{00057}}\ \ \ \ \ std::map<std::string,\ Exercise>\ \mbox{\hyperlink{class_exercise_view_model_a438c9f2f429f6bf090ab0874dbb83b61}{exerciseMap}};\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_a318a8f71d47209b4585744e1f6685b23}{displayAllExercises}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00067}00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_ac787b7c2ee097d6a7b3dc7c3bae4da6e}{displayMuscleGroupOptions}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00074}00074\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_aec5dee52af719d2e9be9940f04428622}{displayExercisesByMuscleGroup}}(\textcolor{keyword}{const}\ std::string\&\ muscleGroup)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00081}00081\ \ \ \ \ std::string\ \mbox{\hyperlink{class_exercise_view_model_a38c7ed5e4efc62c55dc3a3b0b0d1db55}{getMuscleGroupSelection}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00090}00090\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_exercise_view_model_ada8cd998cc4f18639391bb5a03017314}{confirmDeletion}}(\textcolor{keyword}{const}\ std::string\&\ name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00097}00097\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_a52a74f9fc016b24675a1959d13d3a1d9}{overwriteExercise}}(\textcolor{keyword}{const}\ std::pair<std::string,\ Exercise>\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}});}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00104}00104\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_a1c84d0dccb67ca151d5dd0898dd1584e}{handleExerciseModification}}(\mbox{\hyperlink{class_exercise}{Exercise}}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercise}});}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00111}00111\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_ae59980e24ec301a3c0542fa86bf02cce}{handleExerciseDeletion}}(std::map<std::string,\ Exercise>\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{filteredExercises}});}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00118}00118\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_a0a173952a901a377e914722cc88ce7b4}{handleMuscleGroupSelection}}(std::map<std::string,\ Exercise>\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{filteredExercises}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00119}00119\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00125}00125\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_aa869cddd5e2bddfad17126b04988bb70}{printExercise}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_exercise}{Exercise}}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercise}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00133}00133\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_ac24647684df9e874bbafa327da166f58}{printExerciseDetails}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prefix}},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_exercise}{Exercise}}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{exercise}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00140}00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_model_a6f637a9564e8183e9f9851882ff32d40}{printMuscleGroupSelection}}(\textcolor{keyword}{const}\ std::vector<std::string>\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{muscleGroups}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00141}00141\ \};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00142}00142\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_model_8h_source_l00143}00143\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ EXERCISE\_VIEW\_MODEL\_H}}
+
+\end{DoxyCode}

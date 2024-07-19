@@ -1,0 +1,51 @@
+<map id="FitnessApp" name="FitnessApp">
+<area shape="rect" id="Node000001" title="The main application class that initializes and runs the fitness application." alt="" coords="969,249,1057,276"/>
+<area shape="rect" id="Node000002" href="$class_exercise_view_model.html" title="ViewModel class for managing and displaying exercises." alt="" coords="188,195,323,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="329,184,333,181,341,169,344,156,347,142,358,130,412,122,531,119,607,121,689,128,775,140,862,159,907,173,947,198,977,223,1001,247,998,251,974,227,944,202,904,178,861,164,775,146,689,134,606,127,531,124,412,127,360,134,351,144,349,157,346,171,337,184,332,188"/>
+<area shape="rect" id="Node000008" href="$class_exercise_view.html" title="Handles the user interface for displaying and managing exercises." alt="" coords="458,413,558,440"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="285,230,493,411,489,415,282,234"/>
+<area shape="rect" id="Node000003" href="$class_view_model.html" title="Abstract base class for ViewModel, providing a common interface for managing items." alt="" coords="5,120,90,147"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="98,150,177,180,210,192,209,197,175,185,96,155"/>
+<area shape="rect" id="Node000004" href="$class_food_view_model.html" title="ViewModel class for handling food items." alt="" coords="199,43,312,69"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="91,111,113,102,208,67,210,72,115,106,93,116"/>
+<area shape="rect" id="Node000007" href="$class_workout_plan_view_model.html" title=" " alt="" coords="176,144,335,171"/>
+<area shape="poly" id="edge9_Node000007_Node000003" title=" " alt="" coords="105,137,176,145,175,151,105,143"/>
+<area shape="rect" id="Node000013" href="$class_nutrition_plan_view_model.html" title="ViewModel class for managing and manipulating nutrition plans." alt="" coords="176,93,334,120"/>
+<area shape="poly" id="edge24_Node000013_Node000003" title=" " alt="" coords="105,123,175,114,176,119,105,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="327,40,433,27,567,19,641,19,716,23,790,33,862,49,909,62,927,71,947,89,976,129,995,174,1007,217,1013,248,1007,249,1001,218,990,176,971,132,943,92,924,76,907,67,861,55,789,39,715,29,641,24,568,24,433,32,328,46"/>
+<area shape="rect" id="Node000010" href="$class_food_view.html" title="Handles the user interface for displaying and managing food items." alt="" coords="469,159,547,185"/>
+<area shape="poly" id="edge15_Node000010_Node000004" title=" " alt="" coords="319,72,336,79,419,119,485,156,482,160,417,124,334,84,317,77"/>
+<area shape="rect" id="Node000005" href="$class_profile.html" title="The Profile class represents a user&#39;s profile with personal information and activity level." alt="" coords="19,619,76,645"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="91,650,166,678,210,688,254,692,811,692,843,688,872,677,898,660,920,638,939,611,955,581,979,513,995,441,1004,373,1009,276,1014,277,1009,373,1000,442,985,514,960,583,943,614,924,641,901,664,875,682,845,693,811,697,254,697,209,693,164,683,89,655"/>
+<area shape="rect" id="Node000006" href="$class_goals.html" title="The Goals class represents a user&#39;s fitness goals and calculates daily caloric needs based on the pro..." alt="" coords="228,619,283,645"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="92,629,227,629,227,635,92,635"/>
+<area shape="rect" id="Node000011" href="$class_profile_view.html" title="The ProfileView class is responsible for managing the profile and goals settings. It inherits from th..." alt="" coords="466,548,551,575"/>
+<area shape="poly" id="edge18_Node000011_Node000005" title=" " alt="" coords="90,614,113,608,211,589,309,576,465,561,465,567,310,581,212,595,114,613,91,620"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="299,634,404,641,472,642,548,638,627,629,708,614,786,590,860,556,908,526,925,508,943,483,971,426,990,367,1002,314,1008,276,1013,277,1007,315,995,368,976,428,948,485,929,512,911,530,863,561,788,595,709,619,628,635,548,644,472,647,403,647,298,640"/>
+<area shape="poly" id="edge19_Node000011_Node000006" title=" " alt="" coords="298,622,357,610,421,593,475,573,477,578,423,599,358,616,299,628"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="323,135,333,130,345,118,358,107,411,87,458,75,501,70,542,71,627,84,734,100,797,106,848,113,895,130,947,165,968,185,985,207,1008,248,1003,250,980,210,964,188,944,169,892,135,846,119,797,112,733,105,626,89,541,77,501,76,459,80,413,92,360,112,349,122,337,134,326,140"/>
+<area shape="rect" id="Node000012" href="$class_workout_plan_view.html" title="The WorkoutPlanView class represents the view for managing workout plans. It provides a user interfac..." alt="" coords="446,319,570,345"/>
+<area shape="poly" id="edge22_Node000012_Node000007" title=" " alt="" coords="327,175,337,181,350,193,361,206,432,269,491,316,487,320,428,273,357,210,346,196,333,185,324,180"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="574,433,636,439,708,439,786,432,860,413,906,393,943,361,979,316,1003,275,1007,278,983,319,947,365,909,398,862,419,787,437,709,444,635,444,573,439"/>
+<area shape="rect" id="Node000015" href="$class_main_view.html" title="The MainView class provides the main interface for the application." alt="" coords="771,361,848,388"/>
+<area shape="poly" id="edge30_Node000015_Node000008" title=" " alt="" coords="574,423,650,417,733,403,779,386,780,391,734,408,651,422,574,428"/>
+<area shape="rect" id="Node000009" href="$class_view.html" title="Abstract base class for all views in the application." alt="" coords="231,380,280,407"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="296,400,359,412,458,422,457,427,359,417,295,405"/>
+<area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="262,364,276,329,295,287,322,245,357,210,384,194,413,183,468,172,469,177,414,188,386,199,361,214,327,249,300,290,280,331,267,366"/>
+<area shape="poly" id="edge17_Node000011_Node000009" title=" " alt="" coords="276,418,312,464,335,487,360,507,414,534,466,550,465,555,412,539,358,512,331,491,308,467,272,421"/>
+<area shape="poly" id="edge21_Node000012_Node000009" title=" " alt="" coords="295,381,449,343,450,349,296,386"/>
+<area shape="rect" id="Node000014" href="$class_nutrition_plan_view.html" title="Class representing the view for managing nutrition plans." alt="" coords="446,237,570,264"/>
+<area shape="poly" id="edge26_Node000014_Node000009" title=" " alt="" coords="274,366,310,327,358,290,401,270,445,258,447,263,403,275,360,294,314,331,278,370"/>
+<area shape="poly" id="edge29_Node000015_Node000009" title=" " alt="" coords="296,407,365,431,446,449,528,460,593,463,656,454,732,428,766,409,793,386,796,390,769,413,734,433,657,459,593,469,528,465,446,455,364,436,294,412"/>
+<area shape="poly" id="edge13_Node000001_Node000010" title=" " alt="" coords="563,168,640,170,737,177,843,194,896,207,946,224,991,246,988,251,944,229,894,212,842,199,736,182,640,175,563,173"/>
+<area shape="poly" id="edge31_Node000015_Node000010" title=" " alt="" coords="549,191,636,242,735,309,795,359,791,363,732,313,633,247,547,196"/>
+<area shape="poly" id="edge16_Node000001_Node000011" title=" " alt="" coords="566,567,647,571,690,567,733,557,801,532,851,504,895,466,943,410,967,375,985,338,1006,276,1011,277,990,340,971,378,947,414,899,470,855,508,803,537,734,563,691,572,647,576,566,573"/>
+<area shape="poly" id="edge32_Node000015_Node000011" title=" " alt="" coords="566,559,662,552,704,544,732,531,745,512,748,492,748,469,755,443,774,412,793,387,798,390,778,415,760,445,753,470,753,493,750,514,735,535,706,549,663,557,567,564"/>
+<area shape="poly" id="edge20_Node000001_Node000012" title=" " alt="" coords="534,306,566,279,594,261,646,258,749,258,969,259,969,265,749,263,646,264,595,267,569,283,537,310"/>
+<area shape="poly" id="edge33_Node000015_Node000012" title=" " alt="" coords="545,351,595,371,641,378,689,381,770,377,770,382,689,386,641,383,594,376,543,356"/>
+<area shape="poly" id="edge23_Node000001_Node000013" title=" " alt="" coords="324,86,358,77,402,65,446,56,594,55,733,57,798,64,850,72,897,90,947,127,972,157,990,191,1011,248,1006,250,985,193,967,160,943,131,894,94,848,77,797,70,733,63,594,60,446,61,403,70,360,83,325,91"/>
+<area shape="poly" id="edge27_Node000014_Node000013" title=" " alt="" coords="322,123,336,130,411,178,490,235,487,239,408,182,334,134,320,128"/>
+<area shape="poly" id="edge25_Node000001_Node000014" title=" " alt="" coords="575,231,594,228,700,223,805,228,898,239,969,251,968,257,897,245,804,234,700,228,595,233,576,236"/>
+<area shape="poly" id="edge34_Node000015_Node000014" title=" " alt="" coords="537,272,596,324,632,339,662,345,694,348,734,355,771,363,769,368,733,360,693,353,661,350,630,344,593,329,534,276"/>
+<area shape="poly" id="edge28_Node000001_Node000015" title=" " alt="" coords="862,361,903,347,944,327,976,301,999,275,1003,278,979,305,947,332,905,352,864,366"/>
+</map>

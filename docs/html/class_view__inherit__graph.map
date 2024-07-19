@@ -1,0 +1,15 @@
+<map id="View" name="View">
+<area shape="rect" id="Node000001" title="Abstract base class for all views in the application." alt="" coords="307,5,356,32"/>
+<area shape="rect" id="Node000002" href="$class_exercise_view.html" title="Handles the user interface for displaying and managing exercises." alt="" coords="5,80,106,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,33,104,82,103,77,291,28"/>
+<area shape="rect" id="Node000003" href="$class_food_view.html" title="Handles the user interface for displaying and managing food items." alt="" coords="130,80,208,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="294,40,198,82,196,77,291,35"/>
+<area shape="rect" id="Node000004" href="$class_main_view.html" title="The MainView class provides the main interface for the application." alt="" coords="232,80,309,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="313,46,283,81,279,78,309,42"/>
+<area shape="rect" id="Node000005" href="$class_nutrition_plan_view.html" title="Class representing the view for managing nutrition plans." alt="" coords="332,80,456,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="354,42,385,78,381,81,350,46"/>
+<area shape="rect" id="Node000006" href="$class_profile_view.html" title="The ProfileView class is responsible for managing the profile and goals settings. It inherits from th..." alt="" coords="480,80,565,107"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="372,32,490,77,488,82,370,37"/>
+<area shape="rect" id="Node000007" href="$class_workout_plan_view.html" title="The WorkoutPlanView class represents the view for managing workout plans. It provides a user interfac..." alt="" coords="589,80,714,107"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="372,26,596,77,595,82,371,32"/>
+</map>

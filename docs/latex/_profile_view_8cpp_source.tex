@@ -1,0 +1,252 @@
+\doxysection{Profile\+View.\+cpp}
+\hypertarget{_profile_view_8cpp_source}{}\label{_profile_view_8cpp_source}\mbox{\hyperlink{_profile_view_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_profile_view_8h}{ProfileView.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_utils_8h}{Utils.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00011}\mbox{\hyperlink{_profile_view_8cpp_a12f7a1c28b48737e64b541c3e2859702}{00011}}\ std::string\ \mbox{\hyperlink{_profile_view_8cpp_a12f7a1c28b48737e64b541c3e2859702}{getOptionalStringInput}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}},\ \textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00012}00012\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00013}00013\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00014}00014\ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}}\ <<\ \textcolor{stringliteral}{"{}\ ("{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}}\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00015}00015\ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00016}00016\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.empty()\ ?\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}}\ :\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00017}00017\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00026}\mbox{\hyperlink{_profile_view_8cpp_a03ee91b62e0c05c65ef98af1c5c0b719}{00026}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_profile_view_8cpp_a03ee91b62e0c05c65ef98af1c5c0b719}{getOptionalIntInput}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00027}00027\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00028}00028\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{intValue}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00030}00030\ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}}\ <<\ \textcolor{stringliteral}{"{}\ ("{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}}\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00032}00032\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00034}00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.empty())}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00035}00035\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00037}00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_acf86ae23fc05e6ce7db95d940e95e7d1}{stringToInt}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{intValue}})\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{intValue}}\ >=\ 0)}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{intValue}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00041}00041\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}}\ <<\ \textcolor{stringliteral}{"{}\ ("{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}}\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00043}00043\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00044}00044\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00053}\mbox{\hyperlink{_profile_view_8cpp_a412ce7c2cfb1795ce6d27610c0d1870e}{00053}}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{_profile_view_8cpp_a412ce7c2cfb1795ce6d27610c0d1870e}{getOptionalFloatInput}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00054}00054\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00055}00055\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{floatValue}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00057}00057\ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}}\ <<\ \textcolor{stringliteral}{"{}\ ("{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}}\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00059}00059\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.empty())}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a3857f83ad69de0ab5c7cb86eb6d28c9a}{stringToFloat}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{floatValue}})\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{floatValue}}\ >=\ 0)}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{floatValue}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}}\ <<\ \textcolor{stringliteral}{"{}\ ("{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentValue}}\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00070}00070\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00071}00071\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00079}\mbox{\hyperlink{class_profile_view_a5c847b12a176b1daed731163038756d4}{00079}}\ \mbox{\hyperlink{class_profile_view_a5c847b12a176b1daed731163038756d4}{ProfileView::ProfileView}}(\mbox{\hyperlink{class_profile}{Profile}}\&\ profile,\ \mbox{\hyperlink{class_goals}{Goals}}\&\ goals)\ :\ profile(profile),\ goals(goals)}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00080}00080\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00081}00081\ \ \ \ \ \mbox{\hyperlink{class_profile_view_acc8d633fbf6e3cd673d2eac7fce3a2d9}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}View\ Profile"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Viewing\ Profile"{}});\ this-\/>profile.\mbox{\hyperlink{class_profile_a5e1a4f7716d60c3373a5ca24f6fe9c7a}{displayProfileInformation}}();\ this-\/>goals.\mbox{\hyperlink{class_goals_af7c56dbc1c11c6aede0391953669f21e}{displayGoals}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Set\ Profile\ Information"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Setting\ Profile\ Information"{}});\ \mbox{\hyperlink{class_profile_view_aa11e57597414e5159c98924cc1c7ffdb}{setProfileInformation}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00084}00084\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Set\ Goals"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Setting\ Goals"{}});\ \mbox{\hyperlink{class_profile_view_afe9edfeddf26aadbb1d803895ffc7e87}{setGoals}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Set\ Custom\ Calories"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Setting\ Custom\ Calories"{}});\ \mbox{\hyperlink{class_profile_view_afb3770038b5a4d7dfabd02ab3040fd9e}{setCustomCalories}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00086}00086\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Reset\ to\ Calculated\ Calories"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Resetting\ to\ Calculated\ Calories"{}});\ \mbox{\hyperlink{class_profile_view_aee3c8e12e74d79723db9be435212d046}{resetToCalculatedCalories}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00087}00087\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Back"{}},\ [\textcolor{keyword}{this}]()\ \{\ \textcolor{keywordflow}{return};\ \}\}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00088}00088\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{comment}{//\ Load\ profile\ information\ from\ file}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a7bde404a039d876b77f6355658cff7a5}{loadFromCSV}}(\textcolor{stringliteral}{"{}profile.csv"{}}))}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00092}00092\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00093}00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ab08a39b1ee4d75837a0d6d5d28a76e6e}{setProfile}}(\&\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00094}00094\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00096}00096\ \ \ \ \ \textcolor{comment}{//\ Load\ goals\ information\ from\ file}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00097}00097\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ab4b87f662423160ff10be63eed2382b2}{loadFromCSV}}(\textcolor{stringliteral}{"{}goals.csv"{}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00098}00098\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00103}\mbox{\hyperlink{class_profile_view_a175d94b9f25b5baef17252ed9fd8c087}{00103}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_view_a175d94b9f25b5baef17252ed9fd8c087}{ProfileView::display}}()}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00104}00104\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00105}00105\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Profile"{}},\ \mbox{\hyperlink{class_profile_view_acc8d633fbf6e3cd673d2eac7fce3a2d9}{menuOptions}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00106}00106\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00114}\mbox{\hyperlink{class_profile_view_aa6e6bc40edec2864bfa655f06e5f9288}{00114}}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile::ActivityLevel}}\ \mbox{\hyperlink{class_profile_view_aa6e6bc40edec2864bfa655f06e5f9288}{ProfileView::getActivityLevel}}(\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile::ActivityLevel}}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentActivityLevel}})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00115}00115\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00116}00116\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityChoice}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00117}00117\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00119}00119\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Select\ activity\ level:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00120}00120\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ Sedentary:\ little\ or\ no\ exercise\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00121}00121\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Lightly\ Active:\ exercise\ 1-\/3\ times/week\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00122}00122\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3.\ Moderately\ Active:\ daily\ exercise\ or\ intense\ exercise\ 4-\/5\ times/week\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00123}00123\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}4.\ Very\ Active:\ intense\ exercise\ 6-\/7\ times/week\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00124}00124\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}5.\ Extra\ Active:\ physical\ job\ or\ daily\ intense\ exercise\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00125}00125\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ choice\ ("{}}\ <<\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a0f7b8f25b9d78d6724f83682d4880c47}{getActivityLevelString}}()\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00127}00127\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00128}00128\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00129}00129\ \ \ \ \ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00130}00130\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.empty())}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00131}00131\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentActivityLevel}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00133}00133\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00135}00135\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_acf86ae23fc05e6ce7db95d940e95e7d1}{stringToInt}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityChoice}})\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityChoice}}\ >=\ 1\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityChoice}}\ <=\ 5)}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00136}00136\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityChoice}})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{Profile::ActivityLevel::SEDENTARY}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00142}00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{Profile::ActivityLevel::LIGHTLY\_ACTIVE}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00143}00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{Profile::ActivityLevel::MODERATELY\_ACTIVE}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00145}00145\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 4:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{Profile::ActivityLevel::VERY\_ACTIVE}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00147}00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 5:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{Profile::ActivityLevel::EXTRA\_ACTIVE}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice,\ setting\ to\ Sedentary.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{Profile::ActivityLevel::SEDENTARY}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00153}00153\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00154}00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00155}00155\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00156}00156\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ number\ between\ 1\ and\ 5,\ or\ press\ Enter\ to\ keep\ current\ activity\ level:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00157}00157\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00158}00158\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00159}00159\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00160}00160\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00167}\mbox{\hyperlink{class_profile_view_a559fec2f5a84e6001636dae98222cfec}{00167}}\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile::Gender}}\ \mbox{\hyperlink{class_profile_view_a559fec2f5a84e6001636dae98222cfec}{ProfileView::getGender}}(\mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile::Gender}}\ gender)}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00168}00168\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00169}00169\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00170}00170\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{genderChoice}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00171}00171\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00172}00172\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Select\ gender\ ("{}}\ <<\ (gender\ ==\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Profile::Gender::MALE}}\ ?\ \textcolor{stringliteral}{"{}Male"{}}\ :\ \textcolor{stringliteral}{"{}Female"{}})\ <<\ \textcolor{stringliteral}{"{}):\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00173}00173\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ Male\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00174}00174\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Female\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00175}00175\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ choice\ ("{}}\ <<\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a82f6653066dce20b3eceeed18973bf95}{getGenderString}}()\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00176}00176\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00177}00177\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00178}00178\ \ \ \ \ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00179}00179\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.empty())}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00180}00180\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00181}00181\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00182}00182\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00183}00183\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00184}00184\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_acf86ae23fc05e6ce7db95d940e95e7d1}{stringToInt}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{genderChoice}})\ \&\&\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{genderChoice}}\ ==\ 1\ ||\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{genderChoice}}\ ==\ 2))}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00185}00185\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00186}00186\ \ \ \ \ \ \ \ \ \ \ \ \ gender\ =\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{genderChoice}}\ ==\ 1)\ ?\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Profile::Gender::MALE}}\ :\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a4bf2e31c60d6a605954e399524cae56b}{Profile::Gender::FEMALE}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00187}00187\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00188}00188\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00189}00189\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00190}00190\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00191}00191\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice,\ please\ enter\ 1\ or\ 2.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00192}00192\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00193}00193\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00194}00194\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00195}00195\ \ \ \ \ \textcolor{keywordflow}{return}\ gender;}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00196}00196\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00197}00197\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00201}\mbox{\hyperlink{class_profile_view_aa11e57597414e5159c98924cc1c7ffdb}{00201}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_view_aa11e57597414e5159c98924cc1c7ffdb}{ProfileView::setProfileInformation}}()}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00202}00202\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00203}00203\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ new\ value\ (or\ press\ enter\ to\ keep\ current\ value)\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00204}00204\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00205}00205\ \ \ \ \ std::string\ name\ =\ \mbox{\hyperlink{_profile_view_8cpp_a12f7a1c28b48737e64b541c3e2859702}{getOptionalStringInput}}(\textcolor{stringliteral}{"{}Enter\ name"{}},\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_ae8fcd0309d9f65f7a08df24b16a032fe}{getName}}());}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00206}00206\ \ \ \ \ \textcolor{keywordtype}{int}\ age\ =\ \mbox{\hyperlink{_profile_view_8cpp_a03ee91b62e0c05c65ef98af1c5c0b719}{getOptionalIntInput}}(\textcolor{stringliteral}{"{}Enter\ age"{}},\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a60a2349a40b25fb72777d30459af815e}{getAge}}());}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00207}00207\ \ \ \ \ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile::Gender}}\ gender\ =\ \mbox{\hyperlink{class_profile_view_a559fec2f5a84e6001636dae98222cfec}{getGender}}(\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a42e1e3a23cb0d9276fe56e1fa2c9c93f}{getGender}}());}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00208}00208\ \ \ \ \ \textcolor{keywordtype}{float}\ height\ =\ \mbox{\hyperlink{_profile_view_8cpp_a412ce7c2cfb1795ce6d27610c0d1870e}{getOptionalFloatInput}}(\textcolor{stringliteral}{"{}Enter\ height\ (cm)"{}},\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a44937be5dbbcbfdc22b6308ec222009f}{getHeight}}());}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00209}00209\ \ \ \ \ \textcolor{keywordtype}{float}\ weight\ =\ \mbox{\hyperlink{_profile_view_8cpp_a412ce7c2cfb1795ce6d27610c0d1870e}{getOptionalFloatInput}}(\textcolor{stringliteral}{"{}Enter\ weight\ (kg)"{}},\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a7323efaf8fa25d5a2895f4836f5203cc}{getWeight}}());}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00210}00210\ \ \ \ \ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile::ActivityLevel}}\ activityLevel\ =\ \mbox{\hyperlink{class_profile_view_aa6e6bc40edec2864bfa655f06e5f9288}{getActivityLevel}}(\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a105a1dc2f2a029134b5863645919cf2c}{getActivityLevel}}());}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00211}00211\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00212}00212\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_ac62716940298be8090995fdae9baeb64}{setProfileInformation}}(name,\ age,\ gender,\ height,\ weight,\ activityLevel);}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00213}00213\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}}.\mbox{\hyperlink{class_profile_a4870e055a5d2db5dda2bc4cbf1e21166}{saveToCSV}}(\textcolor{stringliteral}{"{}profile.csv"{}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00214}00214\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ab08a39b1ee4d75837a0d6d5d28a76e6e}{setProfile}}(\&\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00215}00215\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a064d95d57bb436f259ae161c149e356c}{saveToCSV}}(\textcolor{stringliteral}{"{}goals.csv"{}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00216}00216\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00217}00217\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00223}\mbox{\hyperlink{_profile_view_8cpp_aed83227d88639a0ae3c9f9697cdb80af}{00223}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_profile_view_8cpp_aed83227d88639a0ae3c9f9697cdb80af}{printFitnessGoalOptions}}()}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00224}00224\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00225}00225\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Select\ fitness\ goal:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00226}00226\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ Weight\ Loss\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00227}00227\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Muscle\ Gain\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00228}00228\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3.\ Maintenance\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00229}00229\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00230}00230\ \ \ \ \ \textcolor{keywordflow}{return}\ 3;}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00231}00231\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00232}00232\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00239}\mbox{\hyperlink{class_profile_view_ac35b98d3c3a90ac5314c0bacad24c679}{00239}}\ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals::FitnessGoal}}\ \mbox{\hyperlink{class_profile_view_ac35b98d3c3a90ac5314c0bacad24c679}{ProfileView::getFitnessGoal}}(\mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals::FitnessGoal}}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentGoal}})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00240}00240\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00241}00241\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalChoice}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00242}00242\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00243}00243\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00244}00244\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Select\ fitness\ goal:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00245}00245\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ Weight\ Loss\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00246}00246\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Muscle\ Gain\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00247}00247\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3.\ Maintenance\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00248}00248\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ choice\ ("{}}\ <<\ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ad2add4cd7ff96e26ae99d9b040be956e}{getFitnessGoalString}}()\ <<\ \textcolor{stringliteral}{"{}):\ "{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00249}00249\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00250}00250\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00251}00251\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00252}00252\ \ \ \ \ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00253}00253\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.empty())}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00254}00254\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00255}00255\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentGoal}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00256}00256\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00257}00257\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00258}00258\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_acf86ae23fc05e6ce7db95d940e95e7d1}{stringToInt}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalChoice}})\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalChoice}}\ >=\ 1\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalChoice}}\ <=\ 3)}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00259}00259\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00260}00260\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{goalChoice}})}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00261}00261\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00262}00262\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00263}00263\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aa756a8457aadfb8b9ed9ef2fda83fdf66}{Goals::FitnessGoal::WEIGHT\_LOSS}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00264}00264\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00265}00265\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aa907bc875a47ab8db15c598d2dfe505fd}{Goals::FitnessGoal::MUSCLE\_GAIN}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00266}00266\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00267}00267\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aaa49182544bf417d2e02cae1f35c9c8b8}{Goals::FitnessGoal::MAINTENANCE}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00268}00268\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00269}00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice,\ setting\ to\ Weight\ Loss.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00270}00270\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6aa756a8457aadfb8b9ed9ef2fda83fdf66}{Goals::FitnessGoal::WEIGHT\_LOSS}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00271}00271\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00272}00272\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00273}00273\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00274}00274\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00275}00275\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ number\ between\ 1\ and\ 3,\ or\ press\ Enter\ to\ keep\ current\ goal:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00276}00276\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00277}00277\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00278}00278\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00279}00279\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00283}\mbox{\hyperlink{class_profile_view_afe9edfeddf26aadbb1d803895ffc7e87}{00283}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_view_afe9edfeddf26aadbb1d803895ffc7e87}{ProfileView::setGoals}}()}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00284}00284\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00285}00285\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ new\ value\ (or\ press\ enter\ to\ keep\ current\ value)\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00286}00286\ \ \ \ \ \textcolor{keywordtype}{float}\ targetWeight\ =\ \mbox{\hyperlink{_profile_view_8cpp_a412ce7c2cfb1795ce6d27610c0d1870e}{getOptionalFloatInput}}(\textcolor{stringliteral}{"{}Enter\ target\ weight\ (kg)"{}},\ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ab15a195e87ceb0663dfb51d0bb782db3}{getTargetWeight}}());}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00287}00287\ \ \ \ \ \textcolor{keywordtype}{float}\ bodyFatPercentage\ =\ \mbox{\hyperlink{_profile_view_8cpp_a412ce7c2cfb1795ce6d27610c0d1870e}{getOptionalFloatInput}}(\textcolor{stringliteral}{"{}Enter\ body\ fat\ percentage"{}},\ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_acb8a5a6a8ffaf5d12bfae14d47186505}{getBodyFatPercentage}}());}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00288}00288\ \ \ \ \ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals::FitnessGoal}}\ fitnessGoal\ =\ \mbox{\hyperlink{class_profile_view_ac35b98d3c3a90ac5314c0bacad24c679}{getFitnessGoal}}(\mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_ac717f724e4c4acdbd2483544e16ef75b}{getFitnessGoal}}());}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00289}00289\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00290}00290\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a98f694444eb362fa35c2d80e04f7d2ae}{setGoals}}(targetWeight,\ bodyFatPercentage,\ fitnessGoal);}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00291}00291\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a064d95d57bb436f259ae161c149e356c}{saveToCSV}}(\textcolor{stringliteral}{"{}goals.csv"{}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00292}00292\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00293}00293\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00297}\mbox{\hyperlink{class_profile_view_afb3770038b5a4d7dfabd02ab3040fd9e}{00297}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_view_afb3770038b5a4d7dfabd02ab3040fd9e}{ProfileView::setCustomCalories}}()}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00298}00298\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00299}00299\ \ \ \ \ \textcolor{keywordtype}{float}\ customCalories;}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00300}00300\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{getValidInput}}(customCalories,\ \textcolor{stringliteral}{"{}Enter\ custom\ daily\ calories:\ "{}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00301}00301\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a6bc7245ce7b6191b2d781ad4b484c453}{setCustomCalories}}(customCalories);}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00302}00302\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a064d95d57bb436f259ae161c149e356c}{saveToCSV}}(\textcolor{stringliteral}{"{}goals.csv"{}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00303}00303\ \}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00304}00304\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00308}\mbox{\hyperlink{class_profile_view_aee3c8e12e74d79723db9be435212d046}{00308}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_view_aee3c8e12e74d79723db9be435212d046}{ProfileView::resetToCalculatedCalories}}()}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00309}00309\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00310}00310\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a58054b6aad3ce3e8a4bbd3afecd06431}{resetToCalculatedCalories}}();}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00311}00311\ \ \ \ \ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}}.\mbox{\hyperlink{class_goals_a064d95d57bb436f259ae161c149e356c}{saveToCSV}}(\textcolor{stringliteral}{"{}goals.csv"{}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8cpp_source_l00312}00312\ \}}
+
+\end{DoxyCode}

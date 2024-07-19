@@ -1,0 +1,40 @@
+\doxysection{Food\+Item.\+h}
+\hypertarget{_food_item_8h_source}{}\label{_food_item_8h_source}\mbox{\hyperlink{_food_item_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ FOODITEM\_H}}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ FOODITEM\_H}}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <set>}}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00013}\mbox{\hyperlink{class_food_item}{00013}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_food_item}{FoodItem}}}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00014}00014\ \{}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00015}00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00016}\mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{00016}}\ \ \ \ \ std::string\ \mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}};\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00017}\mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{00017}}\ \ \ \ \ std::set<std::string>\ \mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{categories}};\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00018}\mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{00018}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}}\ =\ 0;\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00019}\mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{00019}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}}\ =\ 0;\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00020}\mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{00020}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}}\ =\ 0;\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00021}\mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{00021}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}}\ =\ 0;\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00022}\mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{00022}}\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}}\ =\ 0;\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00027}\mbox{\hyperlink{class_food_item_af42d5e83909dda906afb3fcb90974e36}{00027}}\ \ \ \ \ \mbox{\hyperlink{class_food_item_af42d5e83909dda906afb3fcb90974e36}{FoodItem}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00040}\mbox{\hyperlink{class_food_item_a490c7d266483d3203737e4da8d9264ae}{00040}}\ \ \ \ \ \mbox{\hyperlink{class_food_item_a490c7d266483d3203737e4da8d9264ae}{FoodItem}}(std::string\ \mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}},\ std::set<std::string>\ \mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{categories}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}}\ =\ 0)}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00041}00041\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std}}::\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{move}}(\mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}})),\ \mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{categories}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std}}::\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{move}}(\mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{categories}})),\ \mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}}(\mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}}),\ \mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}}(\mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}}),\ \mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}}(\mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}}),\ \mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}}(\mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}}),\ \mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}}(\mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}})}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00042}00042\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00043}00043\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00050}00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_item_a53f0253c1f9d91c8a94b702e577bedd5}{toCSV}}(std::ostream\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00058}00058\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_food_item_aad8dadbab96353c54f1a7fb8ca3658c3}{fromCSV}}(std::istream\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}});}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00065}00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_food_item_a129ef1430fdffd361e62f753ad3069a3}{displayNutritionalValues}}(\textcolor{keywordtype}{float}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00066}00066\ \};}
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_food_item_8h_source_l00068}00068\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FOODITEM\_H}}
+
+\end{DoxyCode}

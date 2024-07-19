@@ -1,0 +1,52 @@
+\doxysection{Workout\+Plan\+View\+Model.\+cpp File Reference}
+\hypertarget{_workout_plan_view_model_8cpp}{}\label{_workout_plan_view_model_8cpp}\index{WorkoutPlanViewModel.cpp@{WorkoutPlanViewModel.cpp}}
+{\ttfamily \#include "{}Workout\+Plan\+View\+Model.\+h"{}}\newline
+{\ttfamily \#include "{}Utils.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+Include dependency graph for Workout\+Plan\+View\+Model.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_workout_plan_view_model_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{_workout_plan_view_model_8cpp_a54ac599f0e1552fabb7587552c392ed8}{print\+View\+Options}} ()
+\begin{DoxyCompactList}\small\item\em Print view options for the workout plans. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_workout_plan_view_model_8cpp_a54ac599f0e1552fabb7587552c392ed8}\label{_workout_plan_view_model_8cpp_a54ac599f0e1552fabb7587552c392ed8} 
+\index{WorkoutPlanViewModel.cpp@{WorkoutPlanViewModel.cpp}!printViewOptions@{printViewOptions}}
+\index{printViewOptions@{printViewOptions}!WorkoutPlanViewModel.cpp@{WorkoutPlanViewModel.cpp}}
+\doxysubsubsection{\texorpdfstring{printViewOptions()}{printViewOptions()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} print\+View\+Options (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print view options for the workout plans. 
+
+\begin{DoxyReturn}{Returns}
+int The number of options available 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_workout_plan_view_model_8cpp_source_l00022}{22}} of file \mbox{\hyperlink{_workout_plan_view_model_8cpp_source}{Workout\+Plan\+View\+Model.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}View\ Options:\(\backslash\)n"{}};}
+\DoxyCodeLine{00025\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ View\ All\(\backslash\)n"{}};}
+\DoxyCodeLine{00026\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ View\ by\ Type\(\backslash\)n"{}};}
+\DoxyCodeLine{00027\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3.\ Cancel\(\backslash\)n"{}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{return}\ 3;}
+\DoxyCodeLine{00030\ \}}
+
+\end{DoxyCode}

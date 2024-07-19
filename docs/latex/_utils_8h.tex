@@ -1,0 +1,982 @@
+\doxysection{Utils.\+h File Reference}
+\hypertarget{_utils_8h}{}\label{_utils_8h}\index{Utils.h@{Utils.h}}
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$sys/ioctl.\+h$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+Include dependency graph for Utils.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_utils_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_utils_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{using}} \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} = \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::pair}}$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::function}}$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}}()$>$$>$
+\begin{DoxyCompactList}\small\item\em Alias for a menu option, consisting of a display name and an action function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}} \{ \newline
+\mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1caa2d9547b5d3dd9f05984475f7c926da0}{RED}}
+, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca9de0e5dd94e861317e74964bed179fa0}{GREEN}}
+, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca8a568e5f41b7e4da88fe5c4a00aad34e}{YELLOW}}
+, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}{BLUE}}
+, \newline
+\mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cac634ffea7195608364671ac52ee59a61}{MAGENTA}}
+, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca344dd8cd533280795b9db82ef0c92749}{CYAN}}
+, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5bf627e448384cf3a4c35121ca6008d}{WHITE}}
+, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5859d8721cfdc0312b2838b9c985bc1}{RESET}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for basic colors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typename}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} $>$ }\\\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_utils_8h_a5280f2f8d4eda5275f5555cf42e3204e}{write\+To\+CSV}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&filename, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}})
+\begin{DoxyCompactList}\small\item\em Generic function to write data to a CSV file. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typename}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} $>$ }\\\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_utils_8h_a5377b9f52e4ba86d4a5f2649fae3cbb5}{overwrite\+CSV}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&filename, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::map}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} $>$ \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}})
+\begin{DoxyCompactList}\small\item\em Generic function to overwrite data in a CSV file. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename U $>$ }\\std\+::map$<$ std\+::string, T $>$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{read\+From\+CSV}} (const std\+::string \&filename, const std\+::map$<$ std\+::string, U $>$ \&items\+Source)
+\begin{DoxyCompactList}\small\item\em Generic function to read data from a CSV file into a map. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::map$<$ std\+::string, T $>$ \mbox{\hyperlink{_utils_8h_ab7feb6f781cd92bfc0477d55df7e0c9c}{read\+From\+CSV}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Generic function to read data from a CSV file into a map. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typename}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} $>$ }\\\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{get\+Valid\+Input}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{variable}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}})
+\begin{DoxyCompactList}\small\item\em Generic helper function to get valid numeric input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_utils_8h_aaa4e161879af0f7971ac0a689c3b090b}{get\+Valid\+Input}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{variable}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{min}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{max}})
+\begin{DoxyCompactList}\small\item\em Helper function to get valid numeric input within a specified range. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typename}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} $>$ }\\\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_utils_8h_a6b6074e85f35e512d3f5fb5a7c3839cd}{get\+Optional\+Input}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{variable}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}})
+\begin{DoxyCompactList}\small\item\em Template function to get optional input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{_utils_8h_acf86ae23fc05e6ce7db95d940e95e7d1}{string\+To\+Int}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{value}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int\+Value}})
+\begin{DoxyCompactList}\small\item\em Function to check if a string can be converted to an integer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{_utils_8h_a3857f83ad69de0ab5c7cb86eb6d28c9a}{string\+To\+Float}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{value}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float\+Value}})
+\begin{DoxyCompactList}\small\item\em Function to check if a string can be converted to a float. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}{clear\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Clears the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \mbox{\hyperlink{_utils_8h_a4bbcf1915ff01b5d9b4f09c5adfe0d5b}{get\+Color\+Code}} (\mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}})
+\begin{DoxyCompactList}\small\item\em Function to get the color code from the Color enum. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \mbox{\hyperlink{_utils_8h_adbabd9737b0a15a715a87db973181298}{color\+Text}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{text}}, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}})
+\begin{DoxyCompactList}\small\item\em Function to color a text string with the desired color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_utils_8h_afb6296da1c6d352521a3431d4588c90a}{print\+Separator}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{char}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{symbol}}, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{size\+\_\+t}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{length}})
+\begin{DoxyCompactList}\small\item\em Prints a separator line of the given length. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{print\+Label}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{label}}, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}}=\mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}{Color\+::\+BLUE}})
+\begin{DoxyCompactList}\small\item\em Prints a label with a separator line around it. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \mbox{\hyperlink{_utils_8h_a96432d89bc886bc9cdd1d73f86b2bbca}{to\+Lower}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{str}})
+\begin{DoxyCompactList}\small\item\em Converts a string to lowercase. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_utils_8h_ac61722961cd6bde5ad740e9ed665cb37}{print\+Window\+Sized\+Separator}} ()
+\begin{DoxyCompactList}\small\item\em Prints a window-\/sized separator line for Unix-\/like systems. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_utils_8h_a8fcbccbd74fee29a94755024f0359239}{display\+Menu}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::vector}}$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \&menu\+Options)
+\begin{DoxyCompactList}\small\item\em Displays a menu with the given title and options. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::vector}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} $>$ \mbox{\hyperlink{_utils_8h_a55deed90000e4bc802702dba36009535}{DAYS\+\_\+\+OF\+\_\+\+WEEK}} = \{ "{}Monday"{}, "{}Tuesday"{}, "{}Wednesday"{}, "{}Thursday"{}, "{}Friday"{}, "{}Saturday"{}, "{}Sunday"{} \}
+\begin{DoxyCompactList}\small\item\em vector of days of the week. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::vector}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} $>$ \mbox{\hyperlink{_utils_8h_aa54bad96bc93c575daf1d3abcddd58f7}{MEAL\+\_\+\+NAMES}} = \{ "{}Breakfast"{}, "{}Snack1"{}, "{}Lunch"{}, "{}Snack2"{}, "{}Dinner"{} \}
+\begin{DoxyCompactList}\small\item\em vector of meal names of a mealplan \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{_utils_8h_aeec697585a15e716eb77a7de1541ed28}\label{_utils_8h_aeec697585a15e716eb77a7de1541ed28} 
+\index{Utils.h@{Utils.h}!MenuOption@{MenuOption}}
+\index{MenuOption@{MenuOption}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{MenuOption}{MenuOption}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{using}} \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} = \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::pair}}$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::function}}$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}}()$>$$>$}
+
+
+
+Alias for a menu option, consisting of a display name and an action function. 
+
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00282}{282}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}\label{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c} 
+\index{Utils.h@{Utils.h}!Color@{Color}}
+\index{Color@{Color}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{enum}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{class}} \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enum for basic colors. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RED@{RED}!Utils.h@{Utils.h}}\index{Utils.h@{Utils.h}!RED@{RED}}}\Hypertarget{_utils_8h_ab87bacfdad76e61b9412d7124be44c1caa2d9547b5d3dd9f05984475f7c926da0}\label{_utils_8h_ab87bacfdad76e61b9412d7124be44c1caa2d9547b5d3dd9f05984475f7c926da0} 
+RED&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GREEN@{GREEN}!Utils.h@{Utils.h}}\index{Utils.h@{Utils.h}!GREEN@{GREEN}}}\Hypertarget{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca9de0e5dd94e861317e74964bed179fa0}\label{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca9de0e5dd94e861317e74964bed179fa0} 
+GREEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{YELLOW@{YELLOW}!Utils.h@{Utils.h}}\index{Utils.h@{Utils.h}!YELLOW@{YELLOW}}}\Hypertarget{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca8a568e5f41b7e4da88fe5c4a00aad34e}\label{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca8a568e5f41b7e4da88fe5c4a00aad34e} 
+YELLOW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLUE@{BLUE}!Utils.h@{Utils.h}}\index{Utils.h@{Utils.h}!BLUE@{BLUE}}}\Hypertarget{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}\label{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f} 
+BLUE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MAGENTA@{MAGENTA}!Utils.h@{Utils.h}}\index{Utils.h@{Utils.h}!MAGENTA@{MAGENTA}}}\Hypertarget{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cac634ffea7195608364671ac52ee59a61}\label{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cac634ffea7195608364671ac52ee59a61} 
+MAGENTA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CYAN@{CYAN}!Utils.h@{Utils.h}}\index{Utils.h@{Utils.h}!CYAN@{CYAN}}}\Hypertarget{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca344dd8cd533280795b9db82ef0c92749}\label{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca344dd8cd533280795b9db82ef0c92749} 
+CYAN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WHITE@{WHITE}!Utils.h@{Utils.h}}\index{Utils.h@{Utils.h}!WHITE@{WHITE}}}\Hypertarget{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5bf627e448384cf3a4c35121ca6008d}\label{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5bf627e448384cf3a4c35121ca6008d} 
+WHITE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RESET@{RESET}!Utils.h@{Utils.h}}\index{Utils.h@{Utils.h}!RESET@{RESET}}}\Hypertarget{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5859d8721cfdc0312b2838b9c985bc1}\label{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5859d8721cfdc0312b2838b9c985bc1} 
+RESET&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00301}{301}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00302\ \{}
+\DoxyCodeLine{00303\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1caa2d9547b5d3dd9f05984475f7c926da0}{RED}},}
+\DoxyCodeLine{00304\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca9de0e5dd94e861317e74964bed179fa0}{GREEN}},}
+\DoxyCodeLine{00305\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca8a568e5f41b7e4da88fe5c4a00aad34e}{YELLOW}},}
+\DoxyCodeLine{00306\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}{BLUE}},}
+\DoxyCodeLine{00307\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cac634ffea7195608364671ac52ee59a61}{MAGENTA}},}
+\DoxyCodeLine{00308\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca344dd8cd533280795b9db82ef0c92749}{CYAN}},}
+\DoxyCodeLine{00309\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5bf627e448384cf3a4c35121ca6008d}{WHITE}},}
+\DoxyCodeLine{00310\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5859d8721cfdc0312b2838b9c985bc1}{RESET}}}
+\DoxyCodeLine{00311\ \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}\label{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f} 
+\index{Utils.h@{Utils.h}!clearScreen@{clearScreen}}
+\index{clearScreen@{clearScreen}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{clearScreen()}{clearScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} clear\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Clears the screen. 
+
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00287}{287}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00288\ \{}
+\DoxyCodeLine{00289\ \textcolor{preprocessor}{\#if\ defined(\_WIN32)\ ||\ defined(\_WIN64) }}
+\DoxyCodeLine{00290\ \ \ \ \ \textcolor{comment}{//\ Windows\ system\ call}}
+\DoxyCodeLine{00291\ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{system}}(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{00292\ \textcolor{preprocessor}{\#else }}
+\DoxyCodeLine{00293\ \ \ \ \ \textcolor{comment}{//\ Unix-\/like\ system\ call}}
+\DoxyCodeLine{00294\ \ \ \ \ std::system(\textcolor{stringliteral}{"{}clear"{}});}
+\DoxyCodeLine{00295\ \textcolor{preprocessor}{\#endif }}
+\DoxyCodeLine{00296\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_adbabd9737b0a15a715a87db973181298}\label{_utils_8h_adbabd9737b0a15a715a87db973181298} 
+\index{Utils.h@{Utils.h}!colorText@{colorText}}
+\index{colorText@{colorText}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{colorText()}{colorText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} color\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{text,  }\item[{\mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to color a text string with the desired color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Text to color. \\
+\hline
+{\em color} & Desired color. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Colored text as a string. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00350}{350}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00351\ \{}
+\DoxyCodeLine{00352\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a4bbcf1915ff01b5d9b4f09c5adfe0d5b}{getColorCode}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}})\ +\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{text}}\ +\ \mbox{\hyperlink{_utils_8h_a4bbcf1915ff01b5d9b4f09c5adfe0d5b}{getColorCode}}(\mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5859d8721cfdc0312b2838b9c985bc1}{Color::RESET}});}
+\DoxyCodeLine{00353\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00319}{get\+Color\+Code()}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, and \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5859d8721cfdc0312b2838b9c985bc1}{RESET}}.
+
+\Hypertarget{_utils_8h_a8fcbccbd74fee29a94755024f0359239}\label{_utils_8h_a8fcbccbd74fee29a94755024f0359239} 
+\index{Utils.h@{Utils.h}!displayMenu@{displayMenu}}
+\index{displayMenu@{displayMenu}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{displayMenu()}{displayMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} display\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{title,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::vector}}$<$ \mbox{\hyperlink{_utils_8h_aeec697585a15e716eb77a7de1541ed28}{Menu\+Option}} $>$ \&}]{menu\+Options }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Displays a menu with the given title and options. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & Title of the menu. \\
+\hline
+{\em menu\+Options} & Vector of menu options. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00434}{434}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00435\ \{}
+\DoxyCodeLine{00436\ \ \ \ \ \mbox{\hyperlink{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}}();\ \textcolor{comment}{//\ Clear\ the\ screen\ before\ displaying\ the\ menu}}
+\DoxyCodeLine{00437\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}},\ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}{Color::BLUE}});}
+\DoxyCodeLine{00438\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}\ =\ 0;\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}\ <\ menuOptions.size();\ ++\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}})}
+\DoxyCodeLine{00439\ \ \ \ \ \{}
+\DoxyCodeLine{00440\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}\ +\ 1\ <<\ \textcolor{stringliteral}{"{}.\ "{}}\ <<\ menuOptions[\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}].first\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00441\ \ \ \ \ \}}
+\DoxyCodeLine{00442\ \ \ \ \ \mbox{\hyperlink{_utils_8h_ac61722961cd6bde5ad740e9ed665cb37}{printWindowSizedSeparator}}();}
+\DoxyCodeLine{00443\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}{BLUE}}, \mbox{\hyperlink{_utils_8h_source_l00287}{clear\+Screen()}}, \mbox{\hyperlink{_utils_8h_source_l00372}{print\+Label()}}, \mbox{\hyperlink{_utils_8h_source_l00417}{print\+Window\+Sized\+Separator()}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_a4bbcf1915ff01b5d9b4f09c5adfe0d5b}\label{_utils_8h_a4bbcf1915ff01b5d9b4f09c5adfe0d5b} 
+\index{Utils.h@{Utils.h}!getColorCode@{getColorCode}}
+\index{getColorCode@{getColorCode}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{getColorCode()}{getColorCode()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} get\+Color\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to get the color code from the Color enum. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & Desired color. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Color code as a string. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00319}{319}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00320\ \{}
+\DoxyCodeLine{00321\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}})}
+\DoxyCodeLine{00322\ \ \ \ \ \{}
+\DoxyCodeLine{00323\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1caa2d9547b5d3dd9f05984475f7c926da0}{Color::RED}}:}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}\(\backslash\)033[1;31m"{}};}
+\DoxyCodeLine{00325\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca9de0e5dd94e861317e74964bed179fa0}{Color::GREEN}}:}
+\DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}\(\backslash\)033[1;32m"{}};}
+\DoxyCodeLine{00327\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca8a568e5f41b7e4da88fe5c4a00aad34e}{Color::YELLOW}}:}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}\(\backslash\)033[1;33m"{}};}
+\DoxyCodeLine{00329\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}{Color::BLUE}}:}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}\(\backslash\)033[1;34m"{}};}
+\DoxyCodeLine{00331\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cac634ffea7195608364671ac52ee59a61}{Color::MAGENTA}}:}
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}\(\backslash\)033[1;35m"{}};}
+\DoxyCodeLine{00333\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca344dd8cd533280795b9db82ef0c92749}{Color::CYAN}}:}
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}\(\backslash\)033[1;36m"{}};}
+\DoxyCodeLine{00335\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5bf627e448384cf3a4c35121ca6008d}{Color::WHITE}}:}
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}\(\backslash\)033[1;37m"{}};}
+\DoxyCodeLine{00337\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5859d8721cfdc0312b2838b9c985bc1}{Color::RESET}}:}
+\DoxyCodeLine{00338\ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}\(\backslash\)033[0m"{}};}
+\DoxyCodeLine{00340\ \ \ \ \ \}}
+\DoxyCodeLine{00341\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}{BLUE}}, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca344dd8cd533280795b9db82ef0c92749}{CYAN}}, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca9de0e5dd94e861317e74964bed179fa0}{GREEN}}, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cac634ffea7195608364671ac52ee59a61}{MAGENTA}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1caa2d9547b5d3dd9f05984475f7c926da0}{RED}}, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5859d8721cfdc0312b2838b9c985bc1}{RESET}}, \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5bf627e448384cf3a4c35121ca6008d}{WHITE}}, and \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca8a568e5f41b7e4da88fe5c4a00aad34e}{YELLOW}}.
+
+\Hypertarget{_utils_8h_a6b6074e85f35e512d3f5fb5a7c3839cd}\label{_utils_8h_a6b6074e85f35e512d3f5fb5a7c3839cd} 
+\index{Utils.h@{Utils.h}!getOptionalInput@{getOptionalInput}}
+\index{getOptionalInput@{getOptionalInput}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{getOptionalInput()}{getOptionalInput()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typename}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} $>$ \\
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} get\+Optional\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} \&}]{variable,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{prompt }\end{DoxyParamCaption})}
+
+
+
+Template function to get optional input. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the variable. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em variable} & Variable to store the input. \\
+\hline
+{\em prompt} & Prompt message for the input. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00190}{190}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00191\ \{}
+\DoxyCodeLine{00192\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{00193\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00194\ \ \ \ \ \{}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}};}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.empty())}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \textcolor{comment}{//\ Keep\ current\ value\ if\ input\ is\ empty}}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00201\ \ \ \ \ \ \ \ \ std::stringstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{temp}};}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}}\ >>\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{temp}}\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}}.eof())}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \{\ \textcolor{comment}{//\ Check\ if\ the\ input\ is\ valid\ for\ type\ T}}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{variable}}\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{temp}};}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ "{}};}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00212\ \ \ \ \ \}}
+\DoxyCodeLine{00213\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_aaa4e161879af0f7971ac0a689c3b090b}\label{_utils_8h_aaa4e161879af0f7971ac0a689c3b090b} 
+\index{Utils.h@{Utils.h}!getValidInput@{getValidInput}}
+\index{getValidInput@{getValidInput}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{getValidInput()}{getValidInput()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} get\+Valid\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \&}]{variable,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{prompt,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}}}]{min,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}}}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper function to get valid numeric input within a specified range. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em variable} & Variable to store the input. \\
+\hline
+{\em prompt} & Prompt message for the input. \\
+\hline
+{\em min} & Minimum value for the input. \\
+\hline
+{\em max} & Maximum value for the input. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00168}{168}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00169\ \{}
+\DoxyCodeLine{00170\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{00171\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00172\ \ \ \ \ \{}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{getValidInput}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{variable}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}});}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{variable}}\ >=\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{min}}\ \&\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{variable}}\ <=\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{max}})}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ number\ between\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{min}}\ <<\ \textcolor{stringliteral}{"{}\ and\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{max}}\ <<\ \textcolor{stringliteral}{"{}.\(\backslash\)n"{}};}
+\DoxyCodeLine{00179\ \ \ \ \ \}}
+\DoxyCodeLine{00180\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00136}{get\+Valid\+Input()}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_afc520920f28b649d4626acef5a0110b0}\label{_utils_8h_afc520920f28b649d4626acef5a0110b0} 
+\index{Utils.h@{Utils.h}!getValidInput@{getValidInput}}
+\index{getValidInput@{getValidInput}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{getValidInput()}{getValidInput()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typename}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} $>$ \\
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} get\+Valid\+Input (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} \&}]{variable,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{prompt }\end{DoxyParamCaption})}
+
+
+
+Generic helper function to get valid numeric input. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the variable. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em variable} & Variable to store the input. \\
+\hline
+{\em prompt} & Prompt message for the input. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00136}{136}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00137\ \{}
+\DoxyCodeLine{00138\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00140\ \ \ \ \ \{}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{prompt}};}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ std::getline(std::cin,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ std::istringstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{iss}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{temp}};}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{extra}};}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{iss}}\ >>\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{temp}})\ ||\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{iss}}\ >>\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{extra}}))}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input.\ Please\ enter\ a\ valid\ number.\(\backslash\)n"{}};}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{variable}}\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{temp}};}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \textcolor{comment}{//\ Valid\ input}}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00157\ \ \ \ \ \}}
+\DoxyCodeLine{00158\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_a5377b9f52e4ba86d4a5f2649fae3cbb5}\label{_utils_8h_a5377b9f52e4ba86d4a5f2649fae3cbb5} 
+\index{Utils.h@{Utils.h}!overwriteCSV@{overwriteCSV}}
+\index{overwriteCSV@{overwriteCSV}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{overwriteCSV()}{overwriteCSV()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typename}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} $>$ \\
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} overwrite\+CSV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{filename,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::map}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} $>$ \&}]{items }\end{DoxyParamCaption})}
+
+
+
+Generic function to overwrite data in a CSV file. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the items to write. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file. \\
+\hline
+{\em items} & Map of items to overwrite the file with. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00043}{43}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00044\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ std::ofstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}(filename,\ std::ios::trunc);\ \textcolor{comment}{//\ Truncate\ mode\ to\ clear\ the\ file}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.is\_open())}
+\DoxyCodeLine{00047\ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}\ :\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}})}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a5280f2f8d4eda5275f5555cf42e3204e}{writeToCSV}}(filename,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second);}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.close();}
+\DoxyCodeLine{00053\ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00055\ \ \ \ \ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Unable\ to\ open\ file\ for\ writing:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{00057\ \ \ \ \ \}}
+\DoxyCodeLine{00058\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, and \mbox{\hyperlink{_utils_8h_source_l00021}{write\+To\+CSV()}}.
+
+\Hypertarget{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}\label{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479} 
+\index{Utils.h@{Utils.h}!printLabel@{printLabel}}
+\index{printLabel@{printLabel}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{printLabel()}{printLabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} print\+Label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{label,  }\item[{\mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}}]{color = {\ttfamily \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}{Color\+::\+BLUE}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Prints a label with a separator line around it. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & Label to print. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00372}{372}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00373\ \{}
+\DoxyCodeLine{00374\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{length}}\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{label}}.length()\ +\ 6;}
+\DoxyCodeLine{00375\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afb6296da1c6d352521a3431d4588c90a}{printSeparator}}(\textcolor{charliteral}{'='},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{length}});}
+\DoxyCodeLine{00376\ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_adbabd9737b0a15a715a87db973181298}{colorText}}(\textcolor{stringliteral}{"{}||\ "{}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}})\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{label}}\ <<\ \mbox{\hyperlink{_utils_8h_adbabd9737b0a15a715a87db973181298}{colorText}}(\textcolor{stringliteral}{"{}\ ||"{}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}})\ <<\ std::endl;}
+\DoxyCodeLine{00377\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afb6296da1c6d352521a3431d4588c90a}{printSeparator}}(\textcolor{charliteral}{'='},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{length}});}
+\DoxyCodeLine{00378\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00350}{color\+Text()}}, \mbox{\hyperlink{_utils_8h_source_l00360}{print\+Separator()}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_afb6296da1c6d352521a3431d4588c90a}\label{_utils_8h_afb6296da1c6d352521a3431d4588c90a} 
+\index{Utils.h@{Utils.h}!printSeparator@{printSeparator}}
+\index{printSeparator@{printSeparator}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{printSeparator()}{printSeparator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} print\+Separator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{char}}}]{symbol,  }\item[{\mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color}}}]{color,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{size\+\_\+t}}}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Prints a separator line of the given length. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & Length of the separator line. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00360}{360}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00361\ \{}
+\DoxyCodeLine{00362\ \ \ \ \ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_a4bbcf1915ff01b5d9b4f09c5adfe0d5b}{getColorCode}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{color}});\ \textcolor{comment}{//\ Change\ the\ color\ here}}
+\DoxyCodeLine{00363\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}\ =\ 0;\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}}\ <\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{length}};\ ++\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{i}})\ std::cout\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{symbol}};}
+\DoxyCodeLine{00364\ \ \ \ \ std::cout\ <<\ std::endl\ <<\ \mbox{\hyperlink{_utils_8h_a4bbcf1915ff01b5d9b4f09c5adfe0d5b}{getColorCode}}(\mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5859d8721cfdc0312b2838b9c985bc1}{Color::RESET}});}
+\DoxyCodeLine{00365\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00319}{get\+Color\+Code()}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, and \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1cab5859d8721cfdc0312b2838b9c985bc1}{RESET}}.
+
+\Hypertarget{_utils_8h_ac61722961cd6bde5ad740e9ed665cb37}\label{_utils_8h_ac61722961cd6bde5ad740e9ed665cb37} 
+\index{Utils.h@{Utils.h}!printWindowSizedSeparator@{printWindowSizedSeparator}}
+\index{printWindowSizedSeparator@{printWindowSizedSeparator}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{printWindowSizedSeparator()}{printWindowSizedSeparator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} print\+Window\+Sized\+Separator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints a window-\/sized separator line for Unix-\/like systems. 
+
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00417}{417}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00418\ \{}
+\DoxyCodeLine{00419\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{winsize}}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{w}};}
+\DoxyCodeLine{00420\ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ioctl}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{STDOUT\_FILENO}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{TIOCGWINSZ}},\ \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{w}});}
+\DoxyCodeLine{00421\ }
+\DoxyCodeLine{00422\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{columns}}\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{w}}.ws\_col;}
+\DoxyCodeLine{00423\ }
+\DoxyCodeLine{00424\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afb6296da1c6d352521a3431d4588c90a}{printSeparator}}(\textcolor{charliteral}{'-\/'},\ \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}{Color::BLUE}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{columns}});}
+\DoxyCodeLine{00425\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_ab87bacfdad76e61b9412d7124be44c1ca1b3e1ee9bff86431dea6b181365ba65f}{BLUE}}, \mbox{\hyperlink{_utils_8h_source_l00360}{print\+Separator()}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_ab7feb6f781cd92bfc0477d55df7e0c9c}\label{_utils_8h_ab7feb6f781cd92bfc0477d55df7e0c9c} 
+\index{Utils.h@{Utils.h}!readFromCSV@{readFromCSV}}
+\index{readFromCSV@{readFromCSV}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{readFromCSV()}{readFromCSV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::map$<$ std\+::string, T $>$ read\+From\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Generic function to read data from a CSV file into a map. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the items to read. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Map of items read from the file. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00103}{103}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00104\ \{}
+\DoxyCodeLine{00105\ \ \ \ \ std::map<std::string,\ T>\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}};}
+\DoxyCodeLine{00106\ \ \ \ \ std::ifstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}(filename);}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.is\_open())}
+\DoxyCodeLine{00108\ \ \ \ \ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}};}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}}))}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ std::stringstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}});}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}};}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}}.fromCSV(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}}))}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}}[\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}}.name]\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}};}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.close();}
+\DoxyCodeLine{00120\ \ \ \ \ \}}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00122\ \ \ \ \ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Unable\ to\ open\ file\ for\ reading:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{00124\ \ \ \ \ \}}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}};}
+\DoxyCodeLine{00126\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}\label{_utils_8h_a96014baf83e2306c12d1b6167a8804e7} 
+\index{Utils.h@{Utils.h}!readFromCSV@{readFromCSV}}
+\index{readFromCSV@{readFromCSV}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{readFromCSV()}{readFromCSV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename U $>$ \\
+std\+::map$<$ std\+::string, T $>$ read\+From\+CSV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const std\+::map$<$ std\+::string, U $>$ \&}]{items\+Source }\end{DoxyParamCaption})}
+
+
+
+Generic function to read data from a CSV file into a map. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the items to read. \\
+\hline
+{\em U} & Type of the items source map. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file. \\
+\hline
+{\em items\+Source} & Source map of items. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Map of items read from the file. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00070}{70}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00071\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ std::map<std::string,\ T>\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}};}
+\DoxyCodeLine{00073\ \ \ \ \ std::ifstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}(filename);}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.is\_open())}
+\DoxyCodeLine{00075\ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}};}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}}))}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ std::stringstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}};}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}}.fromCSV(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemsSource}}))}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}}[\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}}.name]\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}};}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.close();}
+\DoxyCodeLine{00087\ \ \ \ \ \}}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00089\ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Unable\ to\ open\ file\ for\ reading:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{00091\ \ \ \ \ \}}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{items}};}
+\DoxyCodeLine{00093\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_a3857f83ad69de0ab5c7cb86eb6d28c9a}\label{_utils_8h_a3857f83ad69de0ab5c7cb86eb6d28c9a} 
+\index{Utils.h@{Utils.h}!stringToFloat@{stringToFloat}}
+\index{stringToFloat@{stringToFloat}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{stringToFloat()}{stringToFloat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} string\+To\+Float (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{value,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \&}]{float\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to check if a string can be converted to a float. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & String to check. \\
+\hline
+{\em float\+Value} & Float value to store the result. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the string can be converted, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00250}{250}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00251\ \{}
+\DoxyCodeLine{00252\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{p}};}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00254\ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00255\ \ \ \ \ \{}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{floatValue}}\ =\ std::stof(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{value}},\ \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{p}});}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{p}}\ !=\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{value}}.size())}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00262\ \ \ \ \ \}}
+\DoxyCodeLine{00263\ \ \ \ \ \textcolor{keywordflow}{catch}\ (...)}
+\DoxyCodeLine{00264\ \ \ \ \ \{}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00266\ \ \ \ \ \}}
+\DoxyCodeLine{00267\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_acf86ae23fc05e6ce7db95d940e95e7d1}\label{_utils_8h_acf86ae23fc05e6ce7db95d940e95e7d1} 
+\index{Utils.h@{Utils.h}!stringToInt@{stringToInt}}
+\index{stringToInt@{stringToInt}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{stringToInt()}{stringToInt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} string\+To\+Int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{value,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \&}]{int\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Function to check if a string can be converted to an integer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & String to check. \\
+\hline
+{\em int\+Value} & Integer value to store the result. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the string can be converted, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00223}{223}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00224\ \{}
+\DoxyCodeLine{00225\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{p}};}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00228\ \ \ \ \ \{}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{intValue}}\ =\ std::stoi(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{value}},\ \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{p}});}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{p}}\ !=\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{value}}.size())}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00235\ \ \ \ \ \}}
+\DoxyCodeLine{00236\ \ \ \ \ \textcolor{keywordflow}{catch}\ (...)}
+\DoxyCodeLine{00237\ \ \ \ \ \{}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00239\ \ \ \ \ \}}
+\DoxyCodeLine{00240\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_a96432d89bc886bc9cdd1d73f86b2bbca}\label{_utils_8h_a96432d89bc886bc9cdd1d73f86b2bbca} 
+\index{Utils.h@{Utils.h}!toLower@{toLower}}
+\index{toLower@{toLower}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{toLower()}{toLower()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} to\+Lower (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Converts a string to lowercase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Lowercase version of the string. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00386}{386}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00387\ \{}
+\DoxyCodeLine{00388\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{lowerStr}}\ =\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{str}};}
+\DoxyCodeLine{00389\ \ \ \ \ std::transform(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{lowerStr}}.begin(),\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{lowerStr}}.end(),\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{lowerStr}}.begin(),\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{::tolower}});}
+\DoxyCodeLine{00390\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{lowerStr}};}
+\DoxyCodeLine{00391\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{_utils_8h_a5280f2f8d4eda5275f5555cf42e3204e}\label{_utils_8h_a5280f2f8d4eda5275f5555cf42e3204e} 
+\index{Utils.h@{Utils.h}!writeToCSV@{writeToCSV}}
+\index{writeToCSV@{writeToCSV}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{writeToCSV()}{writeToCSV()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{typename}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} $>$ \\
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} write\+To\+CSV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{filename,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{T}} \&}]{item }\end{DoxyParamCaption})}
+
+
+
+Generic function to write data to a CSV file. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the item to write. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file. \\
+\hline
+{\em item} & Item to write to the file. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00021}{21}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ std::ofstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}(filename,\ std::ios::app);\ \textcolor{comment}{//\ Append\ mode}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.is\_open())}
+\DoxyCodeLine{00025\ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item}}.toCSV(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}});}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.close();}
+\DoxyCodeLine{00028\ \ \ \ \ \}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00030\ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Unable\ to\ open\ file\ for\ writing:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{00032\ \ \ \ \ \}}
+\DoxyCodeLine{00033\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_utils_8h_a55deed90000e4bc802702dba36009535}\label{_utils_8h_a55deed90000e4bc802702dba36009535} 
+\index{Utils.h@{Utils.h}!DAYS\_OF\_WEEK@{DAYS\_OF\_WEEK}}
+\index{DAYS\_OF\_WEEK@{DAYS\_OF\_WEEK}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{DAYS\_OF\_WEEK}{DAYS\_OF\_WEEK}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::vector}}$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}$>$ DAYS\+\_\+\+OF\+\_\+\+WEEK = \{ "{}Monday"{}, "{}Tuesday"{}, "{}Wednesday"{}, "{}Thursday"{}, "{}Friday"{}, "{}Saturday"{}, "{}Sunday"{} \}}
+
+
+
+vector of days of the week. 
+
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00272}{272}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00272\ \{\ \textcolor{stringliteral}{"{}Monday"{}},\ \textcolor{stringliteral}{"{}Tuesday"{}},\ \textcolor{stringliteral}{"{}Wednesday"{}},\ \textcolor{stringliteral}{"{}Thursday"{}},\ \textcolor{stringliteral}{"{}Friday"{}},\ \textcolor{stringliteral}{"{}Saturday"{}},\ \textcolor{stringliteral}{"{}Sunday"{}}\ \};}
+
+\end{DoxyCode}
+\Hypertarget{_utils_8h_aa54bad96bc93c575daf1d3abcddd58f7}\label{_utils_8h_aa54bad96bc93c575daf1d3abcddd58f7} 
+\index{Utils.h@{Utils.h}!MEAL\_NAMES@{MEAL\_NAMES}}
+\index{MEAL\_NAMES@{MEAL\_NAMES}!Utils.h@{Utils.h}}
+\doxysubsubsection{\texorpdfstring{MEAL\_NAMES}{MEAL\_NAMES}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::vector}}$<$\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}$>$ MEAL\+\_\+\+NAMES = \{ "{}Breakfast"{}, "{}Snack1"{}, "{}Lunch"{}, "{}Snack2"{}, "{}Dinner"{} \}}
+
+
+
+vector of meal names of a mealplan 
+
+
+
+Definition at line \mbox{\hyperlink{_utils_8h_source_l00277}{277}} of file \mbox{\hyperlink{_utils_8h_source}{Utils.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00277\ \{\ \textcolor{stringliteral}{"{}Breakfast"{}},\ \textcolor{stringliteral}{"{}Snack1"{}},\ \textcolor{stringliteral}{"{}Lunch"{}},\ \textcolor{stringliteral}{"{}Snack2"{}},\ \textcolor{stringliteral}{"{}Dinner"{}}\ \};}
+
+\end{DoxyCode}

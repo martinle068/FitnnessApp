@@ -1,0 +1,57 @@
+\doxysection{Model.\+cpp File Reference}
+\hypertarget{_model_8cpp}{}\label{_model_8cpp}\index{Model.cpp@{Model.cpp}}
+{\ttfamily \#include "{}Model.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for Model.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_model_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{_model_8cpp_a711d403a512007b2e0a51f7137e9800a}{calculate\+Nutritional\+Values}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::map}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}, \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&food\+Item\+Map)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_model_8cpp_a711d403a512007b2e0a51f7137e9800a}\label{_model_8cpp_a711d403a512007b2e0a51f7137e9800a} 
+\index{Model.cpp@{Model.cpp}!calculateNutritionalValues@{calculateNutritionalValues}}
+\index{calculateNutritionalValues@{calculateNutritionalValues}!Model.cpp@{Model.cpp}}
+\doxysubsubsection{\texorpdfstring{calculateNutritionalValues()}{calculateNutritionalValues()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} calculate\+Nutritional\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::map}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}, \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&}]{food\+Item\+Map }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_model_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{_model_8cpp_source}{Model.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ food\ name:\ "{}};}
+\DoxyCodeLine{00012\ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ name);}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{getValidInput}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}},\ \textcolor{stringliteral}{"{}Enter\ quantity\ (grams):\ "{}});}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}\ =\ foodItemMap.find(name);}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}\ !=\ foodItemMap.end())}
+\DoxyCodeLine{00018\ \ \ \ \ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}-\/>second.displayNutritionalValues(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}});}
+\DoxyCodeLine{00020\ \ \ \ \ \}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00022\ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Food\ item\ not\ found.\(\backslash\)n"{}};}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00136}{get\+Valid\+Input()}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+

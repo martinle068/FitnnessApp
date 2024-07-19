@@ -1,0 +1,332 @@
+\doxysection{Food\+Item Class Reference}
+\hypertarget{class_food_item}{}\label{class_food_item}\index{FoodItem@{FoodItem}}
+
+
+Class representing a food item with nutritional information.  
+
+
+
+
+{\ttfamily \#include $<$Food\+Item.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_item_af42d5e83909dda906afb3fcb90974e36}{Food\+Item}} ()=\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{default}}
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_food_item_a490c7d266483d3203737e4da8d9264ae}{Food\+Item}} (std\+::string \mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}}, std\+::set$<$ std\+::string $>$ \mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{categories}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}}=0)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_food_item_a53f0253c1f9d91c8a94b702e577bedd5}{to\+CSV}} (std\+::ostream \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}}) \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Serializes the food item to a CSV stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{class_food_item_aad8dadbab96353c54f1a7fb8ca3658c3}{from\+CSV}} (std\+::istream \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}})
+\begin{DoxyCompactList}\small\item\em Parses a food item from a CSV stream. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_food_item_a129ef1430fdffd361e62f753ad3069a3}{display\+Nutritional\+Values}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}}) \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Displays the nutritional values for a given quantity of the food item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}}
+\begin{DoxyCompactList}\small\item\em Name of the food item. \end{DoxyCompactList}\item 
+std\+::set$<$ std\+::string $>$ \mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{categories}}
+\begin{DoxyCompactList}\small\item\em Categories the food item belongs to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}} = 0
+\begin{DoxyCompactList}\small\item\em Calories per 100 grams. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}} = 0
+\begin{DoxyCompactList}\small\item\em Protein content per 100 grams. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}} = 0
+\begin{DoxyCompactList}\small\item\em Carbohydrate content per 100 grams. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}} = 0
+\begin{DoxyCompactList}\small\item\em Fat content per 100 grams. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}} = 0
+\begin{DoxyCompactList}\small\item\em Portion size in grams. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a food item with nutritional information. 
+
+Definition at line \mbox{\hyperlink{_food_item_8h_source_l00013}{13}} of file \mbox{\hyperlink{_food_item_8h_source}{Food\+Item.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_food_item_af42d5e83909dda906afb3fcb90974e36}\label{class_food_item_af42d5e83909dda906afb3fcb90974e36} 
+\index{FoodItem@{FoodItem}!FoodItem@{FoodItem}}
+\index{FoodItem@{FoodItem}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{FoodItem()}{FoodItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Food\+Item\+::\+Food\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+Default constructor. 
+
+\Hypertarget{class_food_item_a490c7d266483d3203737e4da8d9264ae}\label{class_food_item_a490c7d266483d3203737e4da8d9264ae} 
+\index{FoodItem@{FoodItem}!FoodItem@{FoodItem}}
+\index{FoodItem@{FoodItem}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{FoodItem()}{FoodItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Food\+Item\+::\+Food\+Item (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::set$<$ std\+::string $>$}]{categories,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}}}]{calories,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}}}]{protein,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}}}]{carbohydrates,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}}}]{fats,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}}}]{portion = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Parameterized constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the food item. \\
+\hline
+{\em categories} & Categories the food item belongs to. \\
+\hline
+{\em calories} & Calories per 100 grams. \\
+\hline
+{\em protein} & Protein content per 100 grams. \\
+\hline
+{\em carbohydrates} & Carbohydrate content per 100 grams. \\
+\hline
+{\em fats} & Fat content per 100 grams. \\
+\hline
+{\em portion} & Portion size in grams (default is 0). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_food_item_8h_source_l00040}{40}} of file \mbox{\hyperlink{_food_item_8h_source}{Food\+Item.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}}(std::move(\mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}})),\ \mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{categories}}(std::move(\mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{categories}})),\ \mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}}(\mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}}),\ \mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}}(\mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}}),\ \mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}}(\mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}}),\ \mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}}(\mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}}),\ \mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}}(\mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}}) }
+\DoxyCodeLine{00042\ \ \ \ \ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_food_item_a129ef1430fdffd361e62f753ad3069a3}\label{class_food_item_a129ef1430fdffd361e62f753ad3069a3} 
+\index{FoodItem@{FoodItem}!displayNutritionalValues@{displayNutritionalValues}}
+\index{displayNutritionalValues@{displayNutritionalValues}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{displayNutritionalValues()}{displayNutritionalValues()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Food\+Item\+::display\+Nutritional\+Values (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}}}]{quantity }\end{DoxyParamCaption}) const}
+
+
+
+Displays the nutritional values for a given quantity of the food item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & Quantity in grams. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_food_item_8cpp_source_l00054}{54}} of file \mbox{\hyperlink{_food_item_8cpp_source}{Food\+Item.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00055\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Nutritional\ values\ for\ "{}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}}\ <<\ \textcolor{stringliteral}{"{}\ grams\ of\ "{}}\ <<\ \mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}}\ <<\ \textcolor{stringliteral}{"{}:\(\backslash\)n"{}};}
+\DoxyCodeLine{00057\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Calories:\ "{}}\ <<\ (\mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}}\ *\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}}\ /\ 100)\ <<\ \textcolor{stringliteral}{"{}\ kcal\(\backslash\)n"{}};}
+\DoxyCodeLine{00058\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Protein:\ "{}}\ <<\ (\mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}}\ *\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}}\ /\ 100)\ <<\ \textcolor{stringliteral}{"{}\ g\(\backslash\)n"{}};}
+\DoxyCodeLine{00059\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Carbohydrates:\ "{}}\ <<\ (\mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}}\ *\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}}\ /\ 100)\ <<\ \textcolor{stringliteral}{"{}\ g\(\backslash\)n"{}};}
+\DoxyCodeLine{00060\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Fats:\ "{}}\ <<\ (\mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}}\ *\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}}\ /\ 100)\ <<\ \textcolor{stringliteral}{"{}\ g\(\backslash\)n"{}};}
+\DoxyCodeLine{00061\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Portion\ size:\ "{}}\ <<\ \mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}}\ <<\ \textcolor{stringliteral}{"{}\ grams\(\backslash\)n"{}};}
+\DoxyCodeLine{00062\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_food_item_8h_source_l00018}{calories}}, \mbox{\hyperlink{_food_item_8h_source_l00020}{carbohydrates}}, \mbox{\hyperlink{_food_item_8h_source_l00021}{fats}}, \mbox{\hyperlink{_food_item_8h_source_l00016}{name}}, \mbox{\hyperlink{_food_item_8h_source_l00022}{portion}}, \mbox{\hyperlink{_food_item_8h_source_l00019}{protein}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{class_food_item_aad8dadbab96353c54f1a7fb8ca3658c3}\label{class_food_item_aad8dadbab96353c54f1a7fb8ca3658c3} 
+\index{FoodItem@{FoodItem}!fromCSV@{fromCSV}}
+\index{fromCSV@{fromCSV}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{fromCSV()}{fromCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} Food\+Item\+::from\+CSV (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is }\end{DoxyParamCaption})}
+
+
+
+Parses a food item from a CSV stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is} & Input stream to read from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if parsing was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_food_item_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{_food_item_8cpp_source}{Food\+Item.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{categoriesStr}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{calStr}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{proteinStr}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{carbStr}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{fatsStr}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{portionStr}};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{if}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}},\ \textcolor{charliteral}{','})\ \&\&\ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{categoriesStr}},\ \textcolor{charliteral}{','})\ \&\&}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{calStr}},\ \textcolor{charliteral}{','})\ \&\&\ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{proteinStr}},\ \textcolor{charliteral}{','})\ \&\&}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{carbStr}},\ \textcolor{charliteral}{','})\ \&\&\ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{fatsStr}},\ \textcolor{charliteral}{','})\ \&\&}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{is}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{portionStr}}))}
+\DoxyCodeLine{00031\ \ \ \ \ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::stringstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{categoriesStr}});}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}};}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}},\ \textcolor{charliteral}{';'}))}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{categories}}.insert(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}});}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}}\ =\ std::stoi(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{calStr}});}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}}\ =\ std::stof(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{proteinStr}});}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}}\ =\ std::stof(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{carbStr}});}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}}\ =\ std::stof(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{fatsStr}});}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}}\ =\ std::stof(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{portionStr}});}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00047\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_food_item_8h_source_l00018}{calories}}, \mbox{\hyperlink{_food_item_8h_source_l00020}{carbohydrates}}, \mbox{\hyperlink{_food_item_8h_source_l00017}{categories}}, \mbox{\hyperlink{_food_item_8h_source_l00021}{fats}}, \mbox{\hyperlink{_food_item_8h_source_l00016}{name}}, \mbox{\hyperlink{_food_item_8h_source_l00022}{portion}}, \mbox{\hyperlink{_food_item_8h_source_l00019}{protein}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+\Hypertarget{class_food_item_a53f0253c1f9d91c8a94b702e577bedd5}\label{class_food_item_a53f0253c1f9d91c8a94b702e577bedd5} 
+\index{FoodItem@{FoodItem}!toCSV@{toCSV}}
+\index{toCSV@{toCSV}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{toCSV()}{toCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Food\+Item\+::to\+CSV (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+Serializes the food item to a CSV stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Output stream to write to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_food_item_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{_food_item_8cpp_source}{Food\+Item.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}}\ <<\ \mbox{\hyperlink{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}{name}}\ <<\ \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}}\ :\ \mbox{\hyperlink{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}{categories}})}
+\DoxyCodeLine{00012\ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}}\ <<\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}}\ <<\ \textcolor{stringliteral}{"{};"{}};}
+\DoxyCodeLine{00014\ \ \ \ \ \}}
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{os}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ \mbox{\hyperlink{class_food_item_a00312aaf372045b51b41da64b7129d9c}{calories}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ \mbox{\hyperlink{class_food_item_a967be27bcd6656740cbce6f82b6a3600}{protein}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ \mbox{\hyperlink{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}{carbohydrates}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ \mbox{\hyperlink{class_food_item_adc3944e84537f62469beb4f5707c6fc6}{fats}}\ <<\ \textcolor{stringliteral}{"{},"{}}\ <<\ \mbox{\hyperlink{class_food_item_a8a131943681e05608398ff5f0a35cd94}{portion}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00016\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_food_item_8h_source_l00018}{calories}}, \mbox{\hyperlink{_food_item_8h_source_l00020}{carbohydrates}}, \mbox{\hyperlink{_food_item_8h_source_l00017}{categories}}, \mbox{\hyperlink{_food_item_8h_source_l00021}{fats}}, \mbox{\hyperlink{_food_item_8h_source_l00016}{name}}, \mbox{\hyperlink{_food_item_8h_source_l00022}{portion}}, \mbox{\hyperlink{_food_item_8h_source_l00019}{protein}}, and \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_food_item_a00312aaf372045b51b41da64b7129d9c}\label{class_food_item_a00312aaf372045b51b41da64b7129d9c} 
+\index{FoodItem@{FoodItem}!calories@{calories}}
+\index{calories@{calories}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{calories}{calories}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} Food\+Item\+::calories = 0}
+
+
+
+Calories per 100 grams. 
+
+
+
+Definition at line \mbox{\hyperlink{_food_item_8h_source_l00018}{18}} of file \mbox{\hyperlink{_food_item_8h_source}{Food\+Item.\+h}}.
+
+\Hypertarget{class_food_item_a8adb0c23ba2b310a81404434aace5b9b}\label{class_food_item_a8adb0c23ba2b310a81404434aace5b9b} 
+\index{FoodItem@{FoodItem}!carbohydrates@{carbohydrates}}
+\index{carbohydrates@{carbohydrates}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{carbohydrates}{carbohydrates}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} Food\+Item\+::carbohydrates = 0}
+
+
+
+Carbohydrate content per 100 grams. 
+
+
+
+Definition at line \mbox{\hyperlink{_food_item_8h_source_l00020}{20}} of file \mbox{\hyperlink{_food_item_8h_source}{Food\+Item.\+h}}.
+
+\Hypertarget{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d}\label{class_food_item_a8050e7bb19493ade9b1e7336d4a6685d} 
+\index{FoodItem@{FoodItem}!categories@{categories}}
+\index{categories@{categories}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{categories}{categories}}
+{\footnotesize\ttfamily std\+::set$<$std\+::string$>$ Food\+Item\+::categories}
+
+
+
+Categories the food item belongs to. 
+
+
+
+Definition at line \mbox{\hyperlink{_food_item_8h_source_l00017}{17}} of file \mbox{\hyperlink{_food_item_8h_source}{Food\+Item.\+h}}.
+
+\Hypertarget{class_food_item_adc3944e84537f62469beb4f5707c6fc6}\label{class_food_item_adc3944e84537f62469beb4f5707c6fc6} 
+\index{FoodItem@{FoodItem}!fats@{fats}}
+\index{fats@{fats}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{fats}{fats}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} Food\+Item\+::fats = 0}
+
+
+
+Fat content per 100 grams. 
+
+
+
+Definition at line \mbox{\hyperlink{_food_item_8h_source_l00021}{21}} of file \mbox{\hyperlink{_food_item_8h_source}{Food\+Item.\+h}}.
+
+\Hypertarget{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d}\label{class_food_item_a4b052cbd6a9311b5c3ef816402c3852d} 
+\index{FoodItem@{FoodItem}!name@{name}}
+\index{name@{name}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Food\+Item\+::name}
+
+
+
+Name of the food item. 
+
+
+
+Definition at line \mbox{\hyperlink{_food_item_8h_source_l00016}{16}} of file \mbox{\hyperlink{_food_item_8h_source}{Food\+Item.\+h}}.
+
+\Hypertarget{class_food_item_a8a131943681e05608398ff5f0a35cd94}\label{class_food_item_a8a131943681e05608398ff5f0a35cd94} 
+\index{FoodItem@{FoodItem}!portion@{portion}}
+\index{portion@{portion}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{portion}{portion}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} Food\+Item\+::portion = 0}
+
+
+
+Portion size in grams. 
+
+
+
+Definition at line \mbox{\hyperlink{_food_item_8h_source_l00022}{22}} of file \mbox{\hyperlink{_food_item_8h_source}{Food\+Item.\+h}}.
+
+\Hypertarget{class_food_item_a967be27bcd6656740cbce6f82b6a3600}\label{class_food_item_a967be27bcd6656740cbce6f82b6a3600} 
+\index{FoodItem@{FoodItem}!protein@{protein}}
+\index{protein@{protein}!FoodItem@{FoodItem}}
+\doxysubsubsection{\texorpdfstring{protein}{protein}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} Food\+Item\+::protein = 0}
+
+
+
+Protein content per 100 grams. 
+
+
+
+Definition at line \mbox{\hyperlink{_food_item_8h_source_l00019}{19}} of file \mbox{\hyperlink{_food_item_8h_source}{Food\+Item.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_food_item_8h}{Food\+Item.\+h}}\item 
+\mbox{\hyperlink{_food_item_8cpp}{Food\+Item.\+cpp}}\end{DoxyCompactItemize}

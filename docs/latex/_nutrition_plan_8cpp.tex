@@ -1,0 +1,77 @@
+\doxysection{Nutrition\+Plan.\+cpp File Reference}
+\hypertarget{_nutrition_plan_8cpp}{}\label{_nutrition_plan_8cpp}\index{NutritionPlan.cpp@{NutritionPlan.cpp}}
+{\ttfamily \#include "{}Nutrition\+Plan.\+h"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}Utils.\+h"{}}\newline
+Include dependency graph for Nutrition\+Plan.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_nutrition_plan_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_item}{Food\+Item}} \mbox{\hyperlink{_nutrition_plan_8cpp_ad0d7d33792722ca412fe1552a5f86fb4}{get\+New\+Food\+Item}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{item\+Name}})
+\begin{DoxyCompactList}\small\item\em Prompts the user to enter details for a new food item and returns the created \doxylink{class_food_item}{Food\+Item}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_nutrition_plan_8cpp_ad0d7d33792722ca412fe1552a5f86fb4}\label{_nutrition_plan_8cpp_ad0d7d33792722ca412fe1552a5f86fb4} 
+\index{NutritionPlan.cpp@{NutritionPlan.cpp}!getNewFoodItem@{getNewFoodItem}}
+\index{getNewFoodItem@{getNewFoodItem}!NutritionPlan.cpp@{NutritionPlan.cpp}}
+\doxysubsubsection{\texorpdfstring{getNewFoodItem()}{getNewFoodItem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_food_item}{Food\+Item}} get\+New\+Food\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} \&}]{item\+Name }\end{DoxyParamCaption})}
+
+
+
+Prompts the user to enter details for a new food item and returns the created \doxylink{class_food_item}{Food\+Item}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Name} & The name of the food item. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The created \doxylink{class_food_item}{Food\+Item} object. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_nutrition_plan_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{_nutrition_plan_8cpp_source}{Nutrition\+Plan.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00040\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ std::set<std::string>\ categories;}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ calories;}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{float}\ protein,\ carbohydrates,\ fats,\ portion\ =\ 0;}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{00046\ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ category\ (or\ 'done'\ to\ finish):\ "{}};}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}});}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}}\ ==\ \textcolor{stringliteral}{"{}done"{}})}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ categories.insert(\mbox{\hyperlink{_utils_8h_a96432d89bc886bc9cdd1d73f86b2bbca}{toLower}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{category}}));}
+\DoxyCodeLine{00055\ \ \ \ \ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{getValidInput}}(calories,\ \textcolor{stringliteral}{"{}Enter\ calories\ per\ 100\ grams:\ "{}});}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{getValidInput}}(protein,\ \textcolor{stringliteral}{"{}Enter\ protein\ per\ 100\ grams:\ "{}});}
+\DoxyCodeLine{00059\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{getValidInput}}(carbohydrates,\ \textcolor{stringliteral}{"{}Enter\ carbohydrates\ per\ 100\ grams:\ "{}});}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{getValidInput}}(fats,\ \textcolor{stringliteral}{"{}Enter\ fats\ per\ 100\ grams:\ "{}});}
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{_utils_8h_a6b6074e85f35e512d3f5fb5a7c3839cd}{getOptionalInput}}(portion,\ \textcolor{stringliteral}{"{}Enter\ portion\ size\ in\ grams\ (or\ press\ enter\ to\ skip):\ "{}});}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_food_item}{FoodItem}}\{\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{itemName}},\ categories,\ calories,\ protein,\ carbohydrates,\ fats,\ portion\ \};}
+\DoxyCodeLine{00064\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00190}{get\+Optional\+Input()}}, \mbox{\hyperlink{_utils_8h_source_l00136}{get\+Valid\+Input()}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, and \mbox{\hyperlink{_utils_8h_source_l00386}{to\+Lower()}}.
+

@@ -1,0 +1,5 @@
+<map id="WorkoutPlanView" name="WorkoutPlanView">
+<area shape="rect" id="Node000001" title="The WorkoutPlanView class represents the view for managing workout plans. It provides a user interfac..." alt="" coords="5,80,130,107"/>
+<area shape="rect" id="Node000002" href="$class_view.html" title="Abstract base class for all views in the application." alt="" coords="43,5,92,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,48,70,80,65,80,65,48"/>
+</map>

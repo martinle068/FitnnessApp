@@ -1,0 +1,23 @@
+﻿  FitnessApp.cpp
+  Exercise.cpp
+  ExerciseView.cpp
+  ExerciseViewModel.cpp
+  FoodItem.cpp
+  FoodView.cpp
+  FoodViewModel.cpp
+  Goals.cpp
+  main.cpp
+  MainView.cpp
+  NutritionPlan.cpp
+  NutritionPlanView.cpp
+  NutritionPlanViewModel.cpp
+  Profile.cpp
+  ProfileView.cpp
+  WorkoutPlan.cpp
+  WorkoutPlanView.cpp
+  WorkoutPlanViewModel.cpp
+C:\Users\leduc\source\repos\FitnnessApp\src\FitnessApp\FitnessApp\WorkoutPlanViewModel.cpp(416,114): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\leduc\source\repos\FitnnessApp\src\FitnessApp\FitnessApp\WorkoutPlanViewModel.cpp(501,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\leduc\source\repos\FitnnessApp\src\FitnessApp\FitnessApp\WorkoutPlanViewModel.cpp(591,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  FitnessApp.vcxproj -> C:\Users\leduc\source\repos\FitnnessApp\src\FitnessApp\x64\Debug\FitnessApp.exe

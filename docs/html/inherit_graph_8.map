@@ -1,0 +1,15 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_view.html" title="Abstract base class for all views in the application." alt="" coords="5,132,55,159"/>
+<area shape="rect" id="Node000001" href="$class_exercise_view.html" title="Handles the user interface for displaying and managing exercises." alt="" coords="115,5,215,32"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="42,117,67,79,101,42,120,30,123,35,104,46,71,82,47,120"/>
+<area shape="rect" id="Node000002" href="$class_food_view.html" title="Handles the user interface for displaying and managing food items." alt="" coords="126,56,204,83"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="59,120,101,92,125,81,127,86,104,97,62,125"/>
+<area shape="rect" id="Node000003" href="$class_main_view.html" title="The MainView class provides the main interface for the application." alt="" coords="126,107,204,133"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="69,135,125,125,126,130,70,141"/>
+<area shape="rect" id="Node000004" href="$class_nutrition_plan_view.html" title="Class representing the view for managing nutrition plans." alt="" coords="103,157,226,184"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="70,150,103,156,102,162,69,155"/>
+<area shape="rect" id="Node000005" href="$class_profile_view.html" title="The ProfileView class is responsible for managing the profile and goals settings. It inherits from th..." alt="" coords="122,208,208,235"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="62,166,104,194,127,205,125,210,101,198,59,170"/>
+<area shape="rect" id="Node000006" href="$class_workout_plan_view.html" title="The WorkoutPlanView class represents the view for managing workout plans. It provides a user interfac..." alt="" coords="103,259,227,285"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="47,171,71,209,104,245,123,256,120,260,101,249,67,212,42,174"/>
+</map>

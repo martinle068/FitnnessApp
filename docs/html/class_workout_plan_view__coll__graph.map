@@ -1,0 +1,9 @@
+<map id="WorkoutPlanView" name="WorkoutPlanView">
+<area shape="rect" id="Node000001" title="The WorkoutPlanView class represents the view for managing workout plans. It provides a user interfac..." alt="" coords="10,172,135,199"/>
+<area shape="rect" id="Node000002" href="$class_view.html" title="Abstract base class for all views in the application." alt="" coords="5,81,55,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="45,121,69,170,64,173,40,123"/>
+<area shape="rect" id="Node000003" href="$class_workout_plan_view_model.html" title=" " alt="" coords="78,81,238,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,121,87,173,83,170,134,117"/>
+<area shape="rect" id="Node000004" href="$class_view_model.html" title="Abstract base class for ViewModel, providing a common interface for managing items." alt="" coords="116,5,200,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="161,47,161,81,155,81,155,47"/>
+</map>

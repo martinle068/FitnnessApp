@@ -1,0 +1,30 @@
+\doxysection{Model.\+cpp}
+\hypertarget{_model_8cpp_source}{}\label{_model_8cpp_source}\mbox{\hyperlink{_model_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_model_8h}{Model.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00006}\mbox{\hyperlink{_model_8cpp_a711d403a512007b2e0a51f7137e9800a}{00006}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_model_8cpp_a711d403a512007b2e0a51f7137e9800a}{calculateNutritionalValues}}(\textcolor{keyword}{const}\ std::map<std::string,\ FoodItem>\&\ foodItemMap)}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00008}00008\ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00009}00009\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}};}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00011}00011\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ food\ name:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00012}00012\ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ name);}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00014}00014\ \ \ \ \ \mbox{\hyperlink{_utils_8h_afc520920f28b649d4626acef5a0110b0}{getValidInput}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}},\ \textcolor{stringliteral}{"{}Enter\ quantity\ (grams):\ "{}});}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00016}00016\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}\ =\ foodItemMap.find(name);}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00017}00017\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}\ !=\ foodItemMap.end())}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00018}00018\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{it}}-\/>second.displayNutritionalValues(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{quantity}});}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00020}00020\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00022}00022\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Food\ item\ not\ found.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00024}00024\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_model_8cpp_source_l00025}00025\ \}}
+
+\end{DoxyCode}

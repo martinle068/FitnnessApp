@@ -1,0 +1,5 @@
+<map id="ExerciseViewModel" name="ExerciseViewModel">
+<area shape="rect" id="Node000001" title="ViewModel class for managing and displaying exercises." alt="" coords="5,80,141,107"/>
+<area shape="rect" id="Node000002" href="$class_view_model.html" title="Abstract base class for ViewModel, providing a common interface for managing items." alt="" coords="31,5,115,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,48,76,80,70,80,70,48"/>
+</map>

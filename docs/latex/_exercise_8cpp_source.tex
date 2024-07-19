@@ -1,0 +1,66 @@
+\doxysection{Exercise.\+cpp}
+\hypertarget{_exercise_8cpp_source}{}\label{_exercise_8cpp_source}\mbox{\hyperlink{_exercise_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_exercise_8h}{Exercise.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00009}\mbox{\hyperlink{class_exercise_a504aef66764979ad3d52eed99281f7b8}{00009}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_exercise_a504aef66764979ad3d52eed99281f7b8}{Exercise::fromCSV}}(std::istream\&\ str)}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00010}00010\ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00011}00011\ \ \ \ \ std::string\ line;}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{keywordflow}{if}\ (std::getline(str,\ line))}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00013}00013\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ std::istringstream\ iss(line);}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ std::string\ repetitionsStr,\ setsStr,\ typeStr;}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::getline(iss,\ \mbox{\hyperlink{class_exercise_a3123262631649f25f38ac3756a28e821}{name}},\ \textcolor{charliteral}{','})\ \&\&}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(iss,\ typeStr,\ \textcolor{charliteral}{','})\ \&\&}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(iss,\ \mbox{\hyperlink{class_exercise_a69f7977a65b3f9eba35b51be34212d17}{muscleGroup}},\ \textcolor{charliteral}{','})\ \&\&}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(iss,\ repetitionsStr,\ \textcolor{charliteral}{','})\ \&\&}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(iss,\ setsStr,\ \textcolor{charliteral}{','}))}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00021}00021\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_exercise_a1032bc5da8dca32bfa1df695d060c10c}{type}}\ =\ \mbox{\hyperlink{class_exercise_a605694f79faeaf3336c7dec39e33afa2}{stringToExerciseType}}(typeStr);}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_exercise_a19b9e9db94ecc68c8f1b7b8d99dde638}{repetitions}}\ =\ std::stoi(repetitionsStr);}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_exercise_a751b5132c36570226c5d2d9902082061}{sets}}\ =\ std::stoi(setsStr);}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00027}00027\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00029}00029\ \}}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00036}\mbox{\hyperlink{class_exercise_ad2f84893fb439a10d56c0c202d3f67eb}{00036}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_ad2f84893fb439a10d56c0c202d3f67eb}{Exercise::toCSV}}(std::ostream\&\ str)\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00037}00037\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00038}00038\ \ \ \ \ str\ <<\ \mbox{\hyperlink{class_exercise_a3123262631649f25f38ac3756a28e821}{name}}\ <<\ \textcolor{charliteral}{','}\ <<\ \mbox{\hyperlink{class_exercise_ad2241f72426228339c3f71e950a7809c}{exerciseTypeToString}}(\mbox{\hyperlink{class_exercise_a1032bc5da8dca32bfa1df695d060c10c}{type}})\ <<\ \textcolor{charliteral}{','}\ <<\ \mbox{\hyperlink{class_exercise_a69f7977a65b3f9eba35b51be34212d17}{muscleGroup}}\ <<\ \textcolor{charliteral}{','}\ <<\ \mbox{\hyperlink{class_exercise_a19b9e9db94ecc68c8f1b7b8d99dde638}{repetitions}}\ <<\ \textcolor{charliteral}{','}\ <<\ \mbox{\hyperlink{class_exercise_a751b5132c36570226c5d2d9902082061}{sets}}\ <<\ \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00039}00039\ \}}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00047}\mbox{\hyperlink{class_exercise_a605694f79faeaf3336c7dec39e33afa2}{00047}}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402f}{Exercise::ExerciseType}}\ \mbox{\hyperlink{class_exercise_a605694f79faeaf3336c7dec39e33afa2}{Exercise::stringToExerciseType}}(\textcolor{keyword}{const}\ std::string\&\ str)}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00048}00048\ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \textcolor{stringliteral}{"{}Strength"{}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa3963049b60ddd6534b219d3767af0dfc}{ExerciseType::STRENGTH}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \textcolor{stringliteral}{"{}Hypertrophy"{}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa9f3d2a8f0b5097953e1a708a6fabfc58}{ExerciseType::HYPERTROPHY}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \textcolor{stringliteral}{"{}Endurance"{}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fac47c635f198504d562ae6adcc868d0fa}{ExerciseType::ENDURANCE}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \textcolor{stringliteral}{"{}Flexibility"{}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa9ce1b0863dfd6067dd77c9c1dba0a06a}{ExerciseType::FLEXIBILITY}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00053}00053\ \ \ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \textcolor{stringliteral}{"{}Balance\ and\ Stability"{}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa303ae3fda3559689e50b52c47bcc2e91}{ExerciseType::BALANCE\_AND\_STABILITY}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \textcolor{stringliteral}{"{}Power"{}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fac9c9c146c630ca5ef9197c73c032f4a6}{ExerciseType::POWER}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00055}00055\ \ \ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \textcolor{stringliteral}{"{}Functional"{}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402faf8764f7e89565e76080d7c77595c9879}{ExerciseType::FUNCTIONAL}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \textcolor{stringliteral}{"{}Aerobic"{}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402faf28ad38806f5defe04838de3042a5cdf}{ExerciseType::AEROBIC}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00057}00057\ \ \ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \textcolor{stringliteral}{"{}Anaerobic"{}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa7254c5b4aafdae1baecf897b8d9ce0d7}{ExerciseType::ANAEROBIC}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{keywordflow}{if}\ (str\ ==\ \textcolor{stringliteral}{"{}Recovery\ and\ Regeneration"{}})\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa64c706bb1d8ab3595dceab17f8cb6409}{ExerciseType::RECOVERY\_AND\_REGENERATION}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa696b031073e74bf2cb98e5ef201d4aa3}{ExerciseType::UNKNOWN}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00060}00060\ \}}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00068}\mbox{\hyperlink{class_exercise_ad2241f72426228339c3f71e950a7809c}{00068}}\ std::string\ \mbox{\hyperlink{class_exercise_ad2241f72426228339c3f71e950a7809c}{Exercise::exerciseTypeToString}}(\mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402f}{ExerciseType}}\ type)}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00069}00069\ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00070}00070\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_exercise_a1032bc5da8dca32bfa1df695d060c10c}{type}})}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00071}00071\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa3963049b60ddd6534b219d3767af0dfc}{ExerciseType::STRENGTH}}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Strength"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa9f3d2a8f0b5097953e1a708a6fabfc58}{ExerciseType::HYPERTROPHY}}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Hypertrophy"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00074}00074\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fac47c635f198504d562ae6adcc868d0fa}{ExerciseType::ENDURANCE}}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Endurance"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa9ce1b0863dfd6067dd77c9c1dba0a06a}{ExerciseType::FLEXIBILITY}}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Flexibility"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa303ae3fda3559689e50b52c47bcc2e91}{ExerciseType::BALANCE\_AND\_STABILITY}}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Balance\ and\ Stability"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00077}00077\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fac9c9c146c630ca5ef9197c73c032f4a6}{ExerciseType::POWER}}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Power"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00078}00078\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402faf8764f7e89565e76080d7c77595c9879}{ExerciseType::FUNCTIONAL}}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Functional"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00079}00079\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402faf28ad38806f5defe04838de3042a5cdf}{ExerciseType::AEROBIC}}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Aerobic"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00080}00080\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa7254c5b4aafdae1baecf897b8d9ce0d7}{ExerciseType::ANAEROBIC}}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Anaerobic"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_exercise_a80473c22552f2d0446891d1dcc63402fa64c706bb1d8ab3595dceab17f8cb6409}{ExerciseType::RECOVERY\_AND\_REGENERATION}}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Recovery\ and\ Regeneration"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00082}00082\ \ \ \ \ \textcolor{keywordflow}{default}:\ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Unknown"{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00083}00083\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_exercise_8cpp_source_l00084}00084\ \}}
+
+\end{DoxyCode}

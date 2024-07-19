@@ -1,0 +1,9 @@
+<map id="FoodView" name="FoodView">
+<area shape="rect" id="Node000001" title="Handles the user interface for displaying and managing food items." alt="" coords="28,172,106,199"/>
+<area shape="rect" id="Node000002" href="$class_view.html" title="Abstract base class for all views in the application." alt="" coords="5,81,55,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="44,122,64,170,60,172,39,124"/>
+<area shape="rect" id="Node000003" href="$class_food_view_model.html" title="ViewModel class for handling food items." alt="" coords="79,81,192,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="118,122,79,173,75,170,114,119"/>
+<area shape="rect" id="Node000004" href="$class_view_model.html" title="Abstract base class for ViewModel, providing a common interface for managing items." alt="" coords="93,5,178,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="138,47,138,81,133,81,133,47"/>
+</map>

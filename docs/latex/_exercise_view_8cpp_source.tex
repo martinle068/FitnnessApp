@@ -1,0 +1,33 @@
+\doxysection{Exercise\+View.\+cpp}
+\hypertarget{_exercise_view_8cpp_source}{}\label{_exercise_view_8cpp_source}\mbox{\hyperlink{_exercise_view_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_exercise_view_8h}{ExerciseView.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00010}\mbox{\hyperlink{class_exercise_view_a643a90f4ba1478301fa2770f742332d6}{00010}}\ \mbox{\hyperlink{class_exercise_view_a643a90f4ba1478301fa2770f742332d6}{ExerciseView::ExerciseView}}(\mbox{\hyperlink{class_exercise_view_model}{ExerciseViewModel}}\&\ vm)\ :\ viewModel(vm)}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00012}00012\ \ \ \ \ \mbox{\hyperlink{class_exercise_view_acf84293f53e74ecfa787c0f369b1fa2f}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}View\ Exercises"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Viewing\ Exercises"{}});\ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_ad5a129b99e0b7141be97c472cc5ab747}{view}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Add\ Exercise"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Adding\ Exercise"{}});\ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_aa58b10331e1509c47cdf8f05e97b980d}{add}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Modify\ Exercise"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Modifying\ Exercise"{}});\ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_adc3061dd89508f09dfcf5e04173801ab}{modify}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Delete\ Exercise"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Deleting\ Exercise"{}});\ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_a26f5244c57c4469cfc5165d44d5b9725}{remove}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Import\ from\ file"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_exercise_view_a76af48581962807b6df407908b64a93c}{importFromFile}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Back"{}},\ [\textcolor{keyword}{this}]()\ \{\ \textcolor{keywordflow}{return};\ \}\}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00019}00019\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00028}\mbox{\hyperlink{class_exercise_view_a44c4781dc6b8185a4e8deafc55ea754d}{00028}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_a44c4781dc6b8185a4e8deafc55ea754d}{ExerciseView::display}}()}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00029}00029\ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00030}00030\ \ \ \ \ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_acc21073369e6c107edc594a54263beef}{reload}}();}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Exercises"{}},\ \mbox{\hyperlink{class_exercise_view_acf84293f53e74ecfa787c0f369b1fa2f}{menuOptions}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00039}\mbox{\hyperlink{class_exercise_view_a76af48581962807b6df407908b64a93c}{00039}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_exercise_view_a76af48581962807b6df407908b64a93c}{ExerciseView::importFromFile}}()}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00040}00040\ \{}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00041}00041\ \ \ \ \ std::string\ filename;}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00042}00042\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ the\ filename\ to\ import\ exercises\ from:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00043}00043\ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ filename);}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{class_exercise_view_a629d5cb3e081f72946215bb96fae3c58}{viewModel}}.\mbox{\hyperlink{class_exercise_view_model_a9952d334b11b426e2f5cea14436b3d60}{importFromFile}}(filename);}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00045}00045\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Exercises\ imported\ from\ file:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_exercise_view_8cpp_source_l00046}00046\ \}}
+
+\end{DoxyCode}

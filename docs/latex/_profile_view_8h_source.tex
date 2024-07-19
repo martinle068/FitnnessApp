@@ -1,0 +1,40 @@
+\doxysection{Profile\+View.\+h}
+\hypertarget{_profile_view_8h_source}{}\label{_profile_view_8h_source}\mbox{\hyperlink{_profile_view_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ PROFILEVIEW\_H}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ PROFILEVIEW\_H}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_view_8h}{View.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_profile_8h}{Profile.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_goals_8h}{Goals.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00012}\mbox{\hyperlink{class_profile_view}{00012}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_profile_view}{ProfileView}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_view}{View}}}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00014}00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{class_profile_view_a5c847b12a176b1daed731163038756d4}{ProfileView}}(\mbox{\hyperlink{class_profile}{Profile}}\&\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}},\ \mbox{\hyperlink{class_goals}{Goals}}\&\ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_view_a175d94b9f25b5baef17252ed9fd8c087}{display}}();}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00028}00028\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00029}\mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{00029}}\ \ \ \ \ \mbox{\hyperlink{class_profile}{Profile}}\&\ \mbox{\hyperlink{class_profile_view_ae3dd02abf8658bf285ed1af3bf37c11c}{profile}};\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00030}\mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{00030}}\ \ \ \ \ \mbox{\hyperlink{class_goals}{Goals}}\&\ \mbox{\hyperlink{class_profile_view_ac6b68f8aaa301b12240da90ba6d7e1e9}{goals}};\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00031}\mbox{\hyperlink{class_profile_view_acc8d633fbf6e3cd673d2eac7fce3a2d9}{00031}}\ \ \ \ \ std::vector<MenuOption>\ \mbox{\hyperlink{class_profile_view_acc8d633fbf6e3cd673d2eac7fce3a2d9}{menuOptions}};\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00036}00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_view_aa11e57597414e5159c98924cc1c7ffdb}{setProfileInformation}}();}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00041}00041\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_view_afe9edfeddf26aadbb1d803895ffc7e87}{setGoals}}();}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_view_afb3770038b5a4d7dfabd02ab3040fd9e}{setCustomCalories}}();}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00051}00051\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_profile_view_aee3c8e12e74d79723db9be435212d046}{resetToCalculatedCalories}}();}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals::FitnessGoal}}\ \mbox{\hyperlink{class_profile_view_ac35b98d3c3a90ac5314c0bacad24c679}{getFitnessGoal}}(\mbox{\hyperlink{class_goals_a27830225bcb0e69bfefc0095dff1bd6a}{Goals::FitnessGoal}}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentGoal}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00067}00067\ \ \ \ \ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile::Gender}}\ \mbox{\hyperlink{class_profile_view_a559fec2f5a84e6001636dae98222cfec}{getGender}}(\mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile::Gender}}\ gender);}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00075}00075\ \ \ \ \ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile::ActivityLevel}}\ \mbox{\hyperlink{class_profile_view_aa6e6bc40edec2864bfa655f06e5f9288}{getActivityLevel}}(\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile::ActivityLevel}}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{currentActivityLevel}});}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00076}00076\ \};}
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_profile_view_8h_source_l00078}00078\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PROFILEVIEW\_H}}
+
+\end{DoxyCode}

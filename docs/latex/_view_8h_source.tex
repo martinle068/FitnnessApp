@@ -1,0 +1,77 @@
+\doxysection{View.\+h}
+\hypertarget{_view_8h_source}{}\label{_view_8h_source}\mbox{\hyperlink{_view_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ VIEW\_H}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ VIEW\_H}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_utils_8h}{Utils.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <functional>}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00012}\mbox{\hyperlink{class_view}{00012}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_view}{View}}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00014}00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00018}\mbox{\hyperlink{class_view_ad0f3ade04bca4e74b8868e63729bad86}{00018}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_view_ad0f3ade04bca4e74b8868e63729bad86}{\string~View}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00023}\mbox{\hyperlink{class_view_a2d83a628b932739742a943ccaa3385d0}{00023}}\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_view_a2d83a628b932739742a943ccaa3385d0}{display}}()\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00032}\mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{00032}}\ \ \ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{keyword}{const}\ std::string\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}},\ \textcolor{keyword}{const}\ std::vector<MenuOption>\&\ menuOptions,\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{askForEnterAtTheEnd}})}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00033}00033\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}};}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}};}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}}();\ \textcolor{comment}{//\ Clear\ the\ screen\ before\ displaying\ the\ menu}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a8fcbccbd74fee29a94755024f0359239}{displayMenu}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{title}},\ menuOptions);}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Select\ an\ action:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}});}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{try}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pos}};}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}}\ =\ std::stoi(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}},\ \&\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pos}});}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ pos\ is\ not\ at\ the\ end\ of\ the\ string,\ then\ not\ all\ characters\ were\ valid\ numbers}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pos}}\ !=\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{input}}.length())}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}}\ =\ 0;\ \textcolor{comment}{//\ Invalid\ choice}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{catch}\ (\textcolor{keyword}{const}\ std::exception\&)}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}}\ =\ 0;\ \textcolor{comment}{//\ Invalid\ choice}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice\ <\ 1\ ||\ choice\ >}}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(menuOptions.size()))}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Invalid\ input,\ please\ enter\ a\ number\ between\ 1\ and\ "{}}\ <<\ menuOptions.size()\ <<\ \textcolor{stringliteral}{"{}.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Press\ Enter\ to\ continue..."{}};}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.get();}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}}();\ \textcolor{comment}{//\ Clear\ the\ screen\ for\ the\ next\ iteration}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}}();}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}}\ ==\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(menuOptions.size()))}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ \textcolor{comment}{//\ Exit\ the\ loop\ and\ return\ to\ the\ previous\ menu}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ menuOptions[\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{choice}}\ -\/\ 1].second();}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{askForEnterAtTheEnd}})}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ After\ performing\ the\ action,\ display\ a\ message\ and\ show\ options\ again}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Press\ Enter\ to\ continue..."{}};}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cin.get();\ \textcolor{comment}{//\ Actually\ get\ the\ Enter\ key}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a9d7e8af417b6d543da691e9c0e2f6f9f}{clearScreen}}();\ \textcolor{comment}{//\ Clear\ the\ screen\ for\ the\ next\ iteration}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00084}00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00085}00085\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00086}00086\ \};}
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{_view_8h_source_l00088}00088\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ VIEW\_H}}
+
+\end{DoxyCode}

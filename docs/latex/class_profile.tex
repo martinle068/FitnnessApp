@@ -1,0 +1,787 @@
+\doxysection{Profile Class Reference}
+\hypertarget{class_profile}{}\label{class_profile}\index{Profile@{Profile}}
+
+
+The \doxylink{class_profile}{Profile} class represents a user\textquotesingle{}s profile with personal information and activity level.  
+
+
+
+
+{\ttfamily \#include $<$Profile.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Gender}} \{ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{MALE}}
+, \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a4bf2e31c60d6a605954e399524cae56b}{FEMALE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for gender. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Activity\+Level}} \{ \newline
+\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{SEDENTARY}}
+, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{LIGHTLY\+\_\+\+ACTIVE}}
+, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{MODERATELY\+\_\+\+ACTIVE}}
+, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{VERY\+\_\+\+ACTIVE}}
+, \newline
+\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{EXTRA\+\_\+\+ACTIVE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration for activity level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_profile_a4eea708cdbed0262d9e7ddbe3f1e3f89}{Profile}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_profile}{Profile} object with default values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_profile_ac62716940298be8090995fdae9baeb64}{set\+Profile\+Information}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&\mbox{\hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}}, \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Gender}} \mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}}, \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Activity\+Level}} \mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activity\+Level}})
+\begin{DoxyCompactList}\small\item\em Sets the profile information with provided values. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_profile_a5e1a4f7716d60c3373a5ca24f6fe9c7a}{display\+Profile\+Information}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Displays the profile information to the console. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_profile_a325b0b21b14e801bc996bde6943bd450}{calculate\+Daily\+Calories}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Calculates the daily caloric needs based on the profile information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} \mbox{\hyperlink{class_profile_a4870e055a5d2db5dda2bc4cbf1e21166}{save\+To\+CSV}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&filename) \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Saves the profile information to a CSV file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} \mbox{\hyperlink{class_profile_a7bde404a039d876b77f6355658cff7a5}{load\+From\+CSV}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Loads the profile information from a CSV file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_profile_a7323efaf8fa25d5a2895f4836f5203cc}{get\+Weight}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Gets the weight of the user. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_profile_ae8fcd0309d9f65f7a08df24b16a032fe}{get\+Name}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Gets the name of the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{class_profile_a60a2349a40b25fb72777d30459af815e}{get\+Age}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Gets the age of the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Gender}} \mbox{\hyperlink{class_profile_a42e1e3a23cb0d9276fe56e1fa2c9c93f}{get\+Gender}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Gets the gender of the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_profile_a44937be5dbbcbfdc22b6308ec222009f}{get\+Height}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Gets the height of the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Activity\+Level}} \mbox{\hyperlink{class_profile_a105a1dc2f2a029134b5863645919cf2c}{get\+Activity\+Level}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Gets the activity level of the user. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_profile_a82f6653066dce20b3eceeed18973bf95}{get\+Gender\+String}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Converts the gender to a string representation. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_profile_a0f7b8f25b9d78d6724f83682d4880c47}{get\+Activity\+Level\+String}} () \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}}
+\begin{DoxyCompactList}\small\item\em Converts the activity level to a string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}}
+\begin{DoxyCompactList}\small\item\em The name of the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} \mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}}
+\begin{DoxyCompactList}\small\item\em The age of the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Gender}} \mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}}
+\begin{DoxyCompactList}\small\item\em The gender of the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}}
+\begin{DoxyCompactList}\small\item\em The height of the user in cm. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} \mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}}
+\begin{DoxyCompactList}\small\item\em The weight of the user in kg. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Activity\+Level}} \mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activity\+Level}}
+\begin{DoxyCompactList}\small\item\em The activity level of the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_profile}{Profile} class represents a user\textquotesingle{}s profile with personal information and activity level. 
+
+Definition at line \mbox{\hyperlink{_profile_8h_source_l00012}{12}} of file \mbox{\hyperlink{_profile_8h_source}{Profile.\+h}}.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_profile_a2caf9f36064e49d0a6d01bf382f46352}\label{class_profile_a2caf9f36064e49d0a6d01bf382f46352} 
+\index{Profile@{Profile}!ActivityLevel@{ActivityLevel}}
+\index{ActivityLevel@{ActivityLevel}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{ActivityLevel}{ActivityLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{enum}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{class}} \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile\+::\+Activity\+Level}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration for activity level. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SEDENTARY@{SEDENTARY}!Profile@{Profile}}\index{Profile@{Profile}!SEDENTARY@{SEDENTARY}}}\Hypertarget{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}\label{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9} 
+SEDENTARY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LIGHTLY\_ACTIVE@{LIGHTLY\_ACTIVE}!Profile@{Profile}}\index{Profile@{Profile}!LIGHTLY\_ACTIVE@{LIGHTLY\_ACTIVE}}}\Hypertarget{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}\label{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f} 
+LIGHTLY\+\_\+\+ACTIVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODERATELY\_ACTIVE@{MODERATELY\_ACTIVE}!Profile@{Profile}}\index{Profile@{Profile}!MODERATELY\_ACTIVE@{MODERATELY\_ACTIVE}}}\Hypertarget{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}\label{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b} 
+MODERATELY\+\_\+\+ACTIVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VERY\_ACTIVE@{VERY\_ACTIVE}!Profile@{Profile}}\index{Profile@{Profile}!VERY\_ACTIVE@{VERY\_ACTIVE}}}\Hypertarget{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}\label{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a} 
+VERY\+\_\+\+ACTIVE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXTRA\_ACTIVE@{EXTRA\_ACTIVE}!Profile@{Profile}}\index{Profile@{Profile}!EXTRA\_ACTIVE@{EXTRA\_ACTIVE}}}\Hypertarget{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}\label{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082} 
+EXTRA\+\_\+\+ACTIVE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_profile_8h_source_l00027}{27}} of file \mbox{\hyperlink{_profile_8h_source}{Profile.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{SEDENTARY}},}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{LIGHTLY\_ACTIVE}},}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{MODERATELY\_ACTIVE}},}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{VERY\_ACTIVE}},}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{EXTRA\_ACTIVE}}}
+\DoxyCodeLine{00034\ \ \ \ \ \};}
+
+\end{DoxyCode}
+\Hypertarget{class_profile_afe67e3cd36e6f35898f1815814e9ed08}\label{class_profile_afe67e3cd36e6f35898f1815814e9ed08} 
+\index{Profile@{Profile}!Gender@{Gender}}
+\index{Gender@{Gender}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{Gender}{Gender}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{enum}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{class}} \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile\+::\+Gender}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumeration for gender. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MALE@{MALE}!Profile@{Profile}}\index{Profile@{Profile}!MALE@{MALE}}}\Hypertarget{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}\label{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a} 
+MALE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FEMALE@{FEMALE}!Profile@{Profile}}\index{Profile@{Profile}!FEMALE@{FEMALE}}}\Hypertarget{class_profile_afe67e3cd36e6f35898f1815814e9ed08a4bf2e31c60d6a605954e399524cae56b}\label{class_profile_afe67e3cd36e6f35898f1815814e9ed08a4bf2e31c60d6a605954e399524cae56b} 
+FEMALE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{_profile_8h_source_l00018}{18}} of file \mbox{\hyperlink{_profile_8h_source}{Profile.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \ \ \ \ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{MALE}},}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a4bf2e31c60d6a605954e399524cae56b}{FEMALE}}}
+\DoxyCodeLine{00022\ \ \ \ \ \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_profile_a4eea708cdbed0262d9e7ddbe3f1e3f89}\label{class_profile_a4eea708cdbed0262d9e7ddbe3f1e3f89} 
+\index{Profile@{Profile}!Profile@{Profile}}
+\index{Profile@{Profile}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{Profile()}{Profile()}}
+{\footnotesize\ttfamily Profile\+::\+Profile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_profile}{Profile} object with default values. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00007\ \ \ \ \ :\ \mbox{\hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}}(\textcolor{stringliteral}{"{}"{}}),\ \mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}}(0),\ \mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}}(\mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Gender::MALE}}),\ \mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}}(0),\ \mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}}(0),\ \mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activityLevel}}(\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{ActivityLevel::SEDENTARY}}) }
+\DoxyCodeLine{00008\ \{}
+\DoxyCodeLine{00009\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_profile_a325b0b21b14e801bc996bde6943bd450}\label{class_profile_a325b0b21b14e801bc996bde6943bd450} 
+\index{Profile@{Profile}!calculateDailyCalories@{calculateDailyCalories}}
+\index{calculateDailyCalories@{calculateDailyCalories}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{calculateDailyCalories()}{calculateDailyCalories()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} Profile\+::calculate\+Daily\+Calories (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Calculates the daily caloric needs based on the profile information. 
+
+\begin{DoxyReturn}{Returns}
+float The daily caloric needs. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00068\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bmr}};}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}}\ ==\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Gender::MALE}})}
+\DoxyCodeLine{00071\ \ \ \ \ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bmr}}\ =\ 10\ *\ \mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}}\ +\ 6.25f\ *\ \mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}}\ -\/\ 5\ *\ \mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}}\ +\ 5;}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00075\ \ \ \ \ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bmr}}\ =\ 10\ *\ \mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}}\ +\ 6.25f\ *\ \mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}}\ -\/\ 5\ *\ \mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}}\ -\/\ 161;}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityFactor}}\{\};}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activityLevel}})}
+\DoxyCodeLine{00081\ \ \ \ \ \{}
+\DoxyCodeLine{00082\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{ActivityLevel::SEDENTARY}}:}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityFactor}}\ =\ 1.2f;}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{ActivityLevel::LIGHTLY\_ACTIVE}}:}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityFactor}}\ =\ 1.375f;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{ActivityLevel::MODERATELY\_ACTIVE}}:}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityFactor}}\ =\ 1.55f;}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{ActivityLevel::VERY\_ACTIVE}}:}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityFactor}}\ =\ 1.725f;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{ActivityLevel::EXTRA\_ACTIVE}}:}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityFactor}}\ =\ 1.9f;}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00097\ \ \ \ \ \}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bmr}}\ *\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{activityFactor}};}
+\DoxyCodeLine{00100\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00143}{activity\+Level}}, \mbox{\hyperlink{_profile_8h_source_l00139}{age}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{EXTRA\+\_\+\+ACTIVE}}, \mbox{\hyperlink{_profile_8h_source_l00140}{gender}}, \mbox{\hyperlink{_profile_8h_source_l00141}{height}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{LIGHTLY\+\_\+\+ACTIVE}}, \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{MALE}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{MODERATELY\+\_\+\+ACTIVE}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{SEDENTARY}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{VERY\+\_\+\+ACTIVE}}, and \mbox{\hyperlink{_profile_8h_source_l00142}{weight}}.
+
+\Hypertarget{class_profile_a5e1a4f7716d60c3373a5ca24f6fe9c7a}\label{class_profile_a5e1a4f7716d60c3373a5ca24f6fe9c7a} 
+\index{Profile@{Profile}!displayProfileInformation@{displayProfileInformation}}
+\index{displayProfileInformation@{displayProfileInformation}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{displayProfileInformation()}{displayProfileInformation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Profile\+::display\+Profile\+Information (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Displays the profile information to the console. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Name:\ "{}}\ <<\ \mbox{\hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00037\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Age:\ "{}}\ <<\ \mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00038\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Gender:\ "{}}\ <<\ (\mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}}\ ==\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Gender::MALE}}\ ?\ \textcolor{stringliteral}{"{}Male"{}}\ :\ \textcolor{stringliteral}{"{}Female"{}})\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00039\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Height:\ "{}}\ <<\ \mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}}\ <<\ \textcolor{stringliteral}{"{}\ cm\(\backslash\)n"{}};}
+\DoxyCodeLine{00040\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Weight:\ "{}}\ <<\ \mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}}\ <<\ \textcolor{stringliteral}{"{}\ kg\(\backslash\)n"{}};}
+\DoxyCodeLine{00041\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Activity\ Level:\ "{}};}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activityLevel}})}
+\DoxyCodeLine{00043\ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{ActivityLevel::SEDENTARY}}:}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Sedentary\(\backslash\)n"{}};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{ActivityLevel::LIGHTLY\_ACTIVE}}:}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Lightly\ Active\(\backslash\)n"{}};}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{ActivityLevel::MODERATELY\_ACTIVE}}:}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Moderately\ Active\(\backslash\)n"{}};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{ActivityLevel::VERY\_ACTIVE}}:}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Very\ Active\(\backslash\)n"{}};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{ActivityLevel::EXTRA\_ACTIVE}}:}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Extra\ Active\(\backslash\)n"{}};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00059\ \ \ \ \ \}}
+\DoxyCodeLine{00060\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00143}{activity\+Level}}, \mbox{\hyperlink{_profile_8h_source_l00139}{age}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{EXTRA\+\_\+\+ACTIVE}}, \mbox{\hyperlink{_profile_8h_source_l00140}{gender}}, \mbox{\hyperlink{_profile_8h_source_l00141}{height}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{LIGHTLY\+\_\+\+ACTIVE}}, \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{MALE}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{MODERATELY\+\_\+\+ACTIVE}}, \mbox{\hyperlink{_profile_8h_source_l00138}{name}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{SEDENTARY}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{VERY\+\_\+\+ACTIVE}}, and \mbox{\hyperlink{_profile_8h_source_l00142}{weight}}.
+
+\Hypertarget{class_profile_a105a1dc2f2a029134b5863645919cf2c}\label{class_profile_a105a1dc2f2a029134b5863645919cf2c} 
+\index{Profile@{Profile}!getActivityLevel@{getActivityLevel}}
+\index{getActivityLevel@{getActivityLevel}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{getActivityLevel()}{getActivityLevel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile\+::\+Activity\+Level}} Profile\+::get\+Activity\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the activity level of the user. 
+
+\begin{DoxyReturn}{Returns}
+Activity\+Level The activity level of the user.
+
+\doxylink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Profile\+::\+Activity\+Level} The activity level of the user. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00218}{218}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00219\ \{}
+\DoxyCodeLine{00220\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activityLevel}};}
+\DoxyCodeLine{00221\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00143}{activity\+Level}}.
+
+\Hypertarget{class_profile_a0f7b8f25b9d78d6724f83682d4880c47}\label{class_profile_a0f7b8f25b9d78d6724f83682d4880c47} 
+\index{Profile@{Profile}!getActivityLevelString@{getActivityLevelString}}
+\index{getActivityLevelString@{getActivityLevelString}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{getActivityLevelString()}{getActivityLevelString()}}
+{\footnotesize\ttfamily std\+::string Profile\+::get\+Activity\+Level\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Converts the activity level to a string representation. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The string representation of the activity level. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00246}{246}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00247\ \{}
+\DoxyCodeLine{00248\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activityLevel}})}
+\DoxyCodeLine{00249\ \ \ \ \ \{}
+\DoxyCodeLine{00250\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{ActivityLevel::SEDENTARY}}:}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Sedentary"{}};}
+\DoxyCodeLine{00252\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{ActivityLevel::LIGHTLY\_ACTIVE}}:}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Lightly\ Active"{}};}
+\DoxyCodeLine{00254\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{ActivityLevel::MODERATELY\_ACTIVE}}:}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Moderately\ Active"{}};}
+\DoxyCodeLine{00256\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{ActivityLevel::VERY\_ACTIVE}}:}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Very\ Active"{}};}
+\DoxyCodeLine{00258\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{ActivityLevel::EXTRA\_ACTIVE}}:}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Extra\ Active"{}};}
+\DoxyCodeLine{00260\ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Unknown"{}};}
+\DoxyCodeLine{00262\ \ \ \ \ \}}
+\DoxyCodeLine{00263\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00143}{activity\+Level}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a1dc4ae57a9c9cbb1d93714a65702f082}{EXTRA\+\_\+\+ACTIVE}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a341f454eeddac14ff9fa20c81d9b927f}{LIGHTLY\+\_\+\+ACTIVE}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a6b25587c3f44b14b2fe68ebf5e6d313b}{MODERATELY\+\_\+\+ACTIVE}}, \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a503d0f5d9a5dde6606423ba99b63f2b9}{SEDENTARY}}, and \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352a678e81d898490efa45d7a25568bf5d8a}{VERY\+\_\+\+ACTIVE}}.
+
+\Hypertarget{class_profile_a60a2349a40b25fb72777d30459af815e}\label{class_profile_a60a2349a40b25fb72777d30459af815e} 
+\index{Profile@{Profile}!getAge@{getAge}}
+\index{getAge@{getAge}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{getAge()}{getAge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} Profile\+::get\+Age (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the age of the user. 
+
+\begin{DoxyReturn}{Returns}
+int The age of the user. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00178}{178}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00179\ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}};}
+\DoxyCodeLine{00181\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00139}{age}}.
+
+\Hypertarget{class_profile_a42e1e3a23cb0d9276fe56e1fa2c9c93f}\label{class_profile_a42e1e3a23cb0d9276fe56e1fa2c9c93f} 
+\index{Profile@{Profile}!getGender@{getGender}}
+\index{getGender@{getGender}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{getGender()}{getGender()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile\+::\+Gender}} Profile\+::get\+Gender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the gender of the user. 
+
+\begin{DoxyReturn}{Returns}
+Gender The gender of the user.
+
+\doxylink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Profile\+::\+Gender} The gender of the user. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00198}{198}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00199\ \{}
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}};}
+\DoxyCodeLine{00201\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00140}{gender}}.
+
+\Hypertarget{class_profile_a82f6653066dce20b3eceeed18973bf95}\label{class_profile_a82f6653066dce20b3eceeed18973bf95} 
+\index{Profile@{Profile}!getGenderString@{getGenderString}}
+\index{getGenderString@{getGenderString}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{getGenderString()}{getGenderString()}}
+{\footnotesize\ttfamily std\+::string Profile\+::get\+Gender\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Converts the gender to a string representation. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The string representation of the gender. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00228}{228}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00229\ \{}
+\DoxyCodeLine{00230\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}})}
+\DoxyCodeLine{00231\ \ \ \ \ \{}
+\DoxyCodeLine{00232\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Gender::MALE}}:}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Male"{}};}
+\DoxyCodeLine{00234\ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a4bf2e31c60d6a605954e399524cae56b}{Gender::FEMALE}}:}
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Female"{}};}
+\DoxyCodeLine{00236\ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{stringliteral}{"{}Unknown"{}};}
+\DoxyCodeLine{00238\ \ \ \ \ \}}
+\DoxyCodeLine{00239\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a4bf2e31c60d6a605954e399524cae56b}{FEMALE}}, \mbox{\hyperlink{_profile_8h_source_l00140}{gender}}, and \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{MALE}}.
+
+\Hypertarget{class_profile_a44937be5dbbcbfdc22b6308ec222009f}\label{class_profile_a44937be5dbbcbfdc22b6308ec222009f} 
+\index{Profile@{Profile}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} Profile\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the height of the user. 
+
+\begin{DoxyReturn}{Returns}
+float The height of the user in cm. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00208}{208}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00209\ \{}
+\DoxyCodeLine{00210\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}};}
+\DoxyCodeLine{00211\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00141}{height}}.
+
+\Hypertarget{class_profile_ae8fcd0309d9f65f7a08df24b16a032fe}\label{class_profile_ae8fcd0309d9f65f7a08df24b16a032fe} 
+\index{Profile@{Profile}!getName@{getName}}
+\index{getName@{getName}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Profile\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the name of the user. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The name of the user. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00188}{188}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00189\ \{}
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}};}
+\DoxyCodeLine{00191\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00138}{name}}.
+
+\Hypertarget{class_profile_a7323efaf8fa25d5a2895f4836f5203cc}\label{class_profile_a7323efaf8fa25d5a2895f4836f5203cc} 
+\index{Profile@{Profile}!getWeight@{getWeight}}
+\index{getWeight@{getWeight}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{getWeight()}{getWeight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} Profile\+::get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the weight of the user. 
+
+\begin{DoxyReturn}{Returns}
+float The weight of the user. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00168}{168}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00169\ \{}
+\DoxyCodeLine{00170\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}};}
+\DoxyCodeLine{00171\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00142}{weight}}.
+
+\Hypertarget{class_profile_a7bde404a039d876b77f6355658cff7a5}\label{class_profile_a7bde404a039d876b77f6355658cff7a5} 
+\index{Profile@{Profile}!loadFromCSV@{loadFromCSV}}
+\index{loadFromCSV@{loadFromCSV}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{loadFromCSV()}{loadFromCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{bool}} Profile\+::load\+From\+CSV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+Loads the profile information from a CSV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to load the profile information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If the file was successfully loaded. 
+
+false If the file could not be opened. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00130}{130}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00131\ \{}
+\DoxyCodeLine{00132\ \ \ \ \ std::ifstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}(filename);}
+\DoxyCodeLine{00133\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.is\_open())}
+\DoxyCodeLine{00134\ \ \ \ \ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}};}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}}))}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ std::istringstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}}(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{line}});}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}};}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}},\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}},\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}}\ =\ std::stoi(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}});}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}},\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}}\ =\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}}\ ==\ \textcolor{stringliteral}{"{}Male"{}}\ ?\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Gender::MALE}}\ :\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a4bf2e31c60d6a605954e399524cae56b}{Gender::FEMALE}});}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}},\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}}\ =\ std::stof(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}});}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}},\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}}\ =\ std::stof(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}});}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ std::getline(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{ss}},\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}},\ \textcolor{charliteral}{','});}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activityLevel}}\ =\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{ActivityLevel}}\textcolor{keyword}{>}(std::stoi(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{token}}));}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.close();}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00155\ \ \ \ \ \}}
+\DoxyCodeLine{00156\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00157\ \ \ \ \ \{}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Unable\ to\ open\ file\ for\ reading:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00160\ \ \ \ \ \}}
+\DoxyCodeLine{00161\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00143}{activity\+Level}}, \mbox{\hyperlink{_profile_8h_source_l00139}{age}}, \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a4bf2e31c60d6a605954e399524cae56b}{FEMALE}}, \mbox{\hyperlink{_profile_8h_source_l00140}{gender}}, \mbox{\hyperlink{_profile_8h_source_l00141}{height}}, \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{MALE}}, \mbox{\hyperlink{_profile_8h_source_l00138}{name}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, and \mbox{\hyperlink{_profile_8h_source_l00142}{weight}}.
+
+\Hypertarget{class_profile_a4870e055a5d2db5dda2bc4cbf1e21166}\label{class_profile_a4870e055a5d2db5dda2bc4cbf1e21166} 
+\index{Profile@{Profile}!saveToCSV@{saveToCSV}}
+\index{saveToCSV@{saveToCSV}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{saveToCSV()}{saveToCSV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Profile\+::save\+To\+CSV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&}]{filename }\end{DoxyParamCaption}) const}
+
+
+
+Saves the profile information to a CSV file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to save the profile information. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00107}{107}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00108\ \{}
+\DoxyCodeLine{00109\ \ \ \ \ std::ofstream\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}(filename);}
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.is\_open())}
+\DoxyCodeLine{00111\ \ \ \ \ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}\ <<\ \mbox{\hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}}\ <<\ \textcolor{charliteral}{','}\ <<\ \mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}}\ <<\ \textcolor{charliteral}{','}\ <<\ (\mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}}\ ==\ \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{Gender::MALE}}\ ?\ \textcolor{stringliteral}{"{}Male"{}}\ :\ \textcolor{stringliteral}{"{}Female"{}})\ <<\ \textcolor{charliteral}{','}}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}}\ <<\ \textcolor{charliteral}{','}\ <<\ \mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}}\ <<\ \textcolor{charliteral}{','}}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activityLevel}})\ <<\ \textcolor{charliteral}{'\(\backslash\)n'};}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{file}}.close();}
+\DoxyCodeLine{00116\ \ \ \ \ \}}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00118\ \ \ \ \ \{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Unable\ to\ open\ file\ for\ writing:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{00120\ \ \ \ \ \}}
+\DoxyCodeLine{00121\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00143}{activity\+Level}}, \mbox{\hyperlink{_profile_8h_source_l00139}{age}}, \mbox{\hyperlink{_profile_8h_source_l00140}{gender}}, \mbox{\hyperlink{_profile_8h_source_l00141}{height}}, \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08a797e877326f44c5763d1458d7f56d87a}{MALE}}, \mbox{\hyperlink{_profile_8h_source_l00138}{name}}, \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}, and \mbox{\hyperlink{_profile_8h_source_l00142}{weight}}.
+
+\Hypertarget{class_profile_ac62716940298be8090995fdae9baeb64}\label{class_profile_ac62716940298be8090995fdae9baeb64} 
+\index{Profile@{Profile}!setProfileInformation@{setProfileInformation}}
+\index{setProfileInformation@{setProfileInformation}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{setProfileInformation()}{setProfileInformation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{void}} Profile\+::set\+Profile\+Information (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}}}]{age,  }\item[{\mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Gender}}}]{gender,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}}}]{height,  }\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}}}]{weight,  }\item[{\mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Activity\+Level}}}]{activity\+Level }\end{DoxyParamCaption})}
+
+
+
+Sets the profile information with provided values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the user. \\
+\hline
+{\em age} & The age of the user. \\
+\hline
+{\em gender} & The gender of the user. \\
+\hline
+{\em height} & The height of the user in cm. \\
+\hline
+{\em weight} & The weight of the user in kg. \\
+\hline
+{\em activity\+Level} & The activity level of the user. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_profile_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{_profile_8cpp_source}{Profile.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ this-\/>\mbox{\hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}}\ =\ \mbox{\hyperlink{class_profile_ac8a75db2da9448616fb180edcc25bf8c}{name}};}
+\DoxyCodeLine{00024\ \ \ \ \ this-\/>\mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}}\ =\ \mbox{\hyperlink{class_profile_a6ee13c1b23decb687a247f71c5781676}{age}};}
+\DoxyCodeLine{00025\ \ \ \ \ this-\/>\mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}}\ =\ \mbox{\hyperlink{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}{gender}};}
+\DoxyCodeLine{00026\ \ \ \ \ this-\/>\mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}}\ =\ \mbox{\hyperlink{class_profile_af184aa5bdd95147a8cd584899c8f4811}{height}};}
+\DoxyCodeLine{00027\ \ \ \ \ this-\/>\mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}}\ =\ \mbox{\hyperlink{class_profile_a2e75aef5804188699a575ea41b34fdb0}{weight}};}
+\DoxyCodeLine{00028\ \ \ \ \ this-\/>\mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activityLevel}}\ =\ \mbox{\hyperlink{class_profile_ac301570c818a689e02141e453807d25c}{activityLevel}};}
+\DoxyCodeLine{00029\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_profile_8h_source_l00143}{activity\+Level}}, \mbox{\hyperlink{_profile_8h_source_l00139}{age}}, \mbox{\hyperlink{_profile_8h_source_l00140}{gender}}, \mbox{\hyperlink{_profile_8h_source_l00141}{height}}, \mbox{\hyperlink{_profile_8h_source_l00138}{name}}, and \mbox{\hyperlink{_profile_8h_source_l00142}{weight}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_profile_ac301570c818a689e02141e453807d25c}\label{class_profile_ac301570c818a689e02141e453807d25c} 
+\index{Profile@{Profile}!activityLevel@{activityLevel}}
+\index{activityLevel@{activityLevel}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{activityLevel}{activityLevel}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_profile_a2caf9f36064e49d0a6d01bf382f46352}{Activity\+Level}} Profile\+::activity\+Level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The activity level of the user. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_8h_source_l00143}{143}} of file \mbox{\hyperlink{_profile_8h_source}{Profile.\+h}}.
+
+\Hypertarget{class_profile_a6ee13c1b23decb687a247f71c5781676}\label{class_profile_a6ee13c1b23decb687a247f71c5781676} 
+\index{Profile@{Profile}!age@{age}}
+\index{age@{age}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{age}{age}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{int}} Profile\+::age\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The age of the user. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_8h_source_l00139}{139}} of file \mbox{\hyperlink{_profile_8h_source}{Profile.\+h}}.
+
+\Hypertarget{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6}\label{class_profile_a0b40c6a3b5aa872dcf5ada596348a8d6} 
+\index{Profile@{Profile}!gender@{gender}}
+\index{gender@{gender}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{gender}{gender}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_profile_afe67e3cd36e6f35898f1815814e9ed08}{Gender}} Profile\+::gender\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The gender of the user. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_8h_source_l00140}{140}} of file \mbox{\hyperlink{_profile_8h_source}{Profile.\+h}}.
+
+\Hypertarget{class_profile_af184aa5bdd95147a8cd584899c8f4811}\label{class_profile_af184aa5bdd95147a8cd584899c8f4811} 
+\index{Profile@{Profile}!height@{height}}
+\index{height@{height}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} Profile\+::height\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The height of the user in cm. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_8h_source_l00141}{141}} of file \mbox{\hyperlink{_profile_8h_source}{Profile.\+h}}.
+
+\Hypertarget{class_profile_ac8a75db2da9448616fb180edcc25bf8c}\label{class_profile_ac8a75db2da9448616fb180edcc25bf8c} 
+\index{Profile@{Profile}!name@{name}}
+\index{name@{name}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Profile\+::name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The name of the user. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_8h_source_l00138}{138}} of file \mbox{\hyperlink{_profile_8h_source}{Profile.\+h}}.
+
+\Hypertarget{class_profile_a2e75aef5804188699a575ea41b34fdb0}\label{class_profile_a2e75aef5804188699a575ea41b34fdb0} 
+\index{Profile@{Profile}!weight@{weight}}
+\index{weight@{weight}!Profile@{Profile}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{float}} Profile\+::weight\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The weight of the user in kg. 
+
+
+
+Definition at line \mbox{\hyperlink{_profile_8h_source_l00142}{142}} of file \mbox{\hyperlink{_profile_8h_source}{Profile.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_profile_8h}{Profile.\+h}}\item 
+\mbox{\hyperlink{_profile_8cpp}{Profile.\+cpp}}\end{DoxyCompactItemize}

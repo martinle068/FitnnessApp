@@ -1,0 +1,5 @@
+<map id="Goals" name="Goals">
+<area shape="rect" id="Node000001" title="The Goals class represents a user&#39;s fitness goals and calculates daily caloric needs based on the pro..." alt="" coords="6,96,62,123"/>
+<area shape="rect" id="Node000002" href="$class_profile.html" title="The Profile class represents a user&#39;s profile with personal information and activity level." alt="" coords="5,5,63,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="37,48,37,95,31,95,31,48"/>
+</map>

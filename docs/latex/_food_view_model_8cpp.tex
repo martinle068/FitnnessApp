@@ -1,0 +1,61 @@
+\doxysection{Food\+View\+Model.\+cpp File Reference}
+\hypertarget{_food_view_model_8cpp}{}\label{_food_view_model_8cpp}\index{FoodViewModel.cpp@{FoodViewModel.cpp}}
+{\ttfamily \#include "{}Food\+View\+Model.\+h"{}}\newline
+{\ttfamily \#include "{}Utils.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+Include dependency graph for Food\+View\+Model.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_food_view_model_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::vector}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} $>$ \mbox{\hyperlink{_food_view_model_8cpp_abd74caa54b4049d32ee3adabb2fa7225}{get\+Food\+Item\+Categories}} (\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::map}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}, \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&food\+Item\+Map)
+\begin{DoxyCompactList}\small\item\em Get the unique categories from the food item map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_food_view_model_8cpp_abd74caa54b4049d32ee3adabb2fa7225}\label{_food_view_model_8cpp_abd74caa54b4049d32ee3adabb2fa7225} 
+\index{FoodViewModel.cpp@{FoodViewModel.cpp}!getFoodItemCategories@{getFoodItemCategories}}
+\index{getFoodItemCategories@{getFoodItemCategories}!FoodViewModel.cpp@{FoodViewModel.cpp}}
+\doxysubsubsection{\texorpdfstring{getFoodItemCategories()}{getFoodItemCategories()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::vector}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}} $>$ get\+Food\+Item\+Categories (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{const}} \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::map}}$<$ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{std\+::string}}, \mbox{\hyperlink{class_food_item}{Food\+Item}} $>$ \&}]{food\+Item\+Map }\end{DoxyParamCaption})}
+
+
+
+Get the unique categories from the food item map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em food\+Item\+Map} & The map containing the food items \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::vector$<$std\+::string$>$ A vector of unique categories 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{_food_view_model_8cpp_source_l00081}{81}} of file \mbox{\hyperlink{_food_view_model_8cpp_source}{Food\+View\+Model.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00082\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ std::set<std::string>\ categories;}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keyword}{auto}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}\ :\ foodItemMap)}
+\DoxyCodeLine{00085\ \ \ \ \ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ categories.insert(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second.categories.begin(),\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{pair}}.second.categories.end());}
+\DoxyCodeLine{00087\ \ \ \ \ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordflow}{return}\ std::vector<std::string>(categories.begin(),\ categories.end());}
+\DoxyCodeLine{00090\ \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{_utils_8h_source_l00070}{read\+From\+CSV()}}.
+

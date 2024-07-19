@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['deleteexercisefromday_0',['deleteExerciseFromDay',['../class_workout_plan_view_model.html#afbea2c1ca5c8793e49e712d10dfef0c4',1,'WorkoutPlanViewModel']]],
+  ['display_1',['display',['../class_exercise_view.html#a44c4781dc6b8185a4e8deafc55ea754d',1,'ExerciseView::display()'],['../class_food_view.html#a03a62f43536e2fb31cbdfb2d496f0c6f',1,'FoodView::display()'],['../class_main_view.html#a8086f0b1974b2621b9342ffc44eaf981',1,'MainView::display()'],['../class_nutrition_plan.html#a714a170e48b817e21d7af82dce5869a4',1,'NutritionPlan::display()'],['../class_nutrition_plan_view.html#addc95c5d4f887a07a48ae923a94549af',1,'NutritionPlanView::display()'],['../class_profile_view.html#a175d94b9f25b5baef17252ed9fd8c087',1,'ProfileView::display()'],['../class_view.html#a2d83a628b932739742a943ccaa3385d0',1,'View::display()'],['../class_workout_plan_view.html#a925e9d7b90e458a4f5b051bae12188b2',1,'WorkoutPlanView::display()']]],
+  ['displayallexercises_2',['displayAllExercises',['../class_exercise_view_model.html#a318a8f71d47209b4585744e1f6685b23',1,'ExerciseViewModel']]],
+  ['displayallworkoutplans_3',['displayAllWorkoutPlans',['../class_workout_plan_view_model.html#a9c743e00efafbb6193822e8117633bc1',1,'WorkoutPlanViewModel']]],
+  ['displayandhandlesubmenu_4',['displayAndHandleSubMenu',['../class_view.html#ab7b1812236e25cc25929e6f7ddcc1b10',1,'View']]],
+  ['displaycategoriesoffooditem_5',['displayCategoriesOfFoodItem',['../class_food_view_model.html#ac09ef96a45b66bb70ce6448f2a835e69',1,'FoodViewModel']]],
+  ['displaycategoriesoffooditemmap_6',['displayCategoriesOfFoodItemMap',['../class_food_view_model.html#a497106cce4ac7e3ca3f1e1a59fb0ecf0',1,'FoodViewModel']]],
+  ['displaycurrentexercisesforday_7',['displayCurrentExercisesForDay',['../class_workout_plan_view_model.html#a9ac94e1386754b5c724958a7f88b3db4',1,'WorkoutPlanViewModel']]],
+  ['displaycurrentfoods_8',['displayCurrentFoods',['../class_nutrition_plan_view_model.html#a0549eb8e61a6dc6b73a2aaf6855c07d3',1,'NutritionPlanViewModel']]],
+  ['displayexercisesbymusclegroup_9',['displayExercisesByMuscleGroup',['../class_exercise_view_model.html#aec5dee52af719d2e9be9940f04428622',1,'ExerciseViewModel::displayExercisesByMuscleGroup()'],['../class_workout_plan_view_model.html#a3a92b1867b5cf387718295a4a451416a',1,'WorkoutPlanViewModel::displayExercisesByMuscleGroup(const std::map&lt; std::string, Exercise &gt; &amp;exerciseMap, const std::string &amp;muscleGroup, std::vector&lt; Exercise &gt; &amp;filteredExercises)']]],
+  ['displayexercisetypes_10',['displayExerciseTypes',['../class_workout_plan_view_model.html#a246b6480f414cff9ac23115fbf1fce79',1,'WorkoutPlanViewModel']]],
+  ['displayfooditem_11',['displayFoodItem',['../class_food_view_model.html#a6dca4d399472d0315d593cec5dd5155f',1,'FoodViewModel']]],
+  ['displayfooditems_12',['displayFoodItems',['../class_food_view_model.html#a8abd20b737cb296afc083785004fb0de',1,'FoodViewModel']]],
+  ['displayfooditemsbycategories_13',['displayFoodItemsByCategories',['../class_food_view_model.html#a0d8be147c1bc83aa136e2c0ab6694132',1,'FoodViewModel']]],
+  ['displayfooditemsbycategory_14',['displayFoodItemsByCategory',['../_nutrition_plan_view_model_8cpp.html#ab66066424a0f3ba2ec3286d31705efea',1,'NutritionPlanViewModel.cpp']]],
+  ['displaygoals_15',['displayGoals',['../class_goals.html#af7c56dbc1c11c6aede0391953669f21e',1,'Goals']]],
+  ['displaymenu_16',['displayMenu',['../_utils_8h.html#a8fcbccbd74fee29a94755024f0359239',1,'Utils.h']]],
+  ['displaymusclegroupoptions_17',['displayMuscleGroupOptions',['../class_exercise_view_model.html#ac787b7c2ee097d6a7b3dc7c3bae4da6e',1,'ExerciseViewModel::displayMuscleGroupOptions()'],['../class_workout_plan_view_model.html#a60d6f27f38ce3b76b8c76f9fb19e8034',1,'WorkoutPlanViewModel::displayMuscleGroupOptions()']]],
+  ['displaynutritionalvalues_18',['displayNutritionalValues',['../class_food_item.html#a129ef1430fdffd361e62f753ad3069a3',1,'FoodItem']]],
+  ['displayplan_19',['displayPlan',['../class_nutrition_plan_view_model.html#a0c1e31daba18bb25380545ab58a67a13',1,'NutritionPlanViewModel']]],
+  ['displayprofileinformation_20',['displayProfileInformation',['../class_profile.html#a5e1a4f7716d60c3373a5ca24f6fe9c7a',1,'Profile']]],
+  ['displayworkoutplan_21',['displayWorkoutPlan',['../class_workout_plan_view_model.html#a147f41a01b82a5d5e84a9805c35e7d3b',1,'WorkoutPlanViewModel']]],
+  ['displayworkoutplansbytype_22',['displayWorkoutPlansByType',['../class_workout_plan_view_model.html#a269c0562c27c344e89e95e843a36fdca',1,'WorkoutPlanViewModel']]],
+  ['displayworkoutplantypes_23',['displayWorkoutPlanTypes',['../class_workout_plan_view_model.html#aca8fec1bf2df8ee96648b8635bb237ae',1,'WorkoutPlanViewModel']]]
+];

@@ -1,0 +1,35 @@
+\doxysection{Workout\+Plan\+View.\+cpp}
+\hypertarget{_workout_plan_view_8cpp_source}{}\label{_workout_plan_view_8cpp_source}\mbox{\hyperlink{_workout_plan_view_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_workout_plan_view_8h}{WorkoutPlanView.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_utils_8h}{Utils.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00009}\mbox{\hyperlink{class_workout_plan_view_a99080e469744b45538b65eca6fef6900}{00009}}\ \mbox{\hyperlink{class_workout_plan_view_a99080e469744b45538b65eca6fef6900}{WorkoutPlanView::WorkoutPlanView}}(\mbox{\hyperlink{class_workout_plan_view_model}{WorkoutPlanViewModel}}\&\ \mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}})\ :\ viewModel(\mbox{\hyperlink{_utils_8h_a96014baf83e2306c12d1b6167a8804e7}{vm}})}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00010}00010\ \{}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00011}00011\ \ \ \ \ \mbox{\hyperlink{class_workout_plan_view_ab8996deb119d4418831ac710729c3cf2}{menuOptions}}\ =\ \{}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00012}00012\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}View\ Workout\ Plans"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Viewing\ Workout\ Plans"{}});\ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_a174d20882b287d34d69d73d3498afa48}{view}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Add\ Workout\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Adding\ Workout\ Plan"{}});\ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_aa1c870da9793eceaa1b28560f9a8bdd5}{add}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Modify\ Workout\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Modifying\ Workout\ Plan"{}});\ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_a8beff42855b5a28e944218839c76db52}{modify}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Delete\ Workout\ Plan"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{_utils_8h_ab96aaf5ac1c4cdb557fba0ca3d24c479}{printLabel}}(\textcolor{stringliteral}{"{}Deleting\ Workout\ Plan"{}});\ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_ac0efc332d0ecdaa25876fd7a785a529e}{remove}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00016}00016\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Import\ Workout\ Plan\ from\ File"{}},\ [\textcolor{keyword}{this}]()\ \{\ \mbox{\hyperlink{class_workout_plan_view_a95ad38d7400224cb87089eef66def180}{importFromFile}}();\ \}\},}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00017}00017\ \ \ \ \ \ \ \ \ \{\textcolor{stringliteral}{"{}Back"{}},\ [\textcolor{keyword}{this}]()\ \{\ \textcolor{keywordflow}{return};\ \}\}}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00018}00018\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00019}00019\ \}}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00024}\mbox{\hyperlink{class_workout_plan_view_a925e9d7b90e458a4f5b051bae12188b2}{00024}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_workout_plan_view_a925e9d7b90e458a4f5b051bae12188b2}{WorkoutPlanView::display}}()}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00025}00025\ \{}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_a07bdf96f818ea0a0f58269281e13d539}{reload}}();}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{class_view_ab7b1812236e25cc25929e6f7ddcc1b10}{displayAndHandleSubMenu}}(\textcolor{stringliteral}{"{}Workout\ Plans"{}},\ \mbox{\hyperlink{class_workout_plan_view_ab8996deb119d4418831ac710729c3cf2}{menuOptions}},\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00033}\mbox{\hyperlink{class_workout_plan_view_a95ad38d7400224cb87089eef66def180}{00033}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_workout_plan_view_a95ad38d7400224cb87089eef66def180}{WorkoutPlanView::importFromFile}}()}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00034}00034\ \{}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00035}00035\ \ \ \ \ std::string\ filename;}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00036}00036\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Enter\ the\ filename\ to\ import\ workout\ plans\ from:\ "{}};}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00037}00037\ \ \ \ \ std::getline(std::cin\ >>\ std::ws,\ filename);}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00038}00038\ \ \ \ \ \mbox{\hyperlink{class_workout_plan_view_a0e464e45e1587932294ad654b3c5327a}{viewModel}}.\mbox{\hyperlink{class_workout_plan_view_model_a0239603dfe6e09085cf2a28e83409cfc}{importFromFile}}(filename);}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00039}00039\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Workout\ plans\ imported\ from\ file:\ "{}}\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_workout_plan_view_8cpp_source_l00040}00040\ \}}
+
+\end{DoxyCode}
